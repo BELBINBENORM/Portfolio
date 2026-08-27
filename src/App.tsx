@@ -1,4 +1,5 @@
 import { useMemo, useState, useEffect, useRef, type CSSProperties } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import {
   ArrowDown,
   BrainCircuit,
@@ -1649,6 +1650,7 @@ function App() {
           </div>
         </section>
       </main>
+      <Analytics />
     </div>
   );
 }
