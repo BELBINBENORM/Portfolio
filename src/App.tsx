@@ -18,6 +18,8 @@ import {
   Workflow,
   CheckCircle2,
   FileText,
+  Menu,
+  X,
 } from 'lucide-react';
 import {
   certificationRows,
@@ -870,6 +872,18 @@ function App() {
   const kaggleLink = externalLinks.find((item) => item.title === 'Kaggle')?.url ?? 'https://www.kaggle.com/belbino';
   const resumeHref = '/resume/BELBIN RESUME - AIML.pdf';
 
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsMobileMenuOpen(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   return (
     <div className="page-shell">
       {/* Site-wide ambient video */}
@@ -895,7 +909,7 @@ function App() {
         <nav className="brand-lockup" aria-label="Main navigation">
           <div className="brand-title-group">
             <span className="brand-mark">BELBIN BENO R M</span>
-            <span className="brand-badge">AI ENGINEER</span>
+            <span className="brand-badge">AI/ML ENGINEER</span>
           </div>
           <div className="nav-links">
             <a href="#work">Systems</a>
@@ -913,8 +927,94 @@ function App() {
               Resume ↓
             </a>
           </div>
+          <button
+            type="button"
+            className="hamburger-btn"
+            aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={isMobileMenuOpen}
+            onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+          >
+            {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
         </nav>
+
+        {/* Mobile Navigation Menu Dropdown */}
+        <div
+          className={`mobile-nav-menu ${isMobileMenuOpen ? 'is-open' : ''}`}
+          aria-hidden={!isMobileMenuOpen}
+        >
+          <div className="mobile-nav-links">
+            <a
+              href="#work"
+              className="mobile-nav-link"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <span className="mobile-nav-accent">01</span>
+              <span>SYSTEMS</span>
+            </a>
+            <a
+              href="#architecture"
+              className="mobile-nav-link"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <span className="mobile-nav-accent">02</span>
+              <span>ARCHITECTURE</span>
+            </a>
+            <a
+              href="#skills"
+              className="mobile-nav-link"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <span className="mobile-nav-accent">03</span>
+              <span>SKILLS NETWORK</span>
+            </a>
+            <a
+              href="#constellation"
+              className="mobile-nav-link"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <span className="mobile-nav-accent">04</span>
+              <span>CONSTELLATION</span>
+            </a>
+            <a
+              href="#journey"
+              className="mobile-nav-link"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <span className="mobile-nav-accent">05</span>
+              <span>JOURNEY</span>
+            </a>
+            <a
+              href="#contact"
+              className="mobile-nav-link"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <span className="mobile-nav-accent">06</span>
+              <span>CONTACT</span>
+            </a>
+            <a
+              href={resumeHref}
+              download="BELBIN RESUME - AIML.pdf"
+              className="mobile-resume-btn"
+              onClick={() => setIsMobileMenuOpen(false)}
+              title="Direct PDF Download"
+            >
+              <FileText size={15} />
+              <span>RESUME</span>
+              <span className="resume-download-icon">↓</span>
+            </a>
+          </div>
+        </div>
       </header>
+
+      {/* Backdrop overlay for mobile menu */}
+      {isMobileMenuOpen && (
+        <div
+          className="mobile-nav-backdrop"
+          onClick={() => setIsMobileMenuOpen(false)}
+          aria-hidden="true"
+        />
+      )}
 
       <main className="page-content">
         {/* =========================================================================
@@ -926,11 +1026,11 @@ function App() {
           <div className="hero-content">
             <div className="hero-kicker-badge">
               <Sparkles size={14} className="kicker-icon" />
-              <span>AI ENGINEER & SYSTEM ARCHITECT</span>
+              <span>AI/ML ENGINEER & SYSTEM ARCHITECT</span>
             </div>
 
             <h1 className="hero-headline">
-              AI ENGINEER
+              AI/ML ENGINEER
               <span className="hero-subheadline">
                 Building Intelligent Systems with LLMs, RAG & AI Agents
               </span>
@@ -1649,6 +1749,16 @@ function App() {
           </div>
         </section>
       </main>
+
+      {/* Site Footer */}
+      <footer className="site-footer">
+        <div className="footer-content">
+          <span className="footer-accent-dot" aria-hidden="true" />
+          <span className="footer-copyright-text">
+            © 2026 BELBIN BENO R M. All rights reserved.
+          </span>
+        </div>
+      </footer>
     </div>
   );
 }
