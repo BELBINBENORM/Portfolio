@@ -1,0 +1,5352 @@
+{
+  "sourceFile": "data.csv",
+  "totalRows": 236,
+  "sections": [
+    "profile",
+    "experience",
+    "education",
+    "skills",
+    "projects",
+    "github_projects",
+    "kaggle_datasets",
+    "kaggle_notebooks",
+    "kaggle_models",
+    "certifications",
+    "linkedin_posts",
+    "external_links"
+  ],
+  "records": [
+    {
+      "section": "profile",
+      "title": "LinkedIn Profile",
+      "category": "Profile Link",
+      "description": "Professional profile containing experience, skills, projects and professional activity.",
+      "technology": "AI/ML, Data Science, Python, Generative AI",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/belbino/",
+      "year": "Not specified",
+      "importance": "5",
+      "portfolio_priority": "2",
+      "animation_scene": "profile_hero",
+      "display_on_homepage": true,
+      "categories": [
+        "Profile Link"
+      ],
+      "technologies": [
+        "AI/ML",
+        "Data Science",
+        "Python",
+        "Generative AI"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "profile",
+      "title": "GitHub Profile",
+      "category": "Profile Link",
+      "description": "Primary GitHub account hosting AI, machine learning, data engineering, automation, scraping and backend projects.",
+      "technology": "Git, GitHub, Python, FastAPI, PostgreSQL, RAG, Machine Learning",
+      "platform": "GitHub",
+      "url": "https://github.com/BELBINBENORM",
+      "year": "Not specified",
+      "importance": "5",
+      "portfolio_priority": "3",
+      "animation_scene": "profile_hero",
+      "display_on_homepage": true,
+      "categories": [
+        "Profile Link"
+      ],
+      "technologies": [
+        "Git",
+        "GitHub",
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "RAG",
+        "Machine Learning"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "profile",
+      "title": "Kaggle Profile",
+      "category": "Profile Link",
+      "description": "Kaggle profile containing datasets, notebooks, models and competitive machine learning work.",
+      "technology": "Python, Machine Learning, Data Science, Web Scraping, Forecasting",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/belbino",
+      "year": "Not specified",
+      "importance": "5",
+      "portfolio_priority": "4",
+      "animation_scene": "profile_hero",
+      "display_on_homepage": true,
+      "categories": [
+        "Profile Link"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Data Science",
+        "Web Scraping",
+        "Forecasting"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "profile",
+      "title": "HackerRank Profile",
+      "category": "Profile Link",
+      "description": "Coding and technical practice profile.",
+      "technology": "Python, SQL, Problem Solving",
+      "platform": "HackerRank",
+      "url": "https://www.hackerrank.com/profile/belbinbenorm2002",
+      "year": "Not specified",
+      "importance": "4",
+      "portfolio_priority": "5",
+      "animation_scene": "profile_hero",
+      "display_on_homepage": true,
+      "categories": [
+        "Profile Link"
+      ],
+      "technologies": [
+        "Python",
+        "SQL",
+        "Problem Solving"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "profile",
+      "title": "LeetCode Profile",
+      "category": "Profile Link",
+      "description": "Programming and algorithm practice profile.",
+      "technology": "Python, SQL, Data Structures, Algorithms",
+      "platform": "LeetCode",
+      "url": "https://leetcode.com/u/belbinbenorm2002/",
+      "year": "Not specified",
+      "importance": "4",
+      "portfolio_priority": "6",
+      "animation_scene": "profile_hero",
+      "display_on_homepage": true,
+      "categories": [
+        "Profile Link"
+      ],
+      "technologies": [
+        "Python",
+        "SQL",
+        "Data Structures",
+        "Algorithms"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "profile",
+      "title": "WhatsApp Contact",
+      "category": "Contact Link",
+      "description": "Direct contact link.",
+      "technology": "WhatsApp",
+      "platform": "WhatsApp",
+      "url": "https://wa.me/+918300853647",
+      "year": "Not specified",
+      "importance": "4",
+      "portfolio_priority": "7",
+      "animation_scene": "contact_link",
+      "display_on_homepage": true,
+      "categories": [
+        "Contact Link"
+      ],
+      "technologies": [
+        "WhatsApp"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "profile",
+      "title": "Email Contact",
+      "category": "Contact Link",
+      "description": "Primary professional email address.",
+      "technology": "Email",
+      "platform": "Email",
+      "url": "mailto:belbin.datascientist@gmail.com",
+      "year": "Not specified",
+      "importance": "5",
+      "portfolio_priority": "8",
+      "animation_scene": "contact_link",
+      "display_on_homepage": true,
+      "categories": [
+        "Contact Link"
+      ],
+      "technologies": [
+        "Email"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "experience",
+      "title": "Quantitative Analyst",
+      "category": "Professional Experience",
+      "description": "Strategic resource planning, project analytics, cost estimation, workflow automation, KPI reporting, and technical integration for large-scale infrastructure and construction projects. Automated legacy Excel-based civil engineering workflows with Python, reducing manual processing time by 40%.",
+      "technology": "Python, SQL, Pandas, NumPy, Data Analytics, Automation, Excel, Power BI",
+      "platform": "Adroit Design India Pvt Ltd",
+      "url": "Not publicly specified",
+      "year": "May 2024 – Present",
+      "importance": "5",
+      "portfolio_priority": "1",
+      "animation_scene": "experience_timeline",
+      "display_on_homepage": true,
+      "categories": [
+        "Professional Experience"
+      ],
+      "technologies": [
+        "Python",
+        "SQL",
+        "Pandas",
+        "NumPy",
+        "Data Analytics",
+        "Automation",
+        "Excel",
+        "Power BI"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "experience",
+      "title": "Machine Learning Practitioner",
+      "category": "Professional / Open Data",
+      "description": "Competitive modeling and reproducible data science work on Kaggle, including Stratified K-Fold cross-validation, nested stacking, feature selection, model interpretability, SHAP/LIME, and feature engineering for high-kurtosis and outlier-heavy datasets.",
+      "technology": "Python, Scikit-learn, XGBoost, LightGBM, CatBoost, Optuna, SHAP, LIME, Feature Engineering, Cross-Validation",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/belbino",
+      "year": "2023 – Present",
+      "importance": "5",
+      "portfolio_priority": "2",
+      "animation_scene": "experience_timeline",
+      "display_on_homepage": true,
+      "categories": [
+        "Professional",
+        "Open Data"
+      ],
+      "technologies": [
+        "Python",
+        "Scikit-learn",
+        "XGBoost",
+        "LightGBM",
+        "CatBoost",
+        "Optuna",
+        "SHAP",
+        "LIME",
+        "Feature Engineering",
+        "Cross-Validation"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "education",
+      "title": "B.E. Computer Science and Engineering",
+      "category": "Bachelor's Degree",
+      "description": "Bachelor of Engineering in Computer Science and Engineering at SNS College of Technology, Coimbatore.",
+      "technology": "Computer Science, Python, Programming, Data Science",
+      "platform": "SNS College of Technology",
+      "url": "https://snsct.org/",
+      "year": "2020–2024",
+      "importance": "5",
+      "portfolio_priority": "1",
+      "animation_scene": "education_timeline",
+      "display_on_homepage": true,
+      "categories": [
+        "Bachelor's Degree"
+      ],
+      "technologies": [
+        "Computer Science",
+        "Python",
+        "Programming",
+        "Data Science"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "education",
+      "title": "Post Graduate Program in Data Analytics and Data Science",
+      "category": "Post-Graduate Program",
+      "description": "Post Graduate Program in Data Analytics and Data Science completed through Skill-Lync, with hands-on work in Python, SQL, data analysis, visualization, statistics, and machine learning.",
+      "technology": "Python, SQL, Data Analysis, Tableau, Excel, Power BI, Statistics, Machine Learning",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/profiles/belbin-beno-rm-ckhl9",
+      "year": "Not specified",
+      "importance": "5",
+      "portfolio_priority": "2",
+      "animation_scene": "education_timeline",
+      "display_on_homepage": true,
+      "categories": [
+        "Post-Graduate Program"
+      ],
+      "technologies": [
+        "Python",
+        "SQL",
+        "Data Analysis",
+        "Tableau",
+        "Excel",
+        "Power BI",
+        "Statistics",
+        "Machine Learning"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "education",
+      "title": "Higher Secondary (12th)",
+      "category": "School Education",
+      "description": "Higher secondary education at Sacred Heart Matriculation Higher Secondary School.",
+      "technology": "Science / Mathematics",
+      "platform": "Sacred Heart Matriculation Higher Secondary School",
+      "url": "Not specified",
+      "year": "2019–2020",
+      "importance": "3",
+      "portfolio_priority": "3",
+      "animation_scene": "education_timeline",
+      "display_on_homepage": false,
+      "categories": [
+        "School Education"
+      ],
+      "technologies": [
+        "Science / Mathematics"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "education",
+      "title": "Secondary (10th)",
+      "category": "School Education",
+      "description": "Secondary education at Sacred Heart Matriculation Higher Secondary School.",
+      "technology": "Science / Mathematics",
+      "platform": "Sacred Heart Matriculation Higher Secondary School",
+      "url": "Not specified",
+      "year": "2017–2018",
+      "importance": "3",
+      "portfolio_priority": "4",
+      "animation_scene": "education_timeline",
+      "display_on_homepage": false,
+      "categories": [
+        "School Education"
+      ],
+      "technologies": [
+        "Science / Mathematics"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "Python",
+      "category": "Programming",
+      "description": "Expert Python usage across analytics, machine learning, automation, web scraping, APIs and AI applications.",
+      "technology": "Python",
+      "platform": "GitHub / Kaggle",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "5",
+      "portfolio_priority": "1",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Programming"
+      ],
+      "technologies": [
+        "Python"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "Python OOP",
+      "category": "Programming",
+      "description": "Object-oriented Python used to build reusable ML transformers, backend components and application services.",
+      "technology": "Python, OOP",
+      "platform": "AI projects / GitHub",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "5",
+      "portfolio_priority": "2",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Programming"
+      ],
+      "technologies": [
+        "Python",
+        "OOP"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "SQL",
+      "category": "Database & Analytics",
+      "description": "SQL for data analysis, relational querying and backend data workflows.",
+      "technology": "SQL",
+      "platform": "PostgreSQL / GitHub",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "5",
+      "portfolio_priority": "3",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Database & Analytics"
+      ],
+      "technologies": [
+        "SQL"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "PostgreSQL",
+      "category": "Database",
+      "description": "Relational database design and persistence for AI/data applications.",
+      "technology": "PostgreSQL, SQL",
+      "platform": "AI Knowledge Platform",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "5",
+      "portfolio_priority": "4",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Database"
+      ],
+      "technologies": [
+        "PostgreSQL",
+        "SQL"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "pgvector",
+      "category": "Vector Database",
+      "description": "Vector similarity search in PostgreSQL for retrieval-augmented generation workflows.",
+      "technology": "pgvector, PostgreSQL, Embeddings",
+      "platform": "AI Knowledge Platform",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "5",
+      "portfolio_priority": "5",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Vector Database"
+      ],
+      "technologies": [
+        "pgvector",
+        "PostgreSQL",
+        "Embeddings"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "SQLAlchemy",
+      "category": "Backend & ORM",
+      "description": "ORM and database session management for FastAPI and PostgreSQL applications.",
+      "technology": "SQLAlchemy, PostgreSQL",
+      "platform": "AI Knowledge Platform",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "5",
+      "portfolio_priority": "6",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Backend & ORM"
+      ],
+      "technologies": [
+        "SQLAlchemy",
+        "PostgreSQL"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "FastAPI",
+      "category": "Backend Engineering",
+      "description": "RESTful API development for AI and data applications, including document, search and agent workflows.",
+      "technology": "FastAPI, Pydantic, Python, REST APIs",
+      "platform": "AI Knowledge Platform / GitHub",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "5",
+      "portfolio_priority": "7",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Backend Engineering"
+      ],
+      "technologies": [
+        "FastAPI",
+        "Pydantic",
+        "Python",
+        "REST APIs"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "Pydantic",
+      "category": "Backend Engineering",
+      "description": "Typed request/response schemas and validation for FastAPI services.",
+      "technology": "Pydantic, FastAPI",
+      "platform": "AI Knowledge Platform",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "5",
+      "portfolio_priority": "8",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Backend Engineering"
+      ],
+      "technologies": [
+        "Pydantic",
+        "FastAPI"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "REST API Development",
+      "category": "Backend Engineering",
+      "description": "Design and implementation of API endpoints for AI/data services.",
+      "technology": "REST, FastAPI, Python, HTTP",
+      "platform": "AI projects",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "5",
+      "portfolio_priority": "9",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Backend Engineering"
+      ],
+      "technologies": [
+        "REST",
+        "FastAPI",
+        "Python",
+        "HTTP"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "RAG",
+      "category": "Generative AI",
+      "description": "Retrieval-Augmented Generation using document ingestion, chunking, embeddings, vector search and grounded answer generation.",
+      "technology": "RAG, Embeddings, pgvector",
+      "platform": "AI Knowledge Platform",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "5",
+      "portfolio_priority": "10",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Generative AI"
+      ],
+      "technologies": [
+        "RAG",
+        "Embeddings",
+        "pgvector"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "Generative AI & LLMs",
+      "category": "Generative AI",
+      "description": "Practical LLM application development using local and API-based models, prompt workflows and retrieval.",
+      "technology": "LLM, Ollama, Llama 3.2, OpenAI, Gemini, Groq, Prompt Engineering",
+      "platform": "AI projects",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "5",
+      "portfolio_priority": "11",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Generative AI"
+      ],
+      "technologies": [
+        "LLM",
+        "Ollama",
+        "Llama 3.2",
+        "OpenAI",
+        "Gemini",
+        "Groq",
+        "Prompt Engineering"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "LLM API Integration",
+      "category": "Generative AI",
+      "description": "Integration with LLM providers for application-level generation and AI workflows.",
+      "technology": "OpenAI API, Gemini, Groq, LLM APIs",
+      "platform": "AI projects",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "5",
+      "portfolio_priority": "12",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Generative AI"
+      ],
+      "technologies": [
+        "OpenAI API",
+        "Gemini",
+        "Groq",
+        "LLM APIs"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "Prompt Engineering",
+      "category": "Generative AI",
+      "description": "Prompt design for grounded responses, extraction and AI application workflows.",
+      "technology": "Prompt Engineering, LLM",
+      "platform": "AI projects",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "5",
+      "portfolio_priority": "13",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Generative AI"
+      ],
+      "technologies": [
+        "Prompt Engineering",
+        "LLM"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "AI Agents",
+      "category": "Agentic AI",
+      "description": "Agent workflows that use tools, database context, retrieval and session history instead of behaving as a generic chatbot.",
+      "technology": "Agents, Tools, FastAPI, PostgreSQL, RAG",
+      "platform": "AI Knowledge Platform",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "5",
+      "portfolio_priority": "14",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Agentic AI"
+      ],
+      "technologies": [
+        "Agents",
+        "Tools",
+        "FastAPI",
+        "PostgreSQL",
+        "RAG"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "AI Tools / Tool Calling",
+      "category": "Agentic AI",
+      "description": "Tool-enabled agent workflows for interacting with application data and backend capabilities.",
+      "technology": "Agents, Tools, FastAPI",
+      "platform": "AI Knowledge Platform",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "5",
+      "portfolio_priority": "15",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Agentic AI"
+      ],
+      "technologies": [
+        "Agents",
+        "Tools",
+        "FastAPI"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "Document Intelligence",
+      "category": "Generative AI",
+      "description": "PDF/document ingestion, chunking, embeddings, semantic retrieval and grounded question answering.",
+      "technology": "PDF, RAG, Embeddings, PostgreSQL, pgvector",
+      "platform": "AI Knowledge Platform",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "5",
+      "portfolio_priority": "16",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Generative AI"
+      ],
+      "technologies": [
+        "PDF",
+        "RAG",
+        "Embeddings",
+        "PostgreSQL",
+        "pgvector"
+      ],
+      "project_type": "END-TO-END AI SYSTEM"
+    },
+    {
+      "section": "skills",
+      "title": "Embeddings",
+      "category": "Generative AI",
+      "description": "Text embeddings for semantic similarity and vector retrieval.",
+      "technology": "Embeddings, Vector Search, pgvector",
+      "platform": "AI Knowledge Platform",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "5",
+      "portfolio_priority": "17",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Generative AI"
+      ],
+      "technologies": [
+        "Embeddings",
+        "Vector Search",
+        "pgvector"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "Machine Learning",
+      "category": "Machine Learning",
+      "description": "Classification, regression, feature engineering, model evaluation and ensemble learning.",
+      "technology": "Scikit-learn, XGBoost, LightGBM, CatBoost",
+      "platform": "Kaggle / GitHub",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "5",
+      "portfolio_priority": "18",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Machine Learning"
+      ],
+      "technologies": [
+        "Scikit-learn",
+        "XGBoost",
+        "LightGBM",
+        "CatBoost"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "XGBoost / LightGBM / CatBoost",
+      "category": "Machine Learning",
+      "description": "Gradient boosting models used for high-performance predictive modeling and ensemble workflows.",
+      "technology": "XGBoost, LightGBM, CatBoost",
+      "platform": "Kaggle",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "4",
+      "portfolio_priority": "19",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Machine Learning"
+      ],
+      "technologies": [
+        "XGBoost",
+        "LightGBM",
+        "CatBoost"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "Stacking & Voting Ensembles",
+      "category": "Machine Learning",
+      "description": "Multi-model stacking and voting ensembles, including a five-model stacking classifier with RidgeCV meta-learner.",
+      "technology": "XGBoost, LightGBM, CatBoost, HGB, Logistic Regression, RidgeCV",
+      "platform": "Kaggle",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "4",
+      "portfolio_priority": "20",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Machine Learning"
+      ],
+      "technologies": [
+        "XGBoost",
+        "LightGBM",
+        "CatBoost",
+        "HGB",
+        "Logistic Regression",
+        "RidgeCV"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "Hyperparameter Tuning",
+      "category": "Machine Learning",
+      "description": "Hyperparameter optimization for predictive models using Optuna.",
+      "technology": "Optuna, Scikit-learn, XGBoost, LightGBM, CatBoost",
+      "platform": "Kaggle",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "4",
+      "portfolio_priority": "21",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Machine Learning"
+      ],
+      "technologies": [
+        "Optuna",
+        "Scikit-learn",
+        "XGBoost",
+        "LightGBM",
+        "CatBoost"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "Feature Engineering",
+      "category": "Machine Learning",
+      "description": "Feature selection, transformations, interaction terms, outlier handling and time-based feature creation.",
+      "technology": "Python, Pandas, Scikit-learn",
+      "platform": "Kaggle / ML projects",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "4",
+      "portfolio_priority": "22",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Machine Learning"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Scikit-learn"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "Cross-Validation & OOF",
+      "category": "Machine Learning",
+      "description": "Stratified K-Fold, nested stacking and Out-of-Fold validation strategies for reliable model evaluation.",
+      "technology": "Scikit-learn, Cross-Validation, OOF",
+      "platform": "Kaggle",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "4",
+      "portfolio_priority": "23",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Machine Learning"
+      ],
+      "technologies": [
+        "Scikit-learn",
+        "Cross-Validation",
+        "OOF"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "Model Explainability",
+      "category": "Machine Learning",
+      "description": "Feature importance and model interpretation using SHAP and LIME.",
+      "technology": "SHAP, LIME, Feature Importance",
+      "platform": "Kaggle",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "4",
+      "portfolio_priority": "24",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Machine Learning"
+      ],
+      "technologies": [
+        "SHAP",
+        "LIME",
+        "Feature Importance"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "Time Series Forecasting",
+      "category": "Machine Learning",
+      "description": "Forecasting workflows using time-based features, regression and Prophet models.",
+      "technology": "Python, Pandas, Prophet, Regression",
+      "platform": "Forecasting projects",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "4",
+      "portfolio_priority": "25",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Machine Learning"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Prophet",
+        "Regression"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "ETL & Data Validation",
+      "category": "Data Engineering",
+      "description": "Data cleaning, transformation, validation and repeatable processing pipelines.",
+      "technology": "Python, Pandas, SQL, Data Validation",
+      "platform": "AI / Analytics projects",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "4",
+      "portfolio_priority": "26",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Data Engineering"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "SQL",
+        "Data Validation"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "Web Scraping",
+      "category": "Data Engineering",
+      "description": "Automated collection of public data for monitoring datasets and research.",
+      "technology": "Python, Requests, BeautifulSoup",
+      "platform": "GitHub / Kaggle",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "4",
+      "portfolio_priority": "27",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Data Engineering"
+      ],
+      "technologies": [
+        "Python",
+        "Requests",
+        "BeautifulSoup"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "Git & GitHub",
+      "category": "Developer Tools",
+      "description": "Version control, repository management, documentation and project publishing.",
+      "technology": "Git, GitHub",
+      "platform": "GitHub",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "4",
+      "portfolio_priority": "28",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Developer Tools"
+      ],
+      "technologies": [
+        "Git",
+        "GitHub"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "Docker",
+      "category": "Deployment",
+      "description": "Containerization and deployment-oriented setup for backend AI applications.",
+      "technology": "Docker, Dockerfile",
+      "platform": "AI Knowledge Platform",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "4",
+      "portfolio_priority": "29",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Deployment"
+      ],
+      "technologies": [
+        "Docker",
+        "Dockerfile"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "Pytest",
+      "category": "Testing",
+      "description": "Automated tests for API, document, chunking and search components.",
+      "technology": "pytest, FastAPI, Python",
+      "platform": "AI Knowledge Platform",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "4",
+      "portfolio_priority": "30",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Testing"
+      ],
+      "technologies": [
+        "pytest",
+        "FastAPI",
+        "Python"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "Power BI",
+      "category": "Analytics & BI",
+      "description": "Dashboarding, KPI reporting and business analysis.",
+      "technology": "Power BI, Excel",
+      "platform": "Professional Experience",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "4",
+      "portfolio_priority": "31",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Analytics & BI"
+      ],
+      "technologies": [
+        "Power BI",
+        "Excel"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "Excel / VBA",
+      "category": "Analytics & Automation",
+      "description": "Advanced Excel, Pivot Tables, Power Query, VBA, list functions and data validation for reporting workflows.",
+      "technology": "Excel, VBA, Power Query",
+      "platform": "Professional Experience",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "4",
+      "portfolio_priority": "32",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Analytics & Automation"
+      ],
+      "technologies": [
+        "Excel",
+        "VBA",
+        "Power Query"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "skills",
+      "title": "Data Visualization",
+      "category": "Analytics",
+      "description": "Exploratory analysis and visual storytelling using Python and BI tools.",
+      "technology": "Matplotlib, Pandas, Power BI, Tableau",
+      "platform": "Analytics projects",
+      "url": "Not specified",
+      "year": "2023 – Present",
+      "importance": "4",
+      "portfolio_priority": "33",
+      "animation_scene": "skill_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Analytics"
+      ],
+      "technologies": [
+        "Matplotlib",
+        "Pandas",
+        "Power BI",
+        "Tableau"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "projects",
+      "title": "Project 1 English Dictionary App Library Book Management System 174",
+      "category": "Academic / Course Project",
+      "description": "Course project: Project 1 English Dictionary App Library Book Management System 174, completed via Skill-Lync.",
+      "technology": "Data Analysis",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/student-projects/project-1-english-dictionary-app-library-book-management-system-174",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "1",
+      "animation_scene": "project_timeline",
+      "display_on_homepage": false,
+      "categories": [
+        "Academic",
+        "Course Project"
+      ],
+      "technologies": [
+        "Data Analysis"
+      ],
+      "project_type": "ACADEMIC RESEARCH"
+    },
+    {
+      "section": "projects",
+      "title": "Project 2 Eda on Vehicle Insurance Customer Data 170",
+      "category": "Academic / Course Project",
+      "description": "Course project: Project 2 Eda on Vehicle Insurance Customer Data 170, completed via Skill-Lync.",
+      "technology": "Python, Pandas, Data Visualization",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/student-projects/project-2-eda-on-vehicle-insurance-customer-data-170",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "2",
+      "animation_scene": "project_timeline",
+      "display_on_homepage": false,
+      "categories": [
+        "Academic",
+        "Course Project"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Data Visualization"
+      ],
+      "project_type": "ACADEMIC RESEARCH"
+    },
+    {
+      "section": "projects",
+      "title": "Project 1 6616",
+      "category": "Academic / Course Project",
+      "description": "Course project: Project 1 6616, completed via Skill-Lync.",
+      "technology": "Data Analysis",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/student-projects/project-1-6616",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "3",
+      "animation_scene": "project_timeline",
+      "display_on_homepage": false,
+      "categories": [
+        "Academic",
+        "Course Project"
+      ],
+      "technologies": [
+        "Data Analysis"
+      ],
+      "project_type": "ACADEMIC RESEARCH"
+    },
+    {
+      "section": "projects",
+      "title": "Project 2 4645",
+      "category": "Academic / Course Project",
+      "description": "Course project: Project 2 4645, completed via Skill-Lync.",
+      "technology": "Data Analysis",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/student-projects/project-2-4645",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "4",
+      "animation_scene": "project_timeline",
+      "display_on_homepage": false,
+      "categories": [
+        "Academic",
+        "Course Project"
+      ],
+      "technologies": [
+        "Data Analysis"
+      ],
+      "project_type": "ACADEMIC RESEARCH"
+    },
+    {
+      "section": "projects",
+      "title": "Project 1 Analyzing the Education Trends in Tamilnadu 136",
+      "category": "Academic / Course Project",
+      "description": "Course project: Project 1 Analyzing the Education Trends in Tamilnadu 136, completed via Skill-Lync.",
+      "technology": "Data Analysis",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/student-projects/project-1-analyzing-the-education-trends-in-tamilnadu-136",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "5",
+      "animation_scene": "project_timeline",
+      "display_on_homepage": false,
+      "categories": [
+        "Academic",
+        "Course Project"
+      ],
+      "technologies": [
+        "Data Analysis"
+      ],
+      "project_type": "ACADEMIC RESEARCH"
+    },
+    {
+      "section": "projects",
+      "title": "Project 2 Gender Bias in Science and Technical Field 116",
+      "category": "Academic / Course Project",
+      "description": "Course project: Project 2 Gender Bias in Science and Technical Field 116, completed via Skill-Lync.",
+      "technology": "Data Analysis",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/student-projects/project-2-gender-bias-in-science-and-technical-field-116",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "6",
+      "animation_scene": "project_timeline",
+      "display_on_homepage": false,
+      "categories": [
+        "Academic",
+        "Course Project"
+      ],
+      "technologies": [
+        "Data Analysis"
+      ],
+      "project_type": "ACADEMIC RESEARCH"
+    },
+    {
+      "section": "projects",
+      "title": "Project 1 Data Cleaning and Transformation Using Pivot Table and Charts for the Report on Requirement of Team Hiring 316",
+      "category": "Academic / Course Project",
+      "description": "Course project: Project 1 Data Cleaning and Transformation Using Pivot Table and Charts for the Report on Requirement of Team Hiring 316, completed via Skill-Lync.",
+      "technology": "Data Analysis",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/student-projects/project-1-data-cleaning-and-transformation-using-pivot-table-and-charts-for-the-report-on-requirement-of-team-hiring-316",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "7",
+      "animation_scene": "project_timeline",
+      "display_on_homepage": false,
+      "categories": [
+        "Academic",
+        "Course Project"
+      ],
+      "technologies": [
+        "Data Analysis"
+      ],
+      "project_type": "ACADEMIC RESEARCH"
+    },
+    {
+      "section": "projects",
+      "title": "Project 2 Create a Report Using Powerquery Macro Vba List Functions and Data Validation Functions for Data Reporting of Supply Chain Management Companies 233",
+      "category": "Academic / Course Project",
+      "description": "Course project: Project 2 Create a Report Using Powerquery Macro Vba List Functions and Data Validation Functions for Data Reporting of Supply Chain Management Companies 233, completed via Skill-Lync.",
+      "technology": "Data Analysis",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/student-projects/project-2-create-a-report-using-powerquery-macro-vba-list-functions-and-data-validation-functions-for-data-reporting-of-supply-chain-management-companies-233",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "8",
+      "animation_scene": "project_timeline",
+      "display_on_homepage": false,
+      "categories": [
+        "Academic",
+        "Course Project"
+      ],
+      "technologies": [
+        "Data Analysis"
+      ],
+      "project_type": "ACADEMIC RESEARCH"
+    },
+    {
+      "section": "projects",
+      "title": "Project 1 15266",
+      "category": "Academic / Course Project",
+      "description": "Course project: Project 1 15266, completed via Skill-Lync.",
+      "technology": "Data Analysis",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/student-projects/project-1-15266",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "9",
+      "animation_scene": "project_timeline",
+      "display_on_homepage": false,
+      "categories": [
+        "Academic",
+        "Course Project"
+      ],
+      "technologies": [
+        "Data Analysis"
+      ],
+      "project_type": "ACADEMIC RESEARCH"
+    },
+    {
+      "section": "projects",
+      "title": "Project 2 11489",
+      "category": "Academic / Course Project",
+      "description": "Course project: Project 2 11489, completed via Skill-Lync.",
+      "technology": "Data Analysis",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/student-projects/project-2-11489",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "10",
+      "animation_scene": "project_timeline",
+      "display_on_homepage": false,
+      "categories": [
+        "Academic",
+        "Course Project"
+      ],
+      "technologies": [
+        "Data Analysis"
+      ],
+      "project_type": "ACADEMIC RESEARCH"
+    },
+    {
+      "section": "projects",
+      "title": "Project 1 Covid 19 Vaccinations Trend Analysis 268",
+      "category": "Academic / Course Project",
+      "description": "Course project: Project 1 Covid 19 Vaccinations Trend Analysis 268, completed via Skill-Lync.",
+      "technology": "Python, Pandas, Data Visualization",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/student-projects/project-1-covid-19-vaccinations-trend-analysis-268",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "11",
+      "animation_scene": "project_timeline",
+      "display_on_homepage": false,
+      "categories": [
+        "Academic",
+        "Course Project"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Data Visualization"
+      ],
+      "project_type": "ACADEMIC RESEARCH"
+    },
+    {
+      "section": "projects",
+      "title": "Project 2 Supply and Demand Gap Analysis 252",
+      "category": "Academic / Course Project",
+      "description": "Course project: Project 2 Supply and Demand Gap Analysis 252, completed via Skill-Lync.",
+      "technology": "Python, Pandas, Data Visualization",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/student-projects/project-2-supply-and-demand-gap-analysis-252",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "12",
+      "animation_scene": "project_timeline",
+      "display_on_homepage": false,
+      "categories": [
+        "Academic",
+        "Course Project"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Data Visualization"
+      ],
+      "project_type": "ACADEMIC RESEARCH"
+    },
+    {
+      "section": "projects",
+      "title": "Project 2 16165",
+      "category": "Academic / Course Project",
+      "description": "Course project: Project 2 16165, completed via Skill-Lync.",
+      "technology": "Data Analysis",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/student-projects/project-2-16165",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "13",
+      "animation_scene": "project_timeline",
+      "display_on_homepage": false,
+      "categories": [
+        "Academic",
+        "Course Project"
+      ],
+      "technologies": [
+        "Data Analysis"
+      ],
+      "project_type": "ACADEMIC RESEARCH"
+    },
+    {
+      "section": "projects",
+      "title": "Project 1 20514",
+      "category": "Academic / Course Project",
+      "description": "Course project: Project 1 20514, completed via Skill-Lync.",
+      "technology": "Data Analysis",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/student-projects/project-1-20514",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "14",
+      "animation_scene": "project_timeline",
+      "display_on_homepage": false,
+      "categories": [
+        "Academic",
+        "Course Project"
+      ],
+      "technologies": [
+        "Data Analysis"
+      ],
+      "project_type": "ACADEMIC RESEARCH"
+    },
+    {
+      "section": "projects",
+      "title": "Project 2",
+      "category": "Academic / Course Project",
+      "description": "Course project: Project 2, completed via Skill-Lync.",
+      "technology": "Data Analysis",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/student-projects/project-2-66c20be08f0f3",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "15",
+      "animation_scene": "project_timeline",
+      "display_on_homepage": false,
+      "categories": [
+        "Academic",
+        "Course Project"
+      ],
+      "technologies": [
+        "Data Analysis"
+      ],
+      "project_type": "ACADEMIC RESEARCH"
+    },
+    {
+      "section": "projects",
+      "title": "Project 1 Implement and Deploy Cnn Model in Real Time Using Python on Fashion Mnist Dataset",
+      "category": "Academic / Course Project",
+      "description": "Course project: Project 1 Implement and Deploy Cnn Model in Real Time Using Python on Fashion Mnist Dataset, completed via Skill-Lync.",
+      "technology": "Python, Machine Learning, Scikit-learn",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/student-projects/project-1-implement-and-deploy-cnn-model-in-real-time-using-python-on-fashion-mnist-dataset-66e864bde381d",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "16",
+      "animation_scene": "project_timeline",
+      "display_on_homepage": false,
+      "categories": [
+        "Academic",
+        "Course Project"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Scikit-learn"
+      ],
+      "project_type": "ACADEMIC RESEARCH"
+    },
+    {
+      "section": "github_projects",
+      "title": "AI Knowledge Platform",
+      "category": "Generative AI + LLM + RAG + AI Agents + Document AI",
+      "description": "AI Knowledge Platform backend built with FastAPI, PostgreSQL and pgvector for document ingestion, chunking, embeddings, semantic search, grounded RAG responses, chat sessions/history, agent and tool workflows, automated tests and Docker deployment setup.",
+      "technology": "Python, FastAPI, Pydantic, SQLAlchemy, PostgreSQL, pgvector, RAG, Embeddings, Ollama, Llama 3.2, Agents, Tools, pytest, Docker, Prompt Engineering",
+      "platform": "GitHub",
+      "url": "https://github.com/BELBINBENORM/ai-knowledge-platform",
+      "year": "Not specified",
+      "importance": "5",
+      "portfolio_priority": "1",
+      "animation_scene": "repo_card_flip",
+      "display_on_homepage": true,
+      "categories": [
+        "Generative AI",
+        "LLM",
+        "RAG",
+        "AI Agents",
+        "Document AI"
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Pydantic",
+        "SQLAlchemy",
+        "PostgreSQL",
+        "pgvector",
+        "RAG",
+        "Embeddings",
+        "Ollama",
+        "Llama 3.2",
+        "Agents",
+        "Tools",
+        "pytest",
+        "Docker",
+        "Prompt Engineering"
+      ],
+      "project_type": "END-TO-END AI SYSTEM"
+    },
+    {
+      "section": "github_projects",
+      "title": "Scraper BRICS Expansion De Dollarization Tracker",
+      "category": "Data Scraper",
+      "description": "Automated data scraper for scraper brics expansion de dollarization tracker, published on GitHub.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "GitHub",
+      "url": "https://github.com/BELBINBENORM/Scraper-BRICS-Expansion-De-Dollarization-Tracker",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "2",
+      "animation_scene": "repo_card_flip",
+      "display_on_homepage": true,
+      "categories": [
+        "Data Scraper"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "github_projects",
+      "title": "Scraper Global Sovereign Debt Crisis Monitor",
+      "category": "Data Scraper",
+      "description": "Automated data scraper for scraper global sovereign debt crisis monitor, published on GitHub.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "GitHub",
+      "url": "https://github.com/BELBINBENORM/Scraper-Global-Sovereign-Debt-Crisis-Monitor",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "3",
+      "animation_scene": "repo_card_flip",
+      "display_on_homepage": true,
+      "categories": [
+        "Data Scraper"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "github_projects",
+      "title": "Scraper Global Mental Health Crisis Tracker",
+      "category": "Data Scraper",
+      "description": "Automated data scraper for scraper global mental health crisis tracker, published on GitHub.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "GitHub",
+      "url": "https://github.com/BELBINBENORM/Scraper-Global-Mental-Health-Crisis-Tracker",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "4",
+      "animation_scene": "repo_card_flip",
+      "display_on_homepage": true,
+      "categories": [
+        "Data Scraper"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "github_projects",
+      "title": "Food Price Dataset",
+      "category": "Software Project",
+      "description": "Code repository for food price dataset, published on GitHub.",
+      "technology": "Python, Data Analysis",
+      "platform": "GitHub",
+      "url": "https://github.com/BELBINBENORM/food-price-dataset",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "5",
+      "animation_scene": "repo_card_flip",
+      "display_on_homepage": true,
+      "categories": [
+        "Software Project"
+      ],
+      "technologies": [
+        "Python",
+        "Data Analysis"
+      ],
+      "project_type": "SOFTWARE PROJECT"
+    },
+    {
+      "section": "github_projects",
+      "title": "Vortex Intelligence Suite",
+      "category": "Machine Learning / ML Architecture / Model Evaluation / Analytics",
+      "description": "An end-to-end machine learning and analytics suite providing automated data diagnostics, feature transformations, cross-validation modeling pipelines, and performance benchmarking.",
+      "technology": "Python, Machine Learning, Scikit-learn, Feature Engineering, Cross-Validation, Model Evaluation, Data Analytics, Pandas, NumPy",
+      "platform": "GitHub",
+      "url": "https://github.com/BELBINBENORM/vortex-intelligence-suite",
+      "year": "Not specified",
+      "importance": "5",
+      "portfolio_priority": "6",
+      "animation_scene": "repo_card_flip",
+      "display_on_homepage": true,
+      "categories": [
+        "Machine Learning",
+        "ML Architecture",
+        "Model Evaluation",
+        "Analytics"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Scikit-learn",
+        "Feature Engineering",
+        "Cross-Validation",
+        "Model Evaluation",
+        "Data Analytics",
+        "Pandas",
+        "NumPy"
+      ],
+      "project_type": "ML ARCHITECTURE"
+    },
+    {
+      "section": "github_projects",
+      "title": "Vortex Kfold Engine",
+      "category": "Software Project",
+      "description": "Code repository for vortex kfold engine, published on GitHub.",
+      "technology": "Python, Data Analysis",
+      "platform": "GitHub",
+      "url": "https://github.com/BELBINBENORM/vortex-kfold-engine",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "7",
+      "animation_scene": "repo_card_flip",
+      "display_on_homepage": false,
+      "categories": [
+        "Software Project"
+      ],
+      "technologies": [
+        "Python",
+        "Data Analysis"
+      ],
+      "project_type": "ML ARCHITECTURE"
+    },
+    {
+      "section": "github_projects",
+      "title": "Safe Stack Ml",
+      "category": "Software Project",
+      "description": "Code repository for safe stack ml, published on GitHub.",
+      "technology": "Python, Machine Learning, Gradient Boosting",
+      "platform": "GitHub",
+      "url": "https://github.com/BELBINBENORM/safe-stack-ml",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "8",
+      "animation_scene": "repo_card_flip",
+      "display_on_homepage": false,
+      "categories": [
+        "Software Project"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Gradient Boosting"
+      ],
+      "project_type": "ML ARCHITECTURE"
+    },
+    {
+      "section": "github_projects",
+      "title": "Evaluate Regression Ml",
+      "category": "Software Project",
+      "description": "Code repository for evaluate regression ml, published on GitHub.",
+      "technology": "Python, Machine Learning, Scikit-learn",
+      "platform": "GitHub",
+      "url": "https://github.com/BELBINBENORM/evaluate-regression-ml",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "9",
+      "animation_scene": "repo_card_flip",
+      "display_on_homepage": false,
+      "categories": [
+        "Software Project"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Scikit-learn"
+      ],
+      "project_type": "ML ARCHITECTURE"
+    },
+    {
+      "section": "github_projects",
+      "title": "Evaluate Classification Ml",
+      "category": "Software Project",
+      "description": "Code repository for evaluate classification ml, published on GitHub.",
+      "technology": "Python, Machine Learning, Scikit-learn",
+      "platform": "GitHub",
+      "url": "https://github.com/BELBINBENORM/evaluate-classification-ml",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "10",
+      "animation_scene": "repo_card_flip",
+      "display_on_homepage": false,
+      "categories": [
+        "Software Project"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Scikit-learn"
+      ],
+      "project_type": "ML ARCHITECTURE"
+    },
+    {
+      "section": "github_projects",
+      "title": "Mission Control Ml",
+      "category": "Software Project",
+      "description": "Code repository for mission control ml, published on GitHub.",
+      "technology": "Python, Machine Learning, Scikit-learn",
+      "platform": "GitHub",
+      "url": "https://github.com/BELBINBENORM/mission-control-ml",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "11",
+      "animation_scene": "repo_card_flip",
+      "display_on_homepage": false,
+      "categories": [
+        "Software Project"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Scikit-learn"
+      ],
+      "project_type": "SOFTWARE PROJECT"
+    },
+    {
+      "section": "github_projects",
+      "title": "Modelblocks Ml Mvp",
+      "category": "Software Project",
+      "description": "Code repository for modelblocks ml mvp, published on GitHub.",
+      "technology": "Python, Machine Learning, Scikit-learn",
+      "platform": "GitHub",
+      "url": "https://github.com/BELBINBENORM/modelblocks-ml-mvp-",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "12",
+      "animation_scene": "repo_card_flip",
+      "display_on_homepage": false,
+      "categories": [
+        "Software Project"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Scikit-learn"
+      ],
+      "project_type": "SOFTWARE PROJECT"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Cryptocurrency Fear and Dominance 2017 Present",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Cryptocurrency Fear and Dominance 2017 Present.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/cryptocurrency-fear-and-dominance-2017-present",
+      "year": "2017",
+      "importance": "3",
+      "portfolio_priority": "1",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": true,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Financial News Sentiment vs Market 2020 Present",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Financial News Sentiment vs Market 2020 Present.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/financial-news-sentiment-vs-market-2020-present",
+      "year": "2020",
+      "importance": "3",
+      "portfolio_priority": "2",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": true,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Global Inflation vs Interest Rates 2021 Present",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Global Inflation vs Interest Rates 2021 Present.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/global-inflation-vs-interest-rates-2021-present",
+      "year": "2021",
+      "importance": "3",
+      "portfolio_priority": "3",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": true,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Us Recession Probability Tracker 2000 Present",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Us Recession Probability Tracker 2000 Present.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/us-recession-probability-tracker-2000-present",
+      "year": "2000",
+      "importance": "3",
+      "portfolio_priority": "4",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": true,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Global Trade War 2018 Present Tariff and Markets",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Global Trade War 2018 Present Tariff and Markets.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/global-trade-war-2018-present-tariff-and-markets",
+      "year": "2018",
+      "importance": "3",
+      "portfolio_priority": "5",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": true,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Recession Risk and Safe Haven Monitor 2020 Present",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Recession Risk and Safe Haven Monitor 2020 Present.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/recession-risk-and-safe-haven-monitor-2020-present",
+      "year": "2020",
+      "importance": "3",
+      "portfolio_priority": "6",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": true,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Us Tariff and Trade War Impact Dataset 2018 Present",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Us Tariff and Trade War Impact Dataset 2018 Present.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/us-tariff-and-trade-war-impact-dataset-2018-present",
+      "year": "2018",
+      "importance": "3",
+      "portfolio_priority": "7",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Ai Economy Pulse Dataset",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Ai Economy Pulse Dataset.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/ai-economy-pulse-dataset",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "8",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Global Financial Markets Dataset 2010 Present",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Global Financial Markets Dataset 2010 Present.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/global-financial-markets-dataset-2010-present",
+      "year": "2010",
+      "importance": "3",
+      "portfolio_priority": "9",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Global Urbanisation and Migration Flows 1950 Present",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Global Urbanisation and Migration Flows 1950 Present.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/global-urbanisation-and-migration-flows-1950-present",
+      "year": "1950",
+      "importance": "3",
+      "portfolio_priority": "10",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Gold Silver and Commodity Prices vs Inflation",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Gold Silver and Commodity Prices vs Inflation.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/gold-silver-and-commodity-prices-vs-inflation",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "11",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Global Sovereign Debt Crisis Monitor",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Global Sovereign Debt Crisis Monitor.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/global-sovereign-debt-crisis-monitor",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "12",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Global Mental Health Crisis 2000 Present",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Global Mental Health Crisis 2000 Present.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/global-mental-health-crisis-2000-present",
+      "year": "2000",
+      "importance": "3",
+      "portfolio_priority": "13",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Food Price Inflation Hunger Index 1990 Present",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Food Price Inflation Hunger Index 1990 Present.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/food-price-inflation-hunger-index-1990-present",
+      "year": "1990",
+      "importance": "3",
+      "portfolio_priority": "14",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Global Patent Filings By Technology 2000 Present",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Global Patent Filings By Technology 2000 Present.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/global-patent-filings-by-technology-2000-present",
+      "year": "2000",
+      "importance": "3",
+      "portfolio_priority": "15",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Global Earthquake Events M4 5 1900 Present",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Global Earthquake Events M4 5 1900 Present.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/global-earthquake-events-m4-5-1900-present",
+      "year": "1900",
+      "importance": "3",
+      "portfolio_priority": "16",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Global Ai Layoffs and Job Market 2020 Present",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Global Ai Layoffs and Job Market 2020 Present.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/global-ai-layoffs-and-job-market-2020-present",
+      "year": "2020",
+      "importance": "3",
+      "portfolio_priority": "17",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Global Democracy Freedom Index",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Global Democracy Freedom Index.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/global-democracy-freedom-index",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "18",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Electricity Grid Reliability and Outages Since 2010",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Electricity Grid Reliability and Outages Since 2010.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/electricity-grid-reliability-and-outages-since-2010",
+      "year": "2010",
+      "importance": "3",
+      "portfolio_priority": "19",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Global Education vs Income Inequality Since 1970",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Global Education vs Income Inequality Since 1970.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/global-education-vs-income-inequality-since-1970",
+      "year": "1970",
+      "importance": "3",
+      "portfolio_priority": "20",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Life Expectancy Healthcare Spending 1960 Present",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Life Expectancy Healthcare Spending 1960 Present.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/life-expectancy-healthcare-spending-1960-present",
+      "year": "1960",
+      "importance": "3",
+      "portfolio_priority": "21",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Global Water Stress and Scarcity Index 1990present",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Global Water Stress and Scarcity Index 1990present.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/global-water-stress-and-scarcity-index-1990present",
+      "year": "1990",
+      "importance": "3",
+      "portfolio_priority": "22",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Global Renewable Energy 2000 Present",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Global Renewable Energy 2000 Present.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/global-renewable-energy-2000-present",
+      "year": "2000",
+      "importance": "3",
+      "portfolio_priority": "23",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Fed Balance Sheet and M2 Money Supply 1950 Present",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Fed Balance Sheet and M2 Money Supply 1950 Present.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/fed-balance-sheet-and-m2-money-supply-1950-present",
+      "year": "1950",
+      "importance": "3",
+      "portfolio_priority": "24",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Us Housing Affordability Crisis 1950 Present",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Us Housing Affordability Crisis 1950 Present.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/us-housing-affordability-crisis-1950-present",
+      "year": "1950",
+      "importance": "3",
+      "portfolio_priority": "25",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Iran War and Global Fuel Crisis Impact Dataset",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Iran War and Global Fuel Crisis Impact Dataset.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/iran-war-and-global-fuel-crisis-impact-dataset",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "26",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Global Fuel Prices",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Global Fuel Prices.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/global-fuel-prices-20202026",
+      "year": "2020",
+      "importance": "3",
+      "portfolio_priority": "27",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Indian Banking Transactions",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Indian Banking Transactions.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/indian-banking-transactions-20192024",
+      "year": "2019",
+      "importance": "3",
+      "portfolio_priority": "28",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_datasets",
+      "title": "Google Trends 2025 2026 Daily Worldwide Trends",
+      "category": "Dataset",
+      "description": "Kaggle dataset: Google Trends 2025 2026 Daily Worldwide Trends.",
+      "technology": "Data Curation, CSV, Python",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/datasets/belbino/google-trends-2025-2026-daily-worldwide-trends",
+      "year": "2025",
+      "importance": "3",
+      "portfolio_priority": "29",
+      "animation_scene": "dataset_stack",
+      "display_on_homepage": false,
+      "categories": [
+        "Dataset"
+      ],
+      "technologies": [
+        "Data Curation",
+        "CSV",
+        "Python"
+      ],
+      "project_type": "DATASET & CURATION"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Cryptocurrency Market Cycles Since 2017",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Cryptocurrency Market Cycles Since 2017.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-cryptocurrency-market-cycles-since-2017",
+      "year": "2017",
+      "importance": "3",
+      "portfolio_priority": "1",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": true,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Financial News Sentiment vs Market 2020",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Financial News Sentiment vs Market 2020.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-financial-news-sentiment-vs-market-2020",
+      "year": "2020",
+      "importance": "3",
+      "portfolio_priority": "2",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": true,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Us Recession Probability Tracker 2000",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Us Recession Probability Tracker 2000.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-us-recession-probability-tracker-2000",
+      "year": "2000",
+      "importance": "3",
+      "portfolio_priority": "3",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": true,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Global Inflation vs Interest Rates 2015",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Global Inflation vs Interest Rates 2015.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-global-inflation-vs-interest-rates-2015",
+      "year": "2015",
+      "importance": "3",
+      "portfolio_priority": "4",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": true,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Recession Risk Safe Haven Monitor 2020",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Recession Risk Safe Haven Monitor 2020.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-recession-risk-safe-haven-monitor-2020",
+      "year": "2020",
+      "importance": "3",
+      "portfolio_priority": "5",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": true,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Trade War Tariff Shock Monitor 2018",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Trade War Tariff Shock Monitor 2018.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-trade-war-tariff-shock-monitor-2018",
+      "year": "2018",
+      "importance": "3",
+      "portfolio_priority": "6",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": true,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Us Tariff Trade War Impact Data 2018",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Us Tariff Trade War Impact Data 2018.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-us-tariff-trade-war-impact-data-2018",
+      "year": "2018",
+      "importance": "3",
+      "portfolio_priority": "7",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": true,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Ai Economy Pulse Dataset 2022",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Ai Economy Pulse Dataset 2022.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-ai-economy-pulse-dataset-2022",
+      "year": "2022",
+      "importance": "3",
+      "portfolio_priority": "8",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": true,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Global Financial Markets Dataset 2000",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Global Financial Markets Dataset 2000.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-global-financial-markets-dataset-2000",
+      "year": "2000",
+      "importance": "3",
+      "portfolio_priority": "9",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Urbanisation Migration Flows 1950",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Urbanisation Migration Flows 1950.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-urbanisation-migration-flows-1950",
+      "year": "1950",
+      "importance": "3",
+      "portfolio_priority": "10",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Us Housing Affordability Crisis 1950",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Us Housing Affordability Crisis 1950.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-us-housing-affordability-crisis-1950",
+      "year": "1950",
+      "importance": "3",
+      "portfolio_priority": "11",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Gold Silver Commodities vs Inflation",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Gold Silver Commodities vs Inflation.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-gold-silver-commodities-vs-inflation",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "12",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Gold Silver the Inflation Illusion",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Gold Silver the Inflation Illusion.",
+      "technology": "Python, Data Analysis",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/gold-silver-the-inflation-illusion",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "13",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Data Analysis"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "The Weight the World Carries",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: The Weight the World Carries.",
+      "technology": "Python, Data Analysis",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/the-weight-the-world-carries",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "14",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Data Analysis"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "25 Years of Global Patent Filings Decoded",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: 25 Years of Global Patent Filings Decoded.",
+      "technology": "Python, Pandas, Data Visualization",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/25-years-of-global-patent-filings-decoded",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "15",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Data Visualization"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "The Great Urban Migration",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: The Great Urban Migration.",
+      "technology": "Python, Data Analysis",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/the-great-urban-migration",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "16",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Data Analysis"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Democracy S Long Century",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Democracy S Long Century.",
+      "technology": "Python, Data Analysis",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/democracy-s-long-century",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "17",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Data Analysis"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Spending Healthcare Actually Makes U Live Long",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Spending Healthcare Actually Makes U Live Long.",
+      "technology": "Python, Data Analysis",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/spending-healthcare-actually-makes-u-live-long",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "18",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Data Analysis"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "When Wheat Costs a Week S Wage",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: When Wheat Costs a Week S Wage.",
+      "technology": "Python, Data Analysis",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/when-wheat-costs-a-week-s-wage",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "19",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Data Analysis"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Global Sovereign Debt Crisis",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Global Sovereign Debt Crisis.",
+      "technology": "Python, Data Analysis",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/global-sovereign-debt-crisis",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "20",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Data Analysis"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Fuel Prices Deep Dive 2020 2026",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Fuel Prices Deep Dive 2020 2026.",
+      "technology": "Python, Pandas, Data Visualization",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/fuel-prices-deep-dive-2020-2026",
+      "year": "2020",
+      "importance": "3",
+      "portfolio_priority": "21",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Data Visualization"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Patent Filings By Technology Domain 2000",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Patent Filings By Technology Domain 2000.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-patent-filings-by-technology-domain-2000",
+      "year": "2000",
+      "importance": "3",
+      "portfolio_priority": "22",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Global Earthquake Events Since 1900",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Global Earthquake Events Since 1900.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-global-earthquake-events-since-1900",
+      "year": "1900",
+      "importance": "3",
+      "portfolio_priority": "23",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Global Ai Layoffs Job Market 2020",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Global Ai Layoffs Job Market 2020.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-global-ai-layoffs-job-market-2020",
+      "year": "2020",
+      "importance": "3",
+      "portfolio_priority": "24",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Eda Crypto Market Cycles Starter",
+      "category": "EDA Notebook",
+      "description": "Kaggle notebook: Eda Crypto Market Cycles Starter.",
+      "technology": "Python, Pandas, Data Visualization",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/eda-crypto-market-cycles-starter",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "25",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "EDA Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Data Visualization"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Global Financial Markets",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Global Financial Markets.",
+      "technology": "Python, Data Analysis",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/global-financial-markets",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "26",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Data Analysis"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Eda Electricity Grid Reliability Outages",
+      "category": "EDA Notebook",
+      "description": "Kaggle notebook: Eda Electricity Grid Reliability Outages.",
+      "technology": "Python, Pandas, Data Visualization",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/eda-electricity-grid-reliability-outages",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "27",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "EDA Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Data Visualization"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Eda Global Education vs Income Inequality",
+      "category": "EDA Notebook",
+      "description": "Kaggle notebook: Eda Global Education vs Income Inequality.",
+      "technology": "Python, Pandas, Data Visualization",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/eda-global-education-vs-income-inequality",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "28",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "EDA Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Data Visualization"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Eda Global Earthquake Events M4 5 Since 1900",
+      "category": "EDA Notebook",
+      "description": "Kaggle notebook: Eda Global Earthquake Events M4 5 Since 1900.",
+      "technology": "Python, Pandas, Data Visualization",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/eda-global-earthquake-events-m4-5-since-1900",
+      "year": "1900",
+      "importance": "3",
+      "portfolio_priority": "29",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "EDA Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Data Visualization"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Eda Global Renewable Energy Since 2000",
+      "category": "EDA Notebook",
+      "description": "Kaggle notebook: Eda Global Renewable Energy Since 2000.",
+      "technology": "Python, Pandas, Data Visualization",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/eda-global-renewable-energy-since-2000",
+      "year": "2000",
+      "importance": "3",
+      "portfolio_priority": "30",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "EDA Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Data Visualization"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Electricity Grid Reliability Outages",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Electricity Grid Reliability Outages.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-electricity-grid-reliability-outages",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "31",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Education vs Income Inequality 1970",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Education vs Income Inequality 1970.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-education-vs-income-inequality-1970",
+      "year": "1970",
+      "importance": "3",
+      "portfolio_priority": "32",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Life Expectancy Healthcare Spending",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Life Expectancy Healthcare Spending.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-life-expectancy-healthcare-spending",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "33",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Fed Balance Sheet M2 Money Supply",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Fed Balance Sheet M2 Money Supply.",
+      "technology": "Python, Data Analysis",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/fed-balance-sheet-m2-money-supply",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "34",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Data Analysis"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Water Stress Scarcity Index 1990",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Water Stress Scarcity Index 1990.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-water-stress-scarcity-index-1990",
+      "year": "1990",
+      "importance": "3",
+      "portfolio_priority": "35",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Global Renewable Energy 2000",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Global Renewable Energy 2000.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-global-renewable-energy-2000",
+      "year": "2000",
+      "importance": "3",
+      "portfolio_priority": "36",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Ai Economy Pulse Complete Analysis",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Ai Economy Pulse Complete Analysis.",
+      "technology": "Python, Pandas, Data Visualization",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/ai-economy-pulse-complete-analysis",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "37",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Data Visualization"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Eda Global Inflation vs Interest Rates 2015",
+      "category": "EDA Notebook",
+      "description": "Kaggle notebook: Eda Global Inflation vs Interest Rates 2015.",
+      "technology": "Python, Pandas, Data Visualization",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/eda-global-inflation-vs-interest-rates-2015",
+      "year": "2015",
+      "importance": "3",
+      "portfolio_priority": "38",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "EDA Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Data Visualization"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Global Instability Score Recession Risk Atlas",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Global Instability Score Recession Risk Atlas.",
+      "technology": "Python, Data Analysis",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/global-instability-score-recession-risk-atlas",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "39",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Data Analysis"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Global Central Bank Policy Tracker 1954",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Global Central Bank Policy Tracker 1954.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-global-central-bank-policy-tracker-1954",
+      "year": "1954",
+      "importance": "3",
+      "portfolio_priority": "40",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Scraper Fed Balance Sheet M2 Money Supply 1950",
+      "category": "Scraper Notebook",
+      "description": "Kaggle notebook: Scraper Fed Balance Sheet M2 Money Supply 1950.",
+      "technology": "Python, Web Scraping, BeautifulSoup/Requests",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/scraper-fed-balance-sheet-m2-money-supply-1950",
+      "year": "1950",
+      "importance": "3",
+      "portfolio_priority": "41",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Scraper Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Web Scraping",
+        "BeautifulSoup/Requests"
+      ],
+      "project_type": "AUTOMATED DATA PIPELINE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Us Housing Affordability Crisis",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Us Housing Affordability Crisis.",
+      "technology": "Python, Data Analysis",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/us-housing-affordability-crisis",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "42",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Data Analysis"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Financial News Sentiment vs Markets",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Financial News Sentiment vs Markets.",
+      "technology": "Python, Data Analysis",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/financial-news-sentiment-vs-markets",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "43",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Data Analysis"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Eda Us Recession Probability Tracker",
+      "category": "EDA Notebook",
+      "description": "Kaggle notebook: Eda Us Recession Probability Tracker.",
+      "technology": "Python, Pandas, Data Visualization",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/eda-us-recession-probability-tracker",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "44",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "EDA Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Data Visualization"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Eda Global Ai Layoffs Job Market Pulse",
+      "category": "EDA Notebook",
+      "description": "Kaggle notebook: Eda Global Ai Layoffs Job Market Pulse.",
+      "technology": "Python, Pandas, Data Visualization",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/eda-global-ai-layoffs-job-market-pulse",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "45",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "EDA Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Data Visualization"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Eda Tariff Shock Market Trade War 2018 2026",
+      "category": "EDA Notebook",
+      "description": "Kaggle notebook: Eda Tariff Shock Market Trade War 2018 2026.",
+      "technology": "Python, Pandas, Data Visualization",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/eda-tariff-shock-market-trade-war-2018-2026",
+      "year": "2018",
+      "importance": "3",
+      "portfolio_priority": "46",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "EDA Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Data Visualization"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Us Tariff Trade War Complete Analysis",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Us Tariff Trade War Complete Analysis.",
+      "technology": "Python, Pandas, Data Visualization",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/us-tariff-trade-war-complete-analysis",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "47",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Data Visualization"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Drift Stack Calibrate Irrigation Need",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Drift Stack Calibrate Irrigation Need.",
+      "technology": "Python, Machine Learning, Gradient Boosting",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/drift-stack-calibrate-irrigation-need",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "48",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Gradient Boosting"
+      ],
+      "project_type": "ML EXPERIMENT"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "My Library",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: My Library.",
+      "technology": "Python, Data Analysis",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/my-library",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "49",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Data Analysis"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Iran War Global Fuel Crisis Impact",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Iran War Global Fuel Crisis Impact.",
+      "technology": "Python, Data Analysis",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/iran-war-global-fuel-crisis-impact",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "50",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Data Analysis"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Google Trends 2025 2026 Eda Analysis",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Google Trends 2025 2026 Eda Analysis.",
+      "technology": "Python, Pandas, Data Visualization",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/google-trends-2025-2026-eda-analysis",
+      "year": "2025",
+      "importance": "3",
+      "portfolio_priority": "51",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Data Visualization"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Indian Banking Transactions Starter Eda",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Indian Banking Transactions Starter Eda.",
+      "technology": "Python, Pandas, Data Visualization",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/indian-banking-transactions-starter-eda",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "52",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Data Visualization"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Aether Calibrated Lgbm Solution",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Aether Calibrated Lgbm Solution.",
+      "technology": "Python, Machine Learning, Gradient Boosting",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/aether-calibrated-lgbm-solution",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "53",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Gradient Boosting"
+      ],
+      "project_type": "ML EXPERIMENT"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Vortex Visual Eda Deep Feature Dive",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Vortex Visual Eda Deep Feature Dive.",
+      "technology": "Python, Pandas, Data Visualization",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/vortex-visual-eda-deep-feature-dive",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "54",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Data Visualization"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Predicting Customer Churn Robust Pipeline",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Predicting Customer Churn Robust Pipeline.",
+      "technology": "Python, Machine Learning, Scikit-learn",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/predicting-customer-churn-robust-pipeline",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "55",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Scikit-learn"
+      ],
+      "project_type": "ML EXPERIMENT"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "0 18 Logloss Xgboost March Madness Pipeline",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: 0 18 Logloss Xgboost March Madness Pipeline.",
+      "technology": "Python, Machine Learning, Gradient Boosting",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/0-18-logloss-xgboost-march-madness-pipeline",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "56",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Gradient Boosting"
+      ],
+      "project_type": "ML EXPERIMENT"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Wids 2026 Get Started Xgb Pipeline 0 95791",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Wids 2026 Get Started Xgb Pipeline 0 95791.",
+      "technology": "Python, Machine Learning, Gradient Boosting",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/wids-2026-get-started-xgb-pipeline-0-95791",
+      "year": "2026",
+      "importance": "3",
+      "portfolio_priority": "57",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Gradient Boosting"
+      ],
+      "project_type": "ML EXPERIMENT"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Evaluate Regression Model",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Evaluate Regression Model.",
+      "technology": "Python, Machine Learning, Scikit-learn",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/evaluate-regression-model",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "58",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Scikit-learn"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Vortexstack Parallelized Multi Expert Stacking",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Vortexstack Parallelized Multi Expert Stacking.",
+      "technology": "Python, Machine Learning, Gradient Boosting",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/vortexstack-parallelized-multi-expert-stacking",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "59",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Gradient Boosting"
+      ],
+      "project_type": "ML EXPERIMENT"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "S6e3 Churn Newtonl2 Stacking Feature Pipelines",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: S6e3 Churn Newtonl2 Stacking Feature Pipelines.",
+      "technology": "Python, Machine Learning, Gradient Boosting",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/s6e3-churn-newtonl2-stacking-feature-pipelines",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "60",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Gradient Boosting"
+      ],
+      "project_type": "ML EXPERIMENT"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Predict Customer Churn",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Predict Customer Churn.",
+      "technology": "Python, Machine Learning, Scikit-learn",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/predict-customer-churn",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "61",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Scikit-learn"
+      ],
+      "project_type": "RESEARCH & ANALYSIS"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Heart Disease Stack Pipeline 0 95365",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Heart Disease Stack Pipeline 0 95365.",
+      "technology": "Python, Machine Learning, Gradient Boosting",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/heart-disease-stack-pipeline-0-95365",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "62",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Gradient Boosting"
+      ],
+      "project_type": "ML EXPERIMENT"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Heart Disease Xgb Lgb Cat Ridge Pipe 0 95377",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Heart Disease Xgb Lgb Cat Ridge Pipe 0 95377.",
+      "technology": "Python, Machine Learning, Gradient Boosting",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/heart-disease-xgb-lgb-cat-ridge-pipe-0-95377",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "63",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Gradient Boosting"
+      ],
+      "project_type": "ML EXPERIMENT"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Rag Pdf Doc Chatbot with Streamlit Interface",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Rag Pdf Doc Chatbot with Streamlit Interface.",
+      "technology": "Python, NLP, LLM, Streamlit",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/rag-pdf-doc-chatbot-with-streamlit-interface",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "64",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "NLP",
+        "LLM",
+        "Streamlit"
+      ],
+      "project_type": "RAG PROTOTYPE"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Rag Pdf Doc Chatbot Console Based Q a Interface",
+      "category": "Analysis Notebook",
+      "description": "Kaggle notebook: Rag Pdf Doc Chatbot Console Based Q a Interface.",
+      "technology": "Python, NLP, LLM, Streamlit",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/rag-pdf-doc-chatbot-console-based-q-a-interface",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "65",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": false,
+      "categories": [
+        "Analysis Notebook"
+      ],
+      "technologies": [
+        "Python",
+        "NLP",
+        "LLM",
+        "Streamlit"
+      ],
+      "project_type": "RAG PROTOTYPE"
+    },
+    {
+      "section": "kaggle_models",
+      "title": "Predicting Irrigation Need Lgbm",
+      "category": "Model",
+      "description": "Kaggle model: Predicting Irrigation Need Lgbm.",
+      "technology": "Python, Machine Learning, Gradient Boosting",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/models/belbino/predicting-irrigation-need-lgbm",
+      "year": "Not specified",
+      "importance": "4",
+      "portfolio_priority": "1",
+      "animation_scene": "model_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Model"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Gradient Boosting"
+      ],
+      "project_type": "TRAINED MODEL"
+    },
+    {
+      "section": "kaggle_models",
+      "title": "Wildfire",
+      "category": "Model",
+      "description": "Kaggle model: Wildfire.",
+      "technology": "Python, Machine Learning",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/models/belbino/wildfire",
+      "year": "Not specified",
+      "importance": "4",
+      "portfolio_priority": "2",
+      "animation_scene": "model_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Model"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning"
+      ],
+      "project_type": "TRAINED MODEL"
+    },
+    {
+      "section": "kaggle_models",
+      "title": "Heart Disease Stacking",
+      "category": "Model",
+      "description": "Kaggle model: Heart Disease Stacking.",
+      "technology": "Python, Machine Learning, Gradient Boosting",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/models/belbino/heart-disease-stacking",
+      "year": "Not specified",
+      "importance": "4",
+      "portfolio_priority": "3",
+      "animation_scene": "model_orbit",
+      "display_on_homepage": true,
+      "categories": [
+        "Model"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Gradient Boosting"
+      ],
+      "project_type": "TRAINED MODEL"
+    },
+    {
+      "section": "certifications",
+      "title": "Intro to Programming (Kaggle Learn)",
+      "category": "Micro-course Certification",
+      "description": "Kaggle Learn micro-course certification: Intro to Programming.",
+      "technology": "Intro to Programming",
+      "platform": "Kaggle Learn",
+      "url": "https://www.kaggle.com/learn/certification/belbino/intro-to-programming",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "1",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Micro-course Certification"
+      ],
+      "technologies": [
+        "Intro to Programming"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "certifications",
+      "title": "Python (Kaggle Learn)",
+      "category": "Micro-course Certification",
+      "description": "Kaggle Learn micro-course certification: Python.",
+      "technology": "Python",
+      "platform": "Kaggle Learn",
+      "url": "https://www.kaggle.com/learn/certification/belbino/python",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "2",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Micro-course Certification"
+      ],
+      "technologies": [
+        "Python"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "certifications",
+      "title": "Intro to Deep Learning (Kaggle Learn)",
+      "category": "Micro-course Certification",
+      "description": "Kaggle Learn micro-course certification: Intro to Deep Learning.",
+      "technology": "Intro to Deep Learning",
+      "platform": "Kaggle Learn",
+      "url": "https://www.kaggle.com/learn/certification/belbino/intro-to-deep-learning",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "3",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Micro-course Certification"
+      ],
+      "technologies": [
+        "Intro to Deep Learning"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "certifications",
+      "title": "SQL for Data Science",
+      "category": "Course/Skill Certification",
+      "description": "Skill-Lync certification/credential (ID: epq0bm2yt9l6snxc).",
+      "technology": "SQL for Data Science",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/certification/individual/epq0bm2yt9l6snxc",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "4",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Course",
+        "Skill Certification"
+      ],
+      "technologies": [
+        "SQL for Data Science"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "certifications",
+      "title": "Data Analysis and Visualization with Tableau",
+      "category": "Course/Skill Certification",
+      "description": "Skill-Lync certification/credential (ID: clq7evjnsyr0ht6u).",
+      "technology": "Data Analysis and Visualization with Tableau",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/certification/individual/clq7evjnsyr0ht6u",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "5",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Course",
+        "Skill Certification"
+      ],
+      "technologies": [
+        "Data Analysis and Visualization with Tableau"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "certifications",
+      "title": "Data Analysis and Visualization using Excel",
+      "category": "Course/Skill Certification",
+      "description": "Skill-Lync certification/credential (ID: o51mfq6ku8anvcj4).",
+      "technology": "Data Analysis and Visualization using Excel",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/certification/individual/o51mfq6ku8anvcj4",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "6",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Course",
+        "Skill Certification"
+      ],
+      "technologies": [
+        "Data Analysis and Visualization using Excel"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "certifications",
+      "title": "Effective Dashboards using Power BI",
+      "category": "Course/Skill Certification",
+      "description": "Skill-Lync certification/credential (ID: 0rvs9dl314i5kn8y).",
+      "technology": "Effective Dashboards using Power BI",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/certification/individual/0rvs9dl314i5kn8y",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "7",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Course",
+        "Skill Certification"
+      ],
+      "technologies": [
+        "Effective Dashboards using Power BI"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "certifications",
+      "title": "Statistics and Probability for Data Sciences",
+      "category": "Course/Skill Certification",
+      "description": "Skill-Lync certification/credential (ID: wy2li57cen8f1dp3).",
+      "technology": "Statistics and Probability for Data Sciences",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/certification/individual/wy2li57cen8f1dp3",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "8",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Course",
+        "Skill Certification"
+      ],
+      "technologies": [
+        "Statistics and Probability for Data Sciences"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "certifications",
+      "title": "Introduction to Machine Learning Algorithms and their Implementation in Python",
+      "category": "Course/Skill Certification",
+      "description": "Skill-Lync certification/credential (ID: sg1jvnwikcl5mrzy).",
+      "technology": "Introduction to Machine Learning Algorithms and their Implementation in Python",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/certification/individual/sg1jvnwikcl5mrzy",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "9",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Course",
+        "Skill Certification"
+      ],
+      "technologies": [
+        "Introduction to Machine Learning Algorithms and their Implementation in Python"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "certifications",
+      "title": "Machine Learning Fundamentals In Depth",
+      "category": "Course/Skill Certification",
+      "description": "Skill-Lync certification/credential (ID: setf21w8k7gz4p5v).",
+      "technology": "Machine Learning Fundamentals In Depth",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/certification/individual/setf21w8k7gz4p5v",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "10",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Course",
+        "Skill Certification"
+      ],
+      "technologies": [
+        "Machine Learning Fundamentals In Depth"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "certifications",
+      "title": "Advanced Deep Learning using Python",
+      "category": "Course/Skill Certification",
+      "description": "Skill-Lync certification/credential (ID: v6bjm8zfc4hpyxqa).",
+      "technology": "Advanced Deep Learning using Python",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/certification/individual/v6bjm8zfc4hpyxqa",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "11",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Course",
+        "Skill Certification"
+      ],
+      "technologies": [
+        "Advanced Deep Learning using Python"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "certifications",
+      "title": "Post Graduate Program in Data Analytics and Data Science",
+      "category": "Course/Skill Certification",
+      "description": "Skill-Lync certification/credential (ID: ijbhsz6ge1ov94kr).",
+      "technology": "Post Graduate Program in Data Analytics and Data Science",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/certification/individual/ijbhsz6ge1ov94kr",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "12",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Course",
+        "Skill Certification"
+      ],
+      "technologies": [
+        "Post Graduate Program in Data Analytics and Data Science"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "certifications",
+      "title": "LinkedIn Learning Certificate: Improving Decision-Making as a Business Analyst",
+      "category": "Course/Skill Certification",
+      "description": "Skill-Lync certification/credential (ID: y9xan4zlbfdus2jt).",
+      "technology": "LinkedIn Learning Certificate: Improving Decision-Making as a Business Analyst",
+      "platform": "Skill-Lync",
+      "url": "https://skill-lync.com/certification/master/y9xan4zlbfdus2jt",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "13",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Course",
+        "Skill Certification"
+      ],
+      "technologies": [
+        "LinkedIn Learning Certificate: Improving Decision-Making as a Business Analyst"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "certifications",
+      "title": "Python (Basic)",
+      "category": "Course/Skill Certification",
+      "description": "LinkedIn Learning certification/credential (ID: 94880be8afc14a13e6a3af610a94b2ccc7ff5caa510b9c49b1c06195a20a2d61).",
+      "technology": "Python (Basic)",
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/certificates/94880be8afc14a13e6a3af610a94b2ccc7ff5caa510b9c49b1c06195a20a2d61",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "14",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Course",
+        "Skill Certification"
+      ],
+      "technologies": [
+        "Python (Basic)"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "certifications",
+      "title": "Data Science: Tools",
+      "category": "Course/Skill Certification",
+      "description": "HackerRank certification/credential (ID: 2fc13c842237).",
+      "technology": "Data Science: Tools",
+      "platform": "HackerRank",
+      "url": "https://www.hackerrank.com/certificates/2fc13c842237",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "15",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Course",
+        "Skill Certification"
+      ],
+      "technologies": [
+        "Data Science: Tools"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "certifications",
+      "title": "Statistical Thinking for Data Science and Analytics",
+      "category": "Course/Skill Certification",
+      "description": "edX certification/credential (ID: a967e4ba38164a65a8e8e1a01295cd59).",
+      "technology": "Statistical Thinking for Data Science and Analytics",
+      "platform": "edX",
+      "url": "https://courses.edx.org/certificates/a967e4ba38164a65a8e8e1a01295cd59",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "16",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Course",
+        "Skill Certification"
+      ],
+      "technologies": [
+        "Statistical Thinking for Data Science and Analytics"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "certifications",
+      "title": "Data Science: Visualization",
+      "category": "Course/Skill Certification",
+      "description": "edX certification/credential (ID: 9d821de9793d4f3d9a3828b06dc7f4fc).",
+      "technology": "Data Science: Visualization",
+      "platform": "edX",
+      "url": "https://courses.edx.org/certificates/9d821de9793d4f3d9a3828b06dc7f4fc",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "17",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Course",
+        "Skill Certification"
+      ],
+      "technologies": [
+        "Data Science: Visualization"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "certifications",
+      "title": "Introduction to Data Science",
+      "category": "Course/Skill Certification",
+      "description": "edX certification/credential (ID: 256c8cfecd934d5cb347c200a10cc460).",
+      "technology": "Introduction to Data Science",
+      "platform": "edX",
+      "url": "https://courses.edx.org/certificates/256c8cfecd934d5cb347c200a10cc460",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "18",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Course",
+        "Skill Certification"
+      ],
+      "technologies": [
+        "Introduction to Data Science"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "certifications",
+      "title": "Enterprise Design Thinking Co-Creator",
+      "category": "Course/Skill Certification",
+      "description": "edX certification/credential (ID: 14bdd1d64b38445fad106721d0f40223).",
+      "technology": "Enterprise Design Thinking Co-Creator",
+      "platform": "edX",
+      "url": "https://courses.edx.org/certificates/14bdd1d64b38445fad106721d0f40223",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "19",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Course",
+        "Skill Certification"
+      ],
+      "technologies": [
+        "Enterprise Design Thinking Co-Creator"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "certifications",
+      "title": "Enterprise Design Thinking Practitioner",
+      "category": "Course/Skill Certification",
+      "description": "Credly certification/credential (ID: 2dba5e68-f8b7-41d0-91d9-06a1217b67e9).",
+      "technology": "Enterprise Design Thinking Practitioner",
+      "platform": "Credly",
+      "url": "https://www.credly.com/badges/2dba5e68-f8b7-41d0-91d9-06a1217b67e9?source=linked_in_profile",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "20",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Course",
+        "Skill Certification"
+      ],
+      "technologies": [
+        "Enterprise Design Thinking Practitioner"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "certifications",
+      "title": "Credly Verified Badge",
+      "category": "Course/Skill Certification",
+      "description": "Credly certification/credential (ID: 4edf1e02-ede8-4795-9ac0-848d7ad19391).",
+      "technology": "Not specified",
+      "platform": "Credly",
+      "url": "https://www.credly.com/badges/4edf1e02-ede8-4795-9ac0-848d7ad19391?source=linked_in_profile",
+      "year": "Not specified",
+      "importance": "3",
+      "portfolio_priority": "21",
+      "animation_scene": "cert_badge_pop",
+      "display_on_homepage": false,
+      "categories": [
+        "Course",
+        "Skill Certification"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Datascience Machinelearning Finance",
+      "category": "Social Post",
+      "description": "LinkedIn post on: datascience, machinelearning, finance.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_datascience-machinelearning-finance-activity-7450551007257985024-P9Np",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "1",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Datascience Financialmarkets Python",
+      "category": "Social Post",
+      "description": "LinkedIn post on: datascience, financialmarkets, python.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_datascience-financialmarkets-python-activity-7450544770512465920-qJtP",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "2",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Datascience Techjourney Perseverance",
+      "category": "Social Post",
+      "description": "LinkedIn post on: datascience, techjourney, perseverance.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_datascience-techjourney-perseverance-activity-7185312725336485888-mb32",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "3",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Responsibleai Explainableai Aiethics",
+      "category": "Social Post",
+      "description": "LinkedIn post on: responsibleai, explainableai, aiethics.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_responsibleai-explainableai-aiethics-activity-7184073976455872512-PGxC",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "4",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Climatechange Datascience Sustainability",
+      "category": "Social Post",
+      "description": "LinkedIn post on: climatechange, datascience, sustainability.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_climatechange-datascience-sustainability-activity-7166421724131962880-5yz1",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "5",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Certificate of Completion",
+      "category": "Social Post",
+      "description": "LinkedIn post on: certificate, of, completion.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_certificate-of-completion-activity-7140681806516736000-TbSj",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "6",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Certificate of Completion",
+      "category": "Social Post",
+      "description": "LinkedIn post on: certificate, of, completion.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_certificate-of-completion-activity-7140381196865155073-oXGq",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "7",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Bigdata Dataanalytics Digitaltransformation",
+      "category": "Social Post",
+      "description": "LinkedIn post on: bigdata, dataanalytics, digitaltransformation.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_bigdata-dataanalytics-digitaltransformation-activity-7138751554639077376-mPFF",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "8",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Datascience Dataviz Analytics",
+      "category": "Social Post",
+      "description": "LinkedIn post on: datascience, dataviz, analytics.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_datascience-dataviz-analytics-activity-7138746324027375616-1g5o",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "9",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Datascience Ethicsintech Airesponsibility",
+      "category": "Social Post",
+      "description": "LinkedIn post on: datascience, ethicsintech, airesponsibility.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_datascience-ethicsintech-airesponsibility-activity-7138555323774103552-319K",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "10",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Machinelearning Datadrivendecisions Businessinnovation",
+      "category": "Social Post",
+      "description": "LinkedIn post on: machinelearning, datadrivendecisions, businessinnovation.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_machinelearning-datadrivendecisions-businessinnovation-activity-7138537251449315330-c8Zj",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "11",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Ethicsindatascience Dataprivacy Biasinai",
+      "category": "Social Post",
+      "description": "LinkedIn post on: ethicsindatascience, dataprivacy, biasinai.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_ethicsindatascience-dataprivacy-biasinai-activity-7077718051323850752-zDZh",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "12",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Ai Explainableai Transparentai",
+      "category": "Social Post",
+      "description": "LinkedIn post on: ai, explainableai, transparentai.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_ai-explainableai-transparentai-activity-7077715465178918912-vrtr",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "13",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Aiinbusiness Artificialintelligence Dataanalytics",
+      "category": "Social Post",
+      "description": "LinkedIn post on: aiinbusiness, artificialintelligence, dataanalytics.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_aiinbusiness-artificialintelligence-dataanalytics-activity-7077693397188190214-3ieq",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "14",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Tableau Datavisualization Businessintelligence",
+      "category": "Social Post",
+      "description": "LinkedIn post on: tableau, datavisualization, businessintelligence.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_tableau-datavisualization-businessintelligence-activity-7077686132326416386-60v3",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "15",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Skillsmatter Knowyourworth Careeradvancement",
+      "category": "Social Post",
+      "description": "LinkedIn post on: skillsmatter, knowyourworth, careeradvancement.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_skillsmatter-knowyourworth-careeradvancement-activity-7067556216557752320-mQKH",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "16",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Powerbi Datavisualization Businessintelligence",
+      "category": "Social Post",
+      "description": "LinkedIn post on: powerbi, datavisualization, businessintelligence.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_powerbi-datavisualization-businessintelligence-activity-7066046929872302080-7z7L",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "17",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "LinkedIn Post",
+      "category": "Social Post",
+      "description": "LinkedIn post on: activity, 7066020513755635712.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7066020513755635712?rcm=ACoAADn9AAgBV82IhoPWvnyGrXN-iO6KWt2in-M",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "18",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Dataanalytics Datainsights Digitaltransformation",
+      "category": "Social Post",
+      "description": "LinkedIn post on: dataanalytics, datainsights, digitaltransformation.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_dataanalytics-datainsights-digitaltransformation-activity-7065255075455152128-_U9i",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "19",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Solitude Socialconnections Socialconnection",
+      "category": "Social Post",
+      "description": "LinkedIn post on: solitude, socialconnections, socialconnection.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_solitude-socialconnections-socialconnection-activity-7060480561554886656-aPwu",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "20",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Pythonprogramming Dedication Hardwork",
+      "category": "Social Post",
+      "description": "LinkedIn post on: pythonprogramming, dedication, hardwork.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_pythonprogramming-dedication-hardwork-activity-7058126031685128192-Obob",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "21",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Aipowered Nlp Naturallanguageprocessing",
+      "category": "Social Post",
+      "description": "LinkedIn post on: aipowered, nlp, naturallanguageprocessing.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_aipowered-nlp-naturallanguageprocessing-activity-7057217332682633216-5KaC",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "22",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Aipowered Imageanalysis Videoanalysis",
+      "category": "Social Post",
+      "description": "LinkedIn post on: aipowered, imageanalysis, videoanalysis.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_aipowered-imageanalysis-videoanalysis-activity-7057209580900028417-xAC0",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "23",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Predictiveanalytics Machinelearning Ai",
+      "category": "Social Post",
+      "description": "LinkedIn post on: predictiveanalytics, machinelearning, ai.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_predictiveanalytics-machinelearning-ai-activity-7057048989606555648-fGig",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "24",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Datascience Futuretrends Ai",
+      "category": "Social Post",
+      "description": "LinkedIn post on: datascience, futuretrends, ai.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_datascience-futuretrends-ai-activity-7057039296121221120-3ZsY",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "25",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Article Chatgpt Snsdesignthinkers",
+      "category": "Social Post",
+      "description": "LinkedIn post on: article, chatgpt, snsdesignthinkers.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_article-chatgpt-snsdesignthinkers-activity-7034849084901363712-I-7a",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "26",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Article Dataanalysis Datascience",
+      "category": "Social Post",
+      "description": "LinkedIn post on: article, dataanalysis, datascience.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_article-dataanalysis-datascience-activity-7032243343476629505-zOD_",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "27",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Article Python Pythonprogramming",
+      "category": "Social Post",
+      "description": "LinkedIn post on: article, python, pythonprogramming.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_article-python-pythonprogramming-activity-7007252842050723840-qB0K",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "28",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Article Kaynestechnology Snsdesignthinkers",
+      "category": "Social Post",
+      "description": "LinkedIn post on: article, kaynestechnology, snsdesignthinkers.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_article-kaynestechnology-snsdesignthinkers-activity-6999002825225633792-yBWS",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "29",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Hackerrank Skill Certificate",
+      "category": "Social Post",
+      "description": "LinkedIn post on: hackerrank, skill, certificate.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_hackerrank-skill-certificate-activity-6969187570178019328-ZCBm",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "30",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Just Earned the Gold Badge for Python on",
+      "category": "Social Post",
+      "description": "LinkedIn post on: just, earned, the, gold, badge, for, python, on.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_just-earned-the-gold-badge-for-python-on-activity-6969165853028212736-eqqm",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "31",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Article Snsct Snsinstitutions",
+      "category": "Social Post",
+      "description": "LinkedIn post on: article, snsct, snsinstitutions.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_article-snsct-snsinstitutions-activity-6968111100789764096-GCYk",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "32",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "linkedin_posts",
+      "title": "Nipam Snsct Governmentofindia",
+      "category": "Social Post",
+      "description": "LinkedIn post on: nipam, snsct, governmentofindia.",
+      "technology": "Not specified",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/belbino_nipam-snsct-governmentofindia-activity-6928161817177337856-Mwfl",
+      "year": "Not specified",
+      "importance": "2",
+      "portfolio_priority": "33",
+      "animation_scene": "post_carousel",
+      "display_on_homepage": false,
+      "categories": [
+        "Social Post"
+      ],
+      "technologies": [],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "external_links",
+      "title": "LinkedIn",
+      "category": "Professional Profile",
+      "description": "Professional profile and experience, education, skills, certifications and projects.",
+      "technology": "AI/ML, Data Science",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/belbino/",
+      "year": "Not specified",
+      "importance": "5",
+      "portfolio_priority": "1",
+      "animation_scene": "external_link",
+      "display_on_homepage": true,
+      "categories": [
+        "Professional Profile"
+      ],
+      "technologies": [
+        "AI/ML",
+        "Data Science"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "external_links",
+      "title": "GitHub",
+      "category": "Code Portfolio",
+      "description": "Code repositories covering AI, ML, data analytics, scraping and backend engineering.",
+      "technology": "Git, GitHub, Python",
+      "platform": "GitHub",
+      "url": "https://github.com/BELBINBENORM",
+      "year": "Not specified",
+      "importance": "5",
+      "portfolio_priority": "2",
+      "animation_scene": "external_link",
+      "display_on_homepage": true,
+      "categories": [
+        "Code Portfolio"
+      ],
+      "technologies": [
+        "Git",
+        "GitHub",
+        "Python"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "external_links",
+      "title": "Kaggle",
+      "category": "Data Science Portfolio",
+      "description": "Datasets, notebooks, models and competitive machine learning work.",
+      "technology": "Python, Machine Learning, Data Science",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/belbino",
+      "year": "Not specified",
+      "importance": "5",
+      "portfolio_priority": "3",
+      "animation_scene": "external_link",
+      "display_on_homepage": true,
+      "categories": [
+        "Data Science Portfolio"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Data Science"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "external_links",
+      "title": "HackerRank",
+      "category": "Coding Profile",
+      "description": "Coding and technical practice profile.",
+      "technology": "Python, SQL, Problem Solving",
+      "platform": "HackerRank",
+      "url": "https://www.hackerrank.com/profile/belbinbenorm2002",
+      "year": "Not specified",
+      "importance": "4",
+      "portfolio_priority": "4",
+      "animation_scene": "external_link",
+      "display_on_homepage": true,
+      "categories": [
+        "Coding Profile"
+      ],
+      "technologies": [
+        "Python",
+        "SQL",
+        "Problem Solving"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "external_links",
+      "title": "LeetCode",
+      "category": "Coding Profile",
+      "description": "Programming and algorithm practice profile.",
+      "technology": "Python, SQL, Data Structures, Algorithms",
+      "platform": "LeetCode",
+      "url": "https://leetcode.com/u/belbinbenorm2002/",
+      "year": "Not specified",
+      "importance": "4",
+      "portfolio_priority": "5",
+      "animation_scene": "external_link",
+      "display_on_homepage": true,
+      "categories": [
+        "Coding Profile"
+      ],
+      "technologies": [
+        "Python",
+        "SQL",
+        "Data Structures",
+        "Algorithms"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "external_links",
+      "title": "WhatsApp",
+      "category": "Contact",
+      "description": "Direct WhatsApp contact link.",
+      "technology": "WhatsApp",
+      "platform": "WhatsApp",
+      "url": "https://wa.me/+918300853647",
+      "year": "Not specified",
+      "importance": "4",
+      "portfolio_priority": "6",
+      "animation_scene": "external_link",
+      "display_on_homepage": true,
+      "categories": [
+        "Contact"
+      ],
+      "technologies": [
+        "WhatsApp"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "external_links",
+      "title": "Email",
+      "category": "Contact",
+      "description": "Primary professional email.",
+      "technology": "Email",
+      "platform": "Email",
+      "url": "mailto:belbin.datascientist@gmail.com",
+      "year": "Not specified",
+      "importance": "4",
+      "portfolio_priority": "7",
+      "animation_scene": "external_link",
+      "display_on_homepage": true,
+      "categories": [
+        "Contact"
+      ],
+      "technologies": [
+        "Email"
+      ],
+      "project_type": "TECHNICAL WORK"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "QLoRA Fine-Tuning: Predicting Heart Disease",
+      "category": "LLM / Generative AI / Fine-Tuning / Deep Learning",
+      "description": "Fine-tuning an LLM using QLoRA techniques for a healthcare prediction task, demonstrating parameter-efficient fine-tuning and practical LLM adaptation.",
+      "technology": "Python, LLM, QLoRA, LoRA, Fine-Tuning, Transformers, Hugging Face, NLP, Deep Learning",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/qlora-fine-tuning-predicting-heart-disease",
+      "year": "Not specified",
+      "importance": "5",
+      "portfolio_priority": "4",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": true,
+      "categories": [
+        "LLM",
+        "Generative AI",
+        "Fine-Tuning",
+        "Deep Learning"
+      ],
+      "technologies": [
+        "Python",
+        "LLM",
+        "QLoRA",
+        "LoRA",
+        "Fine-Tuning",
+        "Transformers",
+        "Hugging Face",
+        "NLP",
+        "Deep Learning"
+      ],
+      "project_type": "LLM EXPERIMENT"
+    },
+    {
+      "section": "kaggle_notebooks",
+      "title": "Quad-Tune: 4x Speed Parallel Optuna Framework",
+      "category": "Machine Learning / Optimization / MLOps / Hyperparameter Optimization",
+      "description": "A parallel hyperparameter optimization framework using Optuna, designed to accelerate experimentation and model tuning through parallel execution.",
+      "technology": "Python, Optuna, Hyperparameter Optimization, Parallel Computing, Machine Learning",
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/code/belbino/quad-tune-4x-speed-parallel-optuna-framework",
+      "year": "Not specified",
+      "importance": "5",
+      "portfolio_priority": "4",
+      "animation_scene": "notebook_scroll",
+      "display_on_homepage": true,
+      "categories": [
+        "Machine Learning",
+        "Optimization",
+        "MLOps",
+        "Hyperparameter Optimization"
+      ],
+      "technologies": [
+        "Python",
+        "Optuna",
+        "Hyperparameter Optimization",
+        "Parallel Computing",
+        "Machine Learning"
+      ],
+      "project_type": "ML OPTIMIZATION"
+    },
+    {
+      "section": "github_projects",
+      "title": "AI Customer Support Platform",
+      "category": "Generative AI / AI Agents / LLM / RAG",
+      "description": "An end-to-end AI customer support platform using LLM-powered agents, retrieval-based knowledge access, APIs, and persistent application architecture.",
+      "technology": "Python, FastAPI, LLM, Generative AI, AI Agents, RAG, LangChain, APIs, PostgreSQL, Embeddings, Prompt Engineering",
+      "platform": "GitHub",
+      "url": "https://github.com/BELBINBENORM/ai_customer_support_platform",
+      "year": "Not specified",
+      "importance": "5",
+      "portfolio_priority": "2",
+      "animation_scene": "repo_card_flip",
+      "display_on_homepage": true,
+      "categories": [
+        "Generative AI",
+        "AI Agents",
+        "LLM",
+        "RAG"
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "LLM",
+        "Generative AI",
+        "AI Agents",
+        "RAG",
+        "LangChain",
+        "APIs",
+        "PostgreSQL",
+        "Embeddings",
+        "Prompt Engineering"
+      ],
+      "project_type": "END-TO-END AI SYSTEM"
+    },
+    {
+      "section": "github_projects",
+      "title": "AI Document Intelligence",
+      "category": "Generative AI / RAG / Document AI / LLM",
+      "description": "An end-to-end document intelligence system for extracting, indexing, retrieving, and reasoning over document content using modern RAG and LLM techniques.",
+      "technology": "Python, FastAPI, LLM, RAG, Document Processing, Embeddings, Vector Database, NLP, Generative AI, PostgreSQL, pgvector, Prompt Engineering",
+      "platform": "GitHub",
+      "url": "https://github.com/BELBINBENORM/ai_document_intelligence",
+      "year": "Not specified",
+      "importance": "5",
+      "portfolio_priority": "2",
+      "animation_scene": "repo_card_flip",
+      "display_on_homepage": true,
+      "categories": [
+        "Generative AI",
+        "RAG",
+        "Document AI",
+        "LLM"
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "LLM",
+        "RAG",
+        "Document Processing",
+        "Embeddings",
+        "Vector Database",
+        "NLP",
+        "Generative AI",
+        "PostgreSQL",
+        "pgvector",
+        "Prompt Engineering"
+      ],
+      "project_type": "END-TO-END AI SYSTEM"
+    }
+  ]
+}
