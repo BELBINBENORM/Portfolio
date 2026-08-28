@@ -602,6 +602,88 @@ const getCertTheme = (title: string, platform: string) => {
   };
 };
 
+// Deterministic low-discrepancy 2D distribution using Halton(2, 3) sequence
+const getHalton = (index: number, base: number): number => {
+  let result = 0;
+  let f = 1 / base;
+  let i = index;
+  while (i > 0) {
+    result += f * (i % base);
+    i = Math.floor(i / base);
+    f = f / base;
+  }
+  return result;
+};
+
+const getConstellationCoordinates = (index: number, cardWidth = 0, cardHeight = 0) => {
+  // Seed 7 provides an optimal uniform spread with high minimum distance between adjacent points
+  const seed = 7;
+  const hx = getHalton(index + seed, 2);
+  const hy = getHalton(index + seed, 3);
+
+  // Safe inner margins to guarantee points don't clip the outer card borders
+  const x = Number((6 + hx * 88).toFixed(1));
+  const y = Number((10 + hy * 80).toFixed(1));
+
+  // Desktop Horizontal Alignment:
+  // Points on the right side of the card (x > 50%) pop leftward into open canvas space
+  const hPos = x > 50 ? 'pos-left' : 'pos-right';
+
+  // Dynamic Vertical Boundary Detection (Desktop):
+  // Points near top/bottom boundaries adjust alignment to prevent vertical clipping
+  let vPos = 'v-center';
+  if (y < 22) {
+    vPos = 'v-top';
+  } else if (y > 78) {
+    vPos = 'v-bottom';
+  }
+
+  // --- MOBILE SIZING & ALIGNMENT (Innermost card boundary) ---
+  const cWidth = cardWidth > 0 ? cardWidth : 340;
+  const cHeight = cardHeight > 0 ? cardHeight : 360;
+
+  const innerMargin = 8;
+  const nodeSize = 16;
+  const gap = 10;
+
+  // Available empty vertical space above vs below
+  const pointY = (y / 100) * cHeight;
+  const spaceAbove = Math.max(0, pointY - innerMargin);
+  const spaceBelow = Math.max(0, (cHeight - innerMargin) - (pointY + nodeSize));
+
+  const usableAbove = Math.max(0, spaceAbove - gap);
+  const usableBelow = Math.max(0, spaceBelow - gap);
+  const isAbove = usableAbove >= usableBelow;
+  const mVertical = isAbove ? 'm-above' : 'm-below';
+  const maxPopupHeight = Math.max(40, isAbove ? usableAbove : usableBelow);
+  const maxPopupWidth = Math.max(180, cWidth - 2 * innerMargin);
+
+  // Horizontal Alignment on Mobile:
+  // Center by default; align left/right for points near boundaries to stay strictly in card
+  let mHAlign = 'm-center';
+  let arrowPct = 50;
+
+  if (x < 24) {
+    mHAlign = 'm-left';
+    arrowPct = Math.max(12, Math.min(30, Math.round((x / 24) * 25 + 10)));
+  } else if (x > 76) {
+    mHAlign = 'm-right';
+    arrowPct = Math.max(70, Math.min(88, Math.round(100 - ((100 - x) / 24) * 25 - 10)));
+  }
+
+  return {
+    x,
+    y,
+    hPos,
+    vPos,
+    mVertical,
+    mHAlign,
+    mMaxWidthPx: maxPopupWidth,
+    mMaxHeightPx: maxPopupHeight,
+    arrowPct,
+  };
+};
+
 function App() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
@@ -850,6 +932,48 @@ function App() {
       clearInterval(interval);
     };
   }, [isConstellationHovered, filteredProjects.length]);
+
+  // Innermost constellation plot card boundary measurement for dynamic mobile sizing
+  const constellationRef = useRef<HTMLDivElement | null>(null);
+  const [constellationBounds, setConstellationBounds] = useState<{ width: number; height: number }>({
+    width: 0,
+    height: 0,
+  });
+
+  useEffect(() => {
+    const el = constellationRef.current;
+    if (!el) return;
+
+    const updateBounds = () => {
+      const rect = el.getBoundingClientRect();
+      if (rect.width > 0 && rect.height > 0) {
+        setConstellationBounds({ width: Math.round(rect.width), height: Math.round(rect.height) });
+      }
+    };
+
+    updateBounds();
+
+    const ro = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.contentRect && entry.contentRect.width > 0 && entry.contentRect.height > 0) {
+          setConstellationBounds({
+            width: Math.round(entry.contentRect.width),
+            height: Math.round(entry.contentRect.height),
+          });
+        }
+      }
+    });
+
+    ro.observe(el);
+    window.addEventListener('resize', updateBounds);
+    window.addEventListener('orientationchange', updateBounds);
+
+    return () => {
+      ro.disconnect();
+      window.removeEventListener('resize', updateBounds);
+      window.removeEventListener('orientationchange', updateBounds);
+    };
+  }, []);
 
   const stats = useMemo(() => {
     return {
@@ -1457,7 +1581,11 @@ function App() {
               setHoveredPointIndex(null);
             }}
           >
-            <div className="constellation" aria-label="Project constellation interactive map">
+            <div
+              ref={constellationRef}
+              className="constellation"
+              aria-label="Project constellation interactive map"
+            >
               {filteredProjects.slice(0, 48).map((entry, index) => {
                 const colorClass =
                   entry.project_type === 'END-TO-END AI SYSTEM'
@@ -1472,8 +1600,21 @@ function App() {
                     ? 'academic'
                     : 'notebook';
 
-                const x = 12 + ((index * 19) % 76);
-                const y = 14 + ((index * 29) % 72);
+                const {
+                  x,
+                  y,
+                  hPos,
+                  vPos,
+                  mVertical,
+                  mHAlign,
+                  mMaxWidthPx,
+                  mMaxHeightPx,
+                  arrowPct,
+                } = getConstellationCoordinates(
+                  index,
+                  constellationBounds.width,
+                  constellationBounds.height
+                );
                 const isPopped = hoveredPointIndex === index || (hoveredPointIndex === null && autoPoppedIndex === index);
 
                 return (
@@ -1490,7 +1631,16 @@ function App() {
                       setSelectedConstellationEntry(entry);
                     }}
                   >
-                    <span className="point-label">
+                    <span
+                      className={`point-label ${hPos} ${vPos} ${mVertical} ${mHAlign}`}
+                      style={
+                        {
+                          ['--m-max-width-px' as any]: `${mMaxWidthPx}px`,
+                          ['--m-max-height-px' as any]: `${mMaxHeightPx}px`,
+                          ['--arrow-pct' as any]: `${arrowPct}%`,
+                        } as CSSProperties
+                      }
+                    >
                       <strong>{entry.title}</strong>
                       <small>{entry.project_type || entry.category}</small>
                     </span>
