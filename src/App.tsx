@@ -195,7 +195,7 @@ function HeroNeuralCanvas() {
   return <canvas ref={canvasRef} className="hero-neural-canvas" aria-hidden="true" />;
 }
 
-const getProjectStructure = (project: { title: string; description: string; technology: string; category?: string; project_type?: string }) => {
+const getProjectStructure = (project: { title: string; description: string; technology: string; category?: string; project_type?: string; project_categories?: string[]; }) => {
   const title = project.title.toLowerCase();
   const desc = project.description;
   const tech = project.technology;
