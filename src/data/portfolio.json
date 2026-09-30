@@ -1,6 +1,6 @@
 {
   "sourceFile": "Portfolio CMS.xlsx",
-  "generatedAt": "2026-09-30T17:24:06.802Z",
+  "generatedAt": "2026-09-30T17:28:41.740Z",
   "heroes": [
     {
       "id": 0,
@@ -1544,7 +1544,7 @@
         "AI AGENTS & LLM APPS"
       ],
       "description": "A production-style AI knowledge platform that combines retrieval-augmented generation, semantic vector search, conversational memory, LLM agents and Model Context Protocol (MCP) tools in a modular FastAPI backend.",
-      "technology": "Python, FastAPI, Pydantic, SQLAlchemy, PostgreSQL, pgvector, Sentence Transformers, Google Gemini, Model Context Protocol (MCP), PyMuPDF / PyPDF, python-docx, Docker, Pytest, Render, Neon",
+      "technology": "Python, FastAPI, Pydantic, SQLAlchemy, PostgreSQL, pgvector, Sentence Transformers, Google Gemini, Model Context Protocol (MCP), PyMuPDF / PyPDF, python-docx, Docker, Pytest, Render, Neon, Git & GitHub",
       "technologies": [
         "Python",
         "FastAPI",
@@ -1560,7 +1560,8 @@
         "Docker",
         "Pytest",
         "Render",
-        "Neon"
+        "Neon",
+        "Git & GitHub"
       ],
       "platform": "GitHub",
       "url": "https://github.com/BELBINBENORM/ragforge",
@@ -1617,7 +1618,7 @@
         "architecture_flow": "Agent -> MCP Client -> MCP Server -> Tools -> Services, backed by PostgreSQL + pgvector.",
         "architecture_nodes": "[{\"id\": \"user\", \"label\": \"User\", \"type\": \"input\"}, {\"id\": \"api\", \"label\": \"FastAPI\", \"type\": \"service\"}, {\"id\": \"ingestion\", \"label\": \"Document Ingestion\", \"type\": \"pipeline\"}, {\"id\": \"chunking\", \"label\": \"Chunking\", \"type\": \"pipeline\"}, {\"id\": \"embedding\", \"label\": \"Embeddings\", \"type\": \"ai\"}, {\"id\": \"vector-db\", \"label\": \"PostgreSQL + pgvector\", \"type\": \"database\"}, {\"id\": \"agent\", \"label\": \"Gemini Agent\", \"type\": \"ai\"}, {\"id\": \"mcp\", \"label\": \"MCP Client + Server\", \"type\": \"service\"}, {\"id\": \"retrieval\", \"label\": \"Vector Retrieval (search_documents)\", \"type\": \"service\"}, {\"id\": \"history\", \"label\": \"Conversation History\", \"type\": \"database\"}, {\"id\": \"response\", \"label\": \"Final Answer\", \"type\": \"output\"}]",
         "architecture_connections": "[[\"user\", \"api\"], [\"api\", \"ingestion\"], [\"ingestion\", \"chunking\"], [\"chunking\", \"embedding\"], [\"embedding\", \"vector-db\"], [\"api\", \"agent\"], [\"agent\", \"mcp\"], [\"mcp\", \"retrieval\"], [\"retrieval\", \"vector-db\"], [\"mcp\", \"history\"], [\"agent\", \"response\"], [\"response\", \"history\"]]",
-        "skill": "Python, FastAPI, Pydantic, SQLAlchemy, PostgreSQL, pgvector, Sentence Transformers, Google Gemini, Model Context Protocol (MCP), PyMuPDF / PyPDF, python-docx, Docker, Pytest, Render, Neon",
+        "skill": "Python, FastAPI, Pydantic, SQLAlchemy, PostgreSQL, pgvector, Sentence Transformers, Google Gemini, Model Context Protocol (MCP), PyMuPDF / PyPDF, python-docx, Docker, Pytest, Render, Neon, Git & GitHub",
         "project_url": "https://github.com/BELBINBENORM/ragforge",
         "url_type": "git",
         "Live_url": "https://ragforge-htnl.onrender.com/docs"
@@ -6123,14 +6124,15 @@
         "DATA ANALYSIS & INSIGHTS"
       ],
       "description": "Executes a multi-asset exploratory analysis examining rolling asset correlations, volatility regimes, and cross-market spillovers. Built with Python, Pandas, NumPy, Matplotlib, Seaborn and Statsmodels, and published as a public Kaggle notebook.",
-      "technology": "Python, Pandas, NumPy, Matplotlib, Seaborn, Statsmodels",
+      "technology": "Python, Pandas, NumPy, Matplotlib, Seaborn, Statsmodels, CI/CD",
       "technologies": [
         "Python",
         "Pandas",
         "NumPy",
         "Matplotlib",
         "Seaborn",
-        "Statsmodels"
+        "Statsmodels",
+        "CI/CD"
       ],
       "platform": "Kaggle",
       "url": "https://www.kaggle.com/code/belbino/global-financial-markets",
@@ -6183,7 +6185,7 @@
         "architecture_flow": "Multi-Asset Price Feeds -> Rolling Correlation & PCA Pipeline -> Risk Spillover Engine -> Financial Markets Dashboard",
         "architecture_nodes": "[{\"id\": \"multiasset-feeds\", \"label\": \"Multi-Asset Price Feeds\", \"type\": \"input\"}, {\"id\": \"correlation-pipeline\", \"label\": \"Rolling Correlation & PCA Pipeline\", \"type\": \"pipeline\"}, {\"id\": \"risk-engine\", \"label\": \"Risk Spillover Analytics Engine\", \"type\": \"service\"}, {\"id\": \"markets-dashboard\", \"label\": \"Global Financial Markets Dashboard\", \"type\": \"output\"}]",
         "architecture_connections": "[[\"multiasset-feeds\", \"correlation-pipeline\"], [\"correlation-pipeline\", \"risk-engine\"], [\"risk-engine\", \"markets-dashboard\"]]",
-        "skill": "Python, Pandas, NumPy, Matplotlib, Seaborn, Statsmodels",
+        "skill": "Python, Pandas, NumPy, Matplotlib, Seaborn, Statsmodels, CI/CD",
         "project_url": "https://www.kaggle.com/code/belbino/global-financial-markets",
         "url_type": "kaggle",
         "Live_url": null
@@ -6197,13 +6199,14 @@
         "DATA ANALYSIS & INSIGHTS"
       ],
       "description": "Applies exploratory data analysis techniques to analyze power outage cause categories, restoration times, and regional grid reliability indices. Built with Python, Pandas, NumPy, Matplotlib and Seaborn, and published as a public Kaggle notebook.",
-      "technology": "Python, Pandas, NumPy, Matplotlib, Seaborn",
+      "technology": "Python, Pandas, NumPy, Matplotlib, Seaborn, Git & GitHub",
       "technologies": [
         "Python",
         "Pandas",
         "NumPy",
         "Matplotlib",
-        "Seaborn"
+        "Seaborn",
+        "Git & GitHub"
       ],
       "platform": "Kaggle",
       "url": "https://www.kaggle.com/code/belbino/eda-electricity-grid-reliability-outages",
@@ -6256,7 +6259,7 @@
         "architecture_flow": "Outage Incident Logs -> Duration & Cause Pipeline -> SAIDI/SAIFI Analytics -> Outage Visual Dashboard",
         "architecture_nodes": "[{\"id\": \"outage-logs\", \"label\": \"Power Outage Incident Logs\", \"type\": \"input\"}, {\"id\": \"duration-pipeline\", \"label\": \"Duration & Cause Categorization Pipeline\", \"type\": \"pipeline\"}, {\"id\": \"reliability-engine\", \"label\": \"Grid Reliability Index Engine\", \"type\": \"service\"}, {\"id\": \"outage-dashboard\", \"label\": \"Grid Outage Diagnostic Dashboard\", \"type\": \"output\"}]",
         "architecture_connections": "[[\"outage-logs\", \"duration-pipeline\"], [\"duration-pipeline\", \"reliability-engine\"], [\"reliability-engine\", \"outage-dashboard\"]]",
-        "skill": "Python, Pandas, NumPy, Matplotlib, Seaborn",
+        "skill": "Python, Pandas, NumPy, Matplotlib, Seaborn, Git & GitHub",
         "project_url": "https://www.kaggle.com/code/belbino/eda-electricity-grid-reliability-outages",
         "url_type": "kaggle",
         "Live_url": null
@@ -6270,13 +6273,14 @@
         "DATA ANALYSIS & INSIGHTS"
       ],
       "description": "Explores the correlation between national education attainment levels and income inequality measures across developing and developed economies. Built with Python, Pandas, NumPy, Matplotlib and Seaborn, and published as a public Kaggle notebook.",
-      "technology": "Python, Pandas, NumPy, Matplotlib, Seaborn",
+      "technology": "Python, Pandas, NumPy, Matplotlib, Seaborn, CI/CD",
       "technologies": [
         "Python",
         "Pandas",
         "NumPy",
         "Matplotlib",
-        "Seaborn"
+        "Seaborn",
+        "CI/CD"
       ],
       "platform": "Kaggle",
       "url": "https://www.kaggle.com/code/belbino/eda-global-education-vs-income-inequality",
@@ -6329,7 +6333,7 @@
         "architecture_flow": "Socio-Economic Dataset -> Attainment & Gini Pipeline -> Correlation Analytics -> Education-Inequality Dashboard",
         "architecture_nodes": "[{\"id\": \"socio-dataset\", \"label\": \"Education & Gini Dataset\", \"type\": \"input\"}, {\"id\": \"attainment-pipeline\", \"label\": \"Attainment & Gini Processing Pipeline\", \"type\": \"pipeline\"}, {\"id\": \"correlation-engine\", \"label\": \"Socio-Economic Correlation Engine\", \"type\": \"service\"}, {\"id\": \"inequality-dashboard\", \"label\": \"Education vs Inequality Dashboard\", \"type\": \"output\"}]",
         "architecture_connections": "[[\"socio-dataset\", \"attainment-pipeline\"], [\"attainment-pipeline\", \"correlation-engine\"], [\"correlation-engine\", \"inequality-dashboard\"]]",
-        "skill": "Python, Pandas, NumPy, Matplotlib, Seaborn",
+        "skill": "Python, Pandas, NumPy, Matplotlib, Seaborn, CI/CD",
         "project_url": "https://www.kaggle.com/code/belbino/eda-global-education-vs-income-inequality",
         "url_type": "kaggle",
         "Live_url": null
