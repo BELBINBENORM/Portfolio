@@ -671,11 +671,27 @@ function App() {
   );
 
   useEffect(() => {
-    document.title = hero.meta_tittle || document.title;
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta && hero.meta_description) {
-      meta.setAttribute('content', hero.meta_description);
+    const title = hero.meta_tittle || document.title;
+    const description = hero.meta_description.trim();
+    document.title = title;
+
+    const setMetaContent = (attribute: 'name' | 'property', key: string, content: string) => {
+      let meta = document.head.querySelector<HTMLMetaElement>(`meta[${attribute}="${key}"]`);
+      if (!meta) {
+        meta = document.createElement('meta');
+        meta.setAttribute(attribute, key);
+        document.head.append(meta);
+      }
+      meta.content = content;
+    };
+
+    if (description) {
+      setMetaContent('name', 'description', description);
+      setMetaContent('property', 'og:description', description);
+      setMetaContent('name', 'twitter:description', description);
     }
+    setMetaContent('property', 'og:title', title);
+    setMetaContent('name', 'twitter:title', title);
   }, [hero]);
 
   // Sidebar State Model: Starts minimized by default on every page load.
