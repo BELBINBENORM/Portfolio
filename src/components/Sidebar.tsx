@@ -95,6 +95,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const [isRoleDropdownOpen, setIsRoleDropdownOpen] = useState(false);
   const [themeNotice, setThemeNotice] = useState('');
   const roleDropdownRef = useRef<HTMLDivElement>(null);
+  const roleNavigationFrameRef = useRef<number | null>(null);
+
+  useEffect(() => () => {
+    if (roleNavigationFrameRef.current !== null) {
+      cancelAnimationFrame(roleNavigationFrameRef.current);
+    }
+  }, []);
 
   useEffect(() => {
     if (!themeNotice) return;
@@ -368,7 +375,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
                             onCloseMobile();
                             const heroEl = document.getElementById('top');
                             if (heroEl) {
-                              requestAnimationFrame(() => {
+                              if (roleNavigationFrameRef.current !== null) {
+                                cancelAnimationFrame(roleNavigationFrameRef.current);
+                              }
+                              roleNavigationFrameRef.current = requestAnimationFrame(() => {
+                                roleNavigationFrameRef.current = null;
                                 heroEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
                               });
                             } else {

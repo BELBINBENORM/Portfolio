@@ -422,6 +422,7 @@ for (const r of projects) {
 const normalized = {
   sourceFile: path.basename(INPUT),
   generatedAt: new Date().toISOString(),
+  contact_description: s(heroRows.find((row) => s(row.contact_description))?.contact_description),
   heroes,
   skills,
   totalRows: records.length,

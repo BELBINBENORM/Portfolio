@@ -1,6 +1,7 @@
 {
   "sourceFile": "Portfolio CMS.xlsx",
-  "generatedAt": "2026-09-30T17:28:41.740Z",
+  "generatedAt": "2026-10-02T03:32:12.394Z",
+  "contact_description": "I build practical AI and software systems across machine learning, data science, generative AI, and backend engineering, turning complex problems into production-ready solutions.",
   "heroes": [
     {
       "id": 0,
@@ -3723,7 +3724,7 @@
       "active": true,
       "featured": false,
       "isLive": true,
-      "statusNote": "In Progress",
+      "statusNote": "",
       "display_in": [],
       "problem": "Tracking BRICS expansion and de-dollarization means pulling reserve-currency shares, payment-currency shares, gold holdings and economic-weight indicators from separate sources.",
       "solution": "Dataset contents: Quarterly macro indicators from 2001 onward; IMF COFER FX reserve shares and SWIFT payment currency shares; Gold reserves for BRICS members; BRICS vs G7 economic weight; Composite de-dollarization index.",
@@ -3747,7 +3748,7 @@
         "display_in": null,
         "featured_order": null,
         "category": "DATA ENGINEERING & PIPELINES",
-        "status": "In Progress",
+        "status": "Completed",
         "short_description": "Quarterly dataset tracking BRICS expansion and de-dollarization: reserve shares, payment currencies, gold and economic weight.",
         "description": "A quarterly dataset tracking BRICS expansion and de-dollarization, combining IMF COFER reserve-currency shares, SWIFT payment-currency shares, BRICS gold reserves, BRICS vs G7 economic weight and a composite de-dollarization index.",
         "problem": "Tracking BRICS expansion and de-dollarization means pulling reserve-currency shares, payment-currency shares, gold holdings and economic-weight indicators from separate sources.",

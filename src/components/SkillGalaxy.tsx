@@ -293,6 +293,7 @@ export const SkillGalaxy: React.FC<SkillGalaxyProps> = ({
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const orbitLayoutSizeRef = useRef({ width: 0, height: 0 });
+  const renderRequestRef = useRef<() => void>(() => {});
 
   // Logo images preloading cache
   const imageCacheRef = useRef<Map<string, HTMLImageElement>>(new Map());
@@ -463,13 +464,22 @@ export const SkillGalaxy: React.FC<SkillGalaxyProps> = ({
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    let animationFrameId: number;
+    let animationFrameId: number | null = null;
     let lastTime = performance.now();
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let lastRenderTime = 0;
+    let isVisible = false;
+    let prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     const render = (now: number) => {
+      animationFrameId = null;
+      if (!isVisible) return;
+      if (lastRenderTime && now - lastRenderTime < 1000 / 30) {
+        animationFrameId = requestAnimationFrame(render);
+        return;
+      }
       const dt = Math.min((now - lastTime) / 1000, 0.1);
       lastTime = now;
+      lastRenderTime = now;
 
       const width = canvas.clientWidth;
       const height = canvas.clientHeight;
@@ -1089,13 +1099,49 @@ export const SkillGalaxy: React.FC<SkillGalaxyProps> = ({
       ctx.restore(); // restore camera transform
       ctx.restore(); // restore dpr
 
-      animationFrameId = requestAnimationFrame(render);
+      if (isVisible && !prefersReducedMotion) {
+        animationFrameId = requestAnimationFrame(render);
+      }
     };
 
-    animationFrameId = requestAnimationFrame(render);
+    const scheduleRender = () => {
+      if (isVisible && animationFrameId === null) {
+        animationFrameId = requestAnimationFrame(render);
+      }
+    };
+    renderRequestRef.current = scheduleRender;
+
+    const observer = new IntersectionObserver(([entry]) => {
+      isVisible = entry.isIntersecting && entry.intersectionRatio >= 0.75;
+      if (isVisible) {
+        lastTime = performance.now();
+        lastRenderTime = 0;
+        scheduleRender();
+      } else if (animationFrameId !== null) {
+        cancelAnimationFrame(animationFrameId);
+        animationFrameId = null;
+      }
+    }, { threshold: [0, 0.75] });
+    if (containerRef.current) observer.observe(containerRef.current);
+
+    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const handleMotionChange = (event: MediaQueryListEvent) => {
+      prefersReducedMotion = event.matches;
+      if (isVisible) {
+        if (animationFrameId !== null) cancelAnimationFrame(animationFrameId);
+        animationFrameId = null;
+        lastTime = performance.now();
+        lastRenderTime = 0;
+        scheduleRender();
+      }
+    };
+    motionQuery.addEventListener('change', handleMotionChange);
 
     return () => {
-      cancelAnimationFrame(animationFrameId);
+      observer.disconnect();
+      motionQuery.removeEventListener('change', handleMotionChange);
+      if (animationFrameId !== null) cancelAnimationFrame(animationFrameId);
+      renderRequestRef.current = () => {};
     };
   }, [theme, selectedSkill, activeCategory, notifyCategoryChange, onSelectSkill]);
 
@@ -1132,6 +1178,7 @@ export const SkillGalaxy: React.FC<SkillGalaxyProps> = ({
     state.userInteracting = false;
     state.targetCamera = { x: 0, y: 0, zoom: 1 };
     state.targetFocusProgress = 0;
+    renderRequestRef.current();
   };
 
   const enterLoop2 = (categoryIndex: number, skillIndex?: number, animateTravel = true) => {
@@ -1161,6 +1208,7 @@ export const SkillGalaxy: React.FC<SkillGalaxyProps> = ({
     state.dwellTimer = 0;
     state.userInteracting = false;
     state.targetFocusProgress = 1;
+    renderRequestRef.current();
   };
 
   const skillAtPosition = (system: CategorySystem, x: number, y: number) =>
@@ -1218,6 +1266,7 @@ export const SkillGalaxy: React.FC<SkillGalaxyProps> = ({
               state.activeSkillIndex = skillIndex;
               state.dwellTimer = 0;
               onSelectSkill(activeSys.skills[skillIndex].name, activeSys.name);
+              renderRequestRef.current();
             }
           }
         } else {
@@ -1231,6 +1280,7 @@ export const SkillGalaxy: React.FC<SkillGalaxyProps> = ({
         state.dwellTimer = 0;
         state.activeSkillIndex = skillIndex;
         onSelectSkill(activeSys.skills[skillIndex].name, activeSys.name);
+        renderRequestRef.current();
       }
     }
   };
@@ -1274,6 +1324,7 @@ export const SkillGalaxy: React.FC<SkillGalaxyProps> = ({
     state.dwellTimer = 0;
     state.targetCamera = { x: 0, y: 0, zoom: 1 };
     state.targetFocusProgress = 0;
+    renderRequestRef.current();
   };
 
   const handlePointerCancel = (e: React.PointerEvent<HTMLCanvasElement>) => {

@@ -72,6 +72,7 @@ export type PortfolioData = {
   totalRows: number;
   sections: string[];
   records: PortfolioRow[];
+  contact_description?: string;
   heroes?: HeroPersona[];
   skills?: SkillRecord[];
 };
@@ -80,6 +81,18 @@ export const portfolioData = portfolio as PortfolioData;
 
 export const heroes: HeroPersona[] = portfolioData.heroes ?? [];
 export const skills: SkillRecord[] = portfolioData.skills ?? [];
+export const contactDescription = portfolioData.contact_description?.trim() ?? '';
+
+const contactProfileRoles = ['Data Scientist', 'AI/ML Engineer', 'AI Engineer', 'Python Developer'];
+export const contactSkills = contactProfileRoles
+  .flatMap((role) => heroes.find((hero) => hero.role.toLowerCase() === role.toLowerCase())?.skills.split('|') ?? [])
+  .reduce<string[]>((uniqueSkills, skill) => {
+    const normalizedSkill = skill.trim();
+    if (normalizedSkill && !uniqueSkills.some((existing) => existing.toLowerCase() === normalizedSkill.toLowerCase())) {
+      uniqueSkills.push(normalizedSkill);
+    }
+    return uniqueSkills;
+  }, []);
 
 export const profileLinks = portfolioData.records.filter((row) => row.section === 'profile' && row.display_on_homepage);
 export const experienceRows = portfolioData.records.filter((row) => row.section === 'experience');

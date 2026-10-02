@@ -7,7 +7,6 @@ import {
   Cpu,
   ExternalLink,
   GitBranch,
-  Search,
   Sparkles,
   Workflow,
   FileText,
@@ -15,8 +14,9 @@ import {
   X,
   PanelLeftOpen,
   PanelLeftClose,
-  LayoutGrid,
-  Compass,
+  Linkedin,
+  Mail,
+  Download,
 } from 'lucide-react';
 import { ArchitectureFlow } from './components/ArchitectureFlow';
 import { SkillGalaxy } from './components/SkillGalaxy';
@@ -27,6 +27,8 @@ import {
 } from './components/Sidebar';
 import {
   certificationRows,
+  contactDescription,
+  contactSkills,
   externalLinks,
   featuredSystemsForPersona,
   getHeroBySlug,
@@ -66,20 +68,21 @@ function HeroNeuralCanvas({ theme = 'dark' }: { theme?: 'dark' | 'light' }) {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    let animationFrameId: number;
+    let animationFrameId: number | null = null;
     let width = (canvas.width = canvas.parentElement?.clientWidth || window.innerWidth);
     let height = (canvas.height = canvas.parentElement?.clientHeight || 650);
+    let isVisible = false;
+    let reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     const handleResize = () => {
       if (!canvas.parentElement) return;
       width = canvas.width = canvas.parentElement.clientWidth;
       height = canvas.height = canvas.parentElement.clientHeight;
+      if (reducedMotion) drawFrame(false);
     };
 
-    window.addEventListener('resize', handleResize);
-
     const isLight = theme === 'light';
-    const numNodes = 42;
+    const numNodes = 30;
     const nodes: {
       x: number;
       y: number;
@@ -120,10 +123,7 @@ function HeroNeuralCanvas({ theme = 'dark' }: { theme?: 'dark' | 'light' }) {
       mouse = { x: -1000, y: -1000 };
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    canvas.addEventListener('mouseleave', handleMouseLeave);
-
-    const render = () => {
+    const drawFrame = (advanceNodes: boolean) => {
       ctx.clearRect(0, 0, width, height);
 
       // Draw connections
@@ -151,8 +151,10 @@ function HeroNeuralCanvas({ theme = 'dark' }: { theme?: 'dark' | 'light' }) {
       for (let i = 0; i < nodes.length; i++) {
         const node = nodes[i];
 
-        node.x += node.vx;
-        node.y += node.vy;
+        if (advanceNodes) {
+          node.x += node.vx;
+          node.y += node.vy;
+        }
 
         if (node.x < 0 || node.x > width) node.vx *= -1;
         if (node.y < 0 || node.y > height) node.vy *= -1;
@@ -185,16 +187,64 @@ function HeroNeuralCanvas({ theme = 'dark' }: { theme?: 'dark' | 'light' }) {
         ctx.globalAlpha = 1;
       }
 
-      animationFrameId = requestAnimationFrame(render);
     };
 
-    render();
+    const render = () => {
+      animationFrameId = null;
+      if (!isVisible) return;
+      drawFrame(!reducedMotion);
+      if (!reducedMotion) {
+        animationFrameId = requestAnimationFrame(render);
+      }
+    };
 
-    return () => {
+    const start = () => {
+      if (!isVisible) return;
+      window.addEventListener('resize', handleResize);
+      if (!reducedMotion) {
+        window.addEventListener('mousemove', handleMouseMove);
+        canvas.addEventListener('mouseleave', handleMouseLeave);
+      }
+      if (animationFrameId === null) {
+        animationFrameId = requestAnimationFrame(render);
+      }
+    };
+
+    const stop = () => {
+      if (animationFrameId !== null) {
+        cancelAnimationFrame(animationFrameId);
+        animationFrameId = null;
+      }
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('mousemove', handleMouseMove);
       canvas.removeEventListener('mouseleave', handleMouseLeave);
-      cancelAnimationFrame(animationFrameId);
+    };
+
+    const observer = new IntersectionObserver(([entry]) => {
+      isVisible = entry.isIntersecting && entry.intersectionRatio >= 0.75;
+      if (isVisible) {
+        start();
+      } else {
+        stop();
+      }
+    }, { threshold: [0, 0.75] });
+    const heroSection = canvas.closest('section') || canvas.parentElement;
+    if (heroSection) observer.observe(heroSection);
+
+    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const handleMotionChange = (event: MediaQueryListEvent) => {
+      reducedMotion = event.matches;
+      if (isVisible) {
+        stop();
+        start();
+      }
+    };
+    motionQuery.addEventListener('change', handleMotionChange);
+
+    return () => {
+      observer.disconnect();
+      motionQuery.removeEventListener('change', handleMotionChange);
+      stop();
     };
   }, [theme]);
 
@@ -257,8 +307,31 @@ function ProjectsAsSystemsShowcase({
   const [isPaused, setIsPaused] = useState(false);
   const [elapsedTime, setElapsedTime] = useState(0);
   const [activeNodeIndex, setActiveNodeIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+  const [reducedMotion, setReducedMotion] = useState(
+    () => window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  );
+  const showcaseRef = useRef<HTMLDivElement | null>(null);
 
   const currentSystem = systems[currentIndex] || systems[0];
+
+  useEffect(() => {
+    const element = showcaseRef.current;
+    if (!element) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting && entry.intersectionRatio >= 0.1),
+      { threshold: [0, 0.1] }
+    );
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const handleMotionChange = (event: MediaQueryListEvent) => setReducedMotion(event.matches);
+    motionQuery.addEventListener('change', handleMotionChange);
+    return () => motionQuery.removeEventListener('change', handleMotionChange);
+  }, []);
 
   useEffect(() => {
     setCurrentIndex(0);
@@ -280,9 +353,9 @@ function ProjectsAsSystemsShowcase({
   const totalDuration = Math.max(nodeCount * TIME_PER_NODE, 6600);
 
   useEffect(() => {
-    if (isPaused || systems.length <= 1) return;
+    if (isPaused || !isVisible || reducedMotion || systems.length <= 1) return;
 
-    const interval = 50;
+    const interval = 250;
 
     const timer = setInterval(() => {
       setElapsedTime((prev) => {
@@ -304,7 +377,7 @@ function ProjectsAsSystemsShowcase({
     }, interval);
 
     return () => clearInterval(timer);
-  }, [isPaused, systems.length, totalDuration, nodeCount]);
+  }, [isPaused, isVisible, reducedMotion, systems.length, totalDuration, nodeCount]);
 
   const handleSelect = (index: number) => {
     setCurrentIndex(index);
@@ -332,6 +405,7 @@ function ProjectsAsSystemsShowcase({
 
   return (
     <div
+      ref={showcaseRef}
       className="systems-showcase-container"
       aria-label="Projects As Systems Architecture Showcase"
     >
@@ -502,17 +576,24 @@ function ProjectsAsSystemsShowcase({
 
 function CountUpStat({ value, suffix = '', label }: { value: number; suffix?: string; label: string }) {
   const [displayValue, setDisplayValue] = useState(0);
-  const [hasAnimated, setHasAnimated] = useState(false);
+  const hasAnimatedRef = useRef(false);
   const elementRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const el = elementRef.current;
     if (!el) return;
+    let animationFrameId: number | null = null;
+    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 
     const observer = new IntersectionObserver(
       (entries) => {
-        if (entries[0].isIntersecting && !hasAnimated) {
-          setHasAnimated(true);
+        if (entries[0].isIntersecting && !hasAnimatedRef.current) {
+          hasAnimatedRef.current = true;
+          if (motionQuery.matches) {
+            setDisplayValue(value);
+            observer.disconnect();
+            return;
+          }
           const duration = 1600;
           const startTime = performance.now();
 
@@ -524,26 +605,40 @@ function CountUpStat({ value, suffix = '', label }: { value: number; suffix?: st
             setDisplayValue(current);
 
             if (progress < 1) {
-              requestAnimationFrame(animate);
+              animationFrameId = requestAnimationFrame(animate);
             } else {
               setDisplayValue(value);
+              animationFrameId = null;
             }
           };
 
-          requestAnimationFrame(animate);
+          animationFrameId = requestAnimationFrame(animate);
         }
       },
       { threshold: 0.15 }
     );
 
+    const handleMotionChange = (event: MediaQueryListEvent) => {
+      if (event.matches && animationFrameId !== null) {
+        cancelAnimationFrame(animationFrameId);
+        animationFrameId = null;
+        setDisplayValue(value);
+      }
+    };
+
+    motionQuery.addEventListener('change', handleMotionChange);
     observer.observe(el);
-    return () => observer.disconnect();
-  }, [value, hasAnimated]);
+    return () => {
+      observer.disconnect();
+      motionQuery.removeEventListener('change', handleMotionChange);
+      if (animationFrameId !== null) cancelAnimationFrame(animationFrameId);
+    };
+  }, [value]);
 
   return (
     <div ref={elementRef} className="stat-card">
       <span className="stat-num">
-        {hasAnimated ? displayValue : 0}
+        {displayValue}
         {suffix}
       </span>
       <small>{label}</small>
@@ -657,8 +752,10 @@ const THEME_KEY = 'belbin-portfolio-theme';
 const SIDEBAR_KEY = 'belbin-portfolio-sidebar-open';
 
 function App() {
-  const videoRef = useRef<HTMLVideoElement | null>(null);
   const location = useLocation();
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(
+    () => window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  );
   const hero = useMemo(() => getHeroBySlug(location.pathname), [location.pathname]);
   const personaRole = hero.role;
   const credibilityTags = useMemo(
@@ -694,6 +791,13 @@ function App() {
     setMetaContent('name', 'twitter:title', title);
   }, [hero]);
 
+  useEffect(() => {
+    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const handleMotionChange = (event: MediaQueryListEvent) => setPrefersReducedMotion(event.matches);
+    motionQuery.addEventListener('change', handleMotionChange);
+    return () => motionQuery.removeEventListener('change', handleMotionChange);
+  }, []);
+
   // Sidebar State Model: Starts minimized by default on every page load.
   // Manual expand/collapse toggle is preserved; no automatic scroll or route expansion.
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState<boolean>(true);
@@ -702,9 +806,10 @@ function App() {
   useEffect(() => {
     const heroEl = document.getElementById('top');
     if (heroEl) {
-      requestAnimationFrame(() => {
+      const frameId = requestAnimationFrame(() => {
         heroEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
+      return () => cancelAnimationFrame(frameId);
     } else {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -768,12 +873,14 @@ function App() {
   useEffect(() => {
     const sectionIds = ['work', 'skills', 'constellation', 'certifications', 'contact'];
     let ticking = false;
+    let scrollFrameId: number | null = null;
 
     const handleScroll = () => {
       if (ticking) return;
       ticking = true;
 
-      requestAnimationFrame(() => {
+      scrollFrameId = requestAnimationFrame(() => {
+        scrollFrameId = null;
         ticking = false;
         if (isProgrammaticScrollRef.current) return;
 
@@ -828,6 +935,9 @@ function App() {
       if (scrollTimeoutRef.current) {
         clearTimeout(scrollTimeoutRef.current);
       }
+      if (scrollFrameId !== null) {
+        cancelAnimationFrame(scrollFrameId);
+      }
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleScroll);
     };
@@ -835,27 +945,6 @@ function App() {
 
   const certRow1 = useMemo(() => certificationRows.filter((_, idx) => idx % 2 === 0), []);
   const certRow2 = useMemo(() => certificationRows.filter((_, idx) => idx % 2 !== 0), []);
-
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-    const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const v = videoRef.current;
-    try {
-      if (v) {
-        v.muted = true;
-        v.loop = true;
-        if (prefersReduced) {
-          v.pause();
-        } else {
-          v.play();
-        }
-      }
-    } catch (e) {}
-
-    return () => {
-      if (v && !v.paused) try { v.pause(); } catch (e) {}
-    };
-  }, []);
 
   const featuredSystems = useMemo(() => featuredSystemsForPersona(personaRole), [personaRole]);
 
@@ -931,10 +1020,26 @@ function App() {
     }
   }, [selectedSkill]);
 
+  const relatedProjectSkills = useMemo(() => {
+    const primaryProject = displayedEvidence.records[0];
+    if (!primaryProject) return [];
+
+    const availableSkills = new Map(skills.map((skill) => [skill.name.toLowerCase(), skill.name]));
+    const projectTechnologies = primaryProject.technologies?.length
+      ? primaryProject.technologies
+      : parseTechnologyList(primaryProject.technology);
+
+    return Array.from(new Set(
+      projectTechnologies
+        .map((technology) => availableSkills.get(technology.trim().toLowerCase()))
+        .filter((skillName): skillName is string => Boolean(skillName))
+        .filter((skillName) => skillName.toLowerCase() !== displayedEvidenceSkill.toLowerCase()),
+    ));
+  }, [displayedEvidence, displayedEvidenceSkill]);
+
   // Project Constellation State
   // Default: empty string = no category filter = show all project plots
   const [selectedConstellationFilter, setSelectedConstellationFilter] = useState<string>('');
-  const [searchQuery, setSearchQuery] = useState<string>('');
   const [selectedConstellationEntry, setSelectedConstellationEntry] = useState<PortfolioRow | null>(null);
   const [projectDetailTab, setProjectDetailTab] = useState<'overview' | 'architecture'>('overview');
   const [pendingLiveDemoUrl, setPendingLiveDemoUrl] = useState<string | null>(null);
@@ -942,7 +1047,8 @@ function App() {
   const isDraggingPlotRef = useRef<boolean>(false);
   const [hoveredPointIndex, setHoveredPointIndex] = useState<number | null>(null);
   const [autoPoppedIndex, setAutoPoppedIndex] = useState<number | null>(0);
-  const [constellationViewMode, setConstellationViewMode] = useState<'cards' | 'map'>('map');
+  const [constellationVisible, setConstellationVisible] = useState(false);
+  const constellationRef = useRef<HTMLDivElement | null>(null);
 
   // All CMS Projects for PROJECT CONSTELLATION (no persona/role filtering, no 6-project limit)
   const allConstellationProjects = useMemo(() => {
@@ -980,17 +1086,8 @@ function App() {
   }, [allConstellationProjects]);
 
   const filteredProjects = useMemo(() => {
-    return allConstellationProjects.filter((item) => {
-      const text = `${item.title} ${item.description} ${item.technology} ${item.category} ${item.project_type || ''}`.toLowerCase();
-
-      if (searchQuery.trim()) {
-        const q = searchQuery.toLowerCase().trim();
-        if (!text.includes(q)) return false;
-      }
-
-      return matchesProjectCategory(item, selectedConstellationFilter);
-    });
-  }, [allConstellationProjects, selectedConstellationFilter, searchQuery]);
+    return allConstellationProjects.filter((item) => matchesProjectCategory(item, selectedConstellationFilter));
+  }, [allConstellationProjects, selectedConstellationFilter]);
 
   // Synchronize category highlight from open popup project or active category filter
   const activePopupProject = useMemo(() => {
@@ -1066,10 +1163,23 @@ function App() {
   };
 
   useEffect(() => {
+    const element = constellationRef.current;
+    if (!element) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setConstellationVisible(entry.isIntersecting && entry.intersectionRatio >= 0.75),
+      { threshold: [0, 0.75] }
+    );
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
     if (hoveredPointIndex !== null) {
       setAutoPoppedIndex(null);
       return;
     }
+    if (!constellationVisible || prefersReducedMotion) return;
     const maxPoints = Math.min(filteredProjects.length, 48);
     if (maxPoints === 0) {
       setAutoPoppedIndex(null);
@@ -1094,16 +1204,14 @@ function App() {
       clearTimeout(initialTimer);
       clearInterval(interval);
     };
-  }, [hoveredPointIndex, filteredProjects.length]);
+  }, [hoveredPointIndex, filteredProjects.length, constellationVisible, prefersReducedMotion]);
 
-  const constellationRef = useRef<HTMLDivElement | null>(null);
   const [constellationBounds, setConstellationBounds] = useState<{ width: number; height: number }>({
     width: 0,
     height: 0,
   });
 
   useEffect(() => {
-    if (constellationViewMode !== 'map') return;
     const el = constellationRef.current;
     if (!el) return;
 
@@ -1138,7 +1246,7 @@ function App() {
       window.removeEventListener('resize', updateBounds);
       window.removeEventListener('orientationchange', updateBounds);
     };
-  }, [constellationViewMode]);
+  }, []);
 
   const stats = useMemo(() => {
     return {
@@ -1200,21 +1308,10 @@ function App() {
       data-theme={activeTheme}
       data-persona={personaAccentId(hero.slug)}
     >
-      {/* Site-wide ambient video */}
-      <div className="site-video-wrap" aria-hidden="true">
-        <video
-          ref={videoRef}
-          className="site-video"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          poster="/videos/ai-ambient.jpg"
-        >
-          <source src="/videos/ai-ambient.mp4" type="video/mp4" />
-        </video>
-        <div className="site-video-overlay" />
+      {/* Lightweight CSS ambient background */}
+      <div className="site-ambient-wrap" aria-hidden="true">
+        <div className="site-ambient-layer" />
+        <div className="site-ambient-overlay" />
       </div>
       <div className="grain" aria-hidden="true" />
 
@@ -1499,6 +1596,16 @@ function App() {
                             </div>
                           )}
                         </div>
+                          {relatedProjectSkills.length > 0 && (
+                            <div className="project-related-skills">
+                              <h5>OTHER SKILLS USED IN THIS PROJECT</h5>
+                              <div className="project-related-skill-list">
+                                {relatedProjectSkills.map((skillName) => (
+                                  <span className="project-related-skill-chip" key={skillName}>{skillName}</span>
+                                ))}
+                              </div>
+                            </div>
+                          )}
                         <div className="slot-link-row">
                           {displayedEvidence.records.slice(0, 1).map((item) => item.url ? (
                             <button
@@ -1530,7 +1637,7 @@ function App() {
               </section>
 
               {/* =========================================================================
-                  2. PROJECT CONSTELLATION (Full Card Visibility & Map View)
+                  2. PROJECT CONSTELLATION (Interactive Map)
               ========================================================================= */}
               <section className="kaggle section-panel" id="constellation">
                 <div className="section-header">
@@ -1571,150 +1678,15 @@ function App() {
                       </div>
                     </div>
                   </div>
-
-                  {/* View Mode Toggle: Cards View vs Interactive Map */}
-                  <div className="constellation-view-toggle">
-                    <button
-                      type="button"
-                      className={`constellation-toggle-btn ${constellationViewMode === 'cards' ? 'is-active' : ''}`}
-                      onClick={() => setConstellationViewMode('cards')}
-                      aria-label="Cards View"
-                    >
-                      <LayoutGrid size={14} />
-                      <span>Cards</span>
-                    </button>
-                    <button
-                      type="button"
-                      className={`constellation-toggle-btn ${constellationViewMode === 'map' ? 'is-active' : ''}`}
-                      onClick={() => setConstellationViewMode('map')}
-                      aria-label="Interactive Map View"
-                    >
-                      <Compass size={14} />
-                      <span>Interactive Map</span>
-                    </button>
-                  </div>
                 </div>
 
-                {/* Search Bar - Card View Only */}
-                {constellationViewMode === 'cards' && (
-                  <div className="constellation-controls">
-                    <div className="search-bar">
-                      <Search size={16} className="search-icon" />
-                      <input
-                        type="text"
-                        placeholder="Search projects by name, technology, or topic (e.g. Optuna, QLoRA, FastAPI, RAG)..."
-                        value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
-                        className="search-input"
-                      />
-                      {searchQuery && (
-                        <button
-                          type="button"
-                          className="search-clear"
-                          onClick={() => setSearchQuery('')}
-                        >
-                          Clear
-                        </button>
-                      )}
-                    </div>
-                  </div>
-                )}
-
-                {/* View A: Project Cards Grid (Full Visibility, No Clipping) */}
-                {constellationViewMode === 'cards' && (
-                  <div className="constellation-grid" aria-label="Project cards list">
-                    {filteredProjects.map((entry) => {
-                      const techs = parseTechnologyList(entry.technology || '');
-                      return (
-                        <article key={`${entry.section}-${entry.title}`} className="constellation-card">
-                          <div className="card-top">
-                            <span className="card-type-badge">{entry.project_type || entry.category}</span>
-                            <span className="card-platform-badge">{entry.platform}</span>
-                          </div>
-
-                          <h3 className="card-title">{entry.title}</h3>
-                          <p className="card-desc">
-                            {entry.tagline || entry.description || 'Production engineering system with clean modular architecture.'}
-                          </p>
-
-                          {techs.length > 0 && (
-                            <div className="card-techs">
-                              {techs.slice(0, 6).map((tech) => (
-                                <span key={tech} className="tech-chip">
-                                  {tech}
-                                </span>
-                              ))}
-                              {techs.length > 6 && (
-                                <span className="tech-chip-more">+{techs.length - 6}</span>
-                              )}
-                            </div>
-                          )}
-
-                          <div className="card-footer">
-                            <div className="card-links-left">
-                              {entry.github_url && (
-                                <a
-                                  href={entry.github_url}
-                                  target="_blank"
-                                  rel="noreferrer"
-                                  className="card-link"
-                                  title="GitHub Repository"
-                                >
-                                  <GitBranch size={13} />
-                                  <span>GitHub</span>
-                                </a>
-                              )}
-                              {entry.live_url && (
-                                <button
-                                  type="button"
-                                  className="card-link is-live-link"
-                                  onClick={() => openLiveDemoConfirmation(entry)}
-                                  title="Open Deployed Live Demo"
-                                >
-                                  <ExternalLink size={13} />
-                                  <span>Live Demo</span>
-                                </button>
-                              )}
-                            </div>
-
-                            <button
-                              type="button"
-                              className="card-detail-btn"
-                              onClick={() => openProjectDetail(entry)}
-                            >
-                              View Project
-                            </button>
-                          </div>
-                        </article>
-                      );
-                    })}
-
-                    {filteredProjects.length === 0 && (
-                      <div className="constellation-empty-state">
-                        <p>No projects match your current search and filter criteria.</p>
-                        <button
-                          type="button"
-                          className="search-clear-btn"
-                          onClick={() => {
-                            setSearchQuery('');
-                            setSelectedConstellationFilter('');
-                          }}
-                        >
-                          Clear Filters
-                        </button>
-                      </div>
-                    )}
-                  </div>
-                )}
-
-                {/* View B: Constellation Interactive Node Map */}
-                {constellationViewMode === 'map' && (
-                  <div className="constellation-wrap">
-                    <div
-                      ref={constellationRef}
-                      className="constellation"
-                      aria-label="Project constellation interactive map"
-                    >
+                {/* Constellation Interactive Node Map */}
+                <div className="constellation-wrap">
+                  <div
+                    ref={constellationRef}
+                    className="constellation"
+                    aria-label="Project constellation interactive map"
+                  >
                       {filteredProjects.slice(0, 48).map((entry, index) => {
                         const colorClass =
                           entry.category === 'AI AGENTS & LLM APPS' || entry.project_type === 'END-TO-END AI SYSTEM'
@@ -1794,9 +1766,8 @@ function App() {
                           </button>
                         );
                       })}
-                    </div>
                   </div>
-                )}
+                </div>
 
                 {/* Aggregate Stats */}
                 <div className="stats-row">
@@ -1967,10 +1938,22 @@ function App() {
               ========================================================================= */}
               <section className="contact section-panel" id="contact">
                 <div className="contact-core">
-                  <div className="contact-beno">BELBIN BENO</div>
-                  <h2>LET&apos;S BUILD INTELLIGENT SYSTEMS.</h2>
-                  <p>Generative AI · LLMs · RAG · AI Agents · Machine Learning · AI Engineering</p>
-                  <div className="contact-actions">
+                  <div className="contact-heading">
+                    <span className="contact-eyebrow">CONTACT / CONNECTION</span>
+                    <h2>HAVE A SYSTEM TO BUILD?</h2>
+                    {contactDescription && <p>{contactDescription}</p>}
+                  </div>
+                  <div className="contact-info-grid">
+                    <div className="contact-info-card">
+                      <span className="contact-info-label">CURRENT STACK</span>
+                      <div className="contact-stack-skills">
+                        {contactSkills.map((skill) => (
+                          <span className="contact-stack-chip" key={skill}>{skill}</span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="contact-actions" aria-label="Contact and profile links">
                     {externalLinks
                       .filter((item) => ['GitHub', 'LinkedIn', 'Email'].includes(item.title))
                       .map((item) => (
@@ -1979,7 +1962,11 @@ function App() {
                           href={item.url}
                           target={item.url.startsWith('http') ? '_blank' : undefined}
                           rel={item.url.startsWith('http') ? 'noreferrer' : undefined}
+                          className={`contact-action-link contact-action-${item.title.toLowerCase()}`}
                         >
+                          {item.title === 'GitHub' && <GitBranch size={17} aria-hidden="true" />}
+                          {item.title === 'LinkedIn' && <Linkedin size={17} aria-hidden="true" />}
+                          {item.title === 'Email' && <Mail size={17} aria-hidden="true" />}
                           {item.title}
                         </a>
                       ))}
@@ -1989,7 +1976,8 @@ function App() {
                       className="contact-resume-link"
                       title="Direct PDF Download"
                     >
-                      Download Resume (PDF)
+                      <Download size={17} aria-hidden="true" />
+                      Download Resume
                     </a>
                   </div>
                 </div>
