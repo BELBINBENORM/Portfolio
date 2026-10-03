@@ -6729,3 +6729,1673 @@ img {
   }
 
 }
+
+
+/* =========================================================================
+   LIGHT THEME COMPLETION — PROJECT DETAIL / ARCHITECTURE SURFACES
+   These are intentionally designed light surfaces, not inverted dark colors.
+========================================================================= */
+[data-theme="light"] .variant-project {
+  background: #ffffff;
+  border-color: #dbe4ee;
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.05);
+}
+
+[data-theme="light"] .arch-diagram-viewport.is-project-scroll {
+  background: linear-gradient(180deg, #f8fbff 0%, #f1f5f9 100%);
+  border-color: #dbe4ee;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), inset 0 2px 12px rgba(15, 23, 42, 0.035);
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+[data-theme="light"] .arch-diagram-viewport.is-project-scroll::-webkit-scrollbar-track {
+  background: #eef2f7;
+}
+
+[data-theme="light"] .arch-diagram-viewport.is-project-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+[data-theme="light"] .arch-diagram-viewport.is-project-scroll::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+[data-theme="light"] .arch-edge-flow {
+  stroke: #0284c7;
+  opacity: 0.82;
+}
+
+[data-theme="light"] .arch-edge-group.is-active .arch-edge-base {
+  stroke: #0284c7;
+  filter: drop-shadow(0 0 4px rgba(2, 132, 199, 0.22));
+}
+
+[data-theme="light"] .arch-edge-group.is-active .arch-edge-flow {
+  stroke: #2563eb;
+}
+
+[data-theme="light"] .arch-node-card.is-active-step {
+  box-shadow: 0 0 22px rgba(2, 132, 199, 0.16), 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+[data-theme="light"] .modal-tech-section {
+  background: #f1f5f9;
+  border-color: #dbe4ee;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="light"] .modal-tech-section strong {
+  color: #475569;
+}
+
+[data-theme="light"] .modal-tech-tag {
+  background: #ffffff;
+  border-color: #dbe4ee;
+  color: #334155;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
+}
+
+[data-theme="light"] .project-status-line {
+  color: #64748b;
+}
+
+/* =========================================================================
+   LIGHT THEME — FRONT VIEW COLOR SYSTEM
+   Keeps the clean light layout, but adds the blue / violet / orange / green
+   color language used by the portfolio's engineering visuals.
+   ========================================================================= */
+
+[data-theme="light"] .hero {
+  background:
+    radial-gradient(circle at 18% 28%, rgba(14, 165, 233, 0.10), transparent 28%),
+    radial-gradient(circle at 82% 22%, rgba(99, 102, 241, 0.09), transparent 27%),
+    radial-gradient(circle at 70% 78%, rgba(245, 158, 11, 0.075), transparent 24%),
+    radial-gradient(circle at 25% 78%, rgba(16, 185, 129, 0.065), transparent 22%),
+    linear-gradient(135deg, #ffffff 0%, #f8fbff 48%, #f4f7ff 100%);
+}
+
+[data-theme="light"] .hero::after {
+  background:
+    linear-gradient(rgba(37, 99, 235, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.055) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(circle at center, black 34%, transparent 82%);
+}
+
+[data-theme="light"] .hero-headline {
+  background: linear-gradient(
+    135deg,
+    #0f172a 8%,
+    #172554 42%,
+    #1d4ed8 72%,
+    #4338ca 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+[data-theme="light"] .hero-subheadline {
+  background: linear-gradient(90deg, #0284c7 0%, #2563eb 42%, #6366f1 72%, #d97706 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+[data-theme="light"] .hero-kicker-badge {
+  background: linear-gradient(135deg, rgba(239, 246, 255, 0.95), rgba(245, 243, 255, 0.95));
+  border-color: #bfdbfe;
+  box-shadow: 0 5px 18px rgba(37, 99, 235, 0.08);
+}
+
+[data-theme="light"] .hero-credibility-strip {
+  background: linear-gradient(135deg, rgba(248, 251, 255, 0.96), rgba(246, 247, 255, 0.96));
+  border-color: #dbe5f2;
+  box-shadow: 0 12px 28px rgba(30, 64, 175, 0.08);
+}
+
+[data-theme="light"] .credibility-tag:nth-child(1) {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: #1d4ed8;
+}
+
+[data-theme="light"] .credibility-tag:nth-child(2) {
+  background: #f5f3ff;
+  border-color: #ddd6fe;
+  color: #6d28d9;
+}
+
+[data-theme="light"] .credibility-tag:nth-child(3) {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+  color: #047857;
+}
+
+[data-theme="light"] .credibility-tag:nth-child(4) {
+  background: #fff7ed;
+  border-color: #fed7aa;
+  color: #c2410c;
+}
+
+/* Engineering Pipeline: replace the dark miniature canvases with
+   differentiated light technical surfaces. */
+[data-theme="light"] .stage-panel {
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+  border-color: #dbe5f0;
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.035);
+}
+
+[data-theme="light"] .stage-panel:nth-child(1) .stage-label { color: #0284c7; }
+[data-theme="light"] .stage-panel:nth-child(2) .stage-label { color: #ea580c; }
+[data-theme="light"] .stage-panel:nth-child(3) .stage-label { color: #6366f1; }
+[data-theme="light"] .stage-panel:nth-child(4) .stage-label { color: #2563eb; }
+[data-theme="light"] .stage-panel:nth-child(5) .stage-label { color: #059669; }
+
+[data-theme="light"] .stage-visual {
+  background:
+    linear-gradient(rgba(148, 163, 184, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.045) 1px, transparent 1px),
+    #f8fbff;
+  background-size: 20px 20px;
+  border-color: #dce7f3;
+  box-shadow: inset 0 1px 3px rgba(15, 23, 42, 0.025);
+}
+
+[data-theme="light"] .stage-panel:nth-child(1) .stage-visual {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.07), transparent 62%),
+    #f0f9ff;
+}
+
+[data-theme="light"] .stage-panel:nth-child(2) .stage-visual {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.08), transparent 62%),
+    #fffaf3;
+}
+
+[data-theme="light"] .stage-panel:nth-child(3) .stage-visual {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.08), transparent 62%),
+    #f7f5ff;
+}
+
+[data-theme="light"] .stage-panel:nth-child(4) .stage-visual {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.08), transparent 62%),
+    #f3f7ff;
+}
+
+[data-theme="light"] .stage-panel:nth-child(5) .stage-visual {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.08), transparent 62%),
+    #f1fbf7;
+}
+
+[data-theme="light"] .stage-visual--data .dot {
+  box-shadow: 0 0 10px rgba(14, 165, 233, 0.28);
+}
+
+[data-theme="light"] .stage-visual .node {
+  background: rgba(245, 158, 11, 0.10);
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.16);
+}
+
+[data-theme="light"] .doc {
+  background: rgba(99, 102, 241, 0.09);
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.14);
+}
+
+[data-theme="light"] .service {
+  background: rgba(37, 99, 235, 0.09);
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.12);
+}
+
+[data-theme="light"] .project-block {
+  background: rgba(16, 185, 129, 0.10);
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.12);
+}
+
+/* Light page shell: keep the section surfaces white, but give the page
+   around them a subtle cool canvas so the sections don't float on pure white. */
+[data-theme="light"] .page-content {
+  background: transparent;
+}
+
+[data-theme="light"] .section-panel {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.985), rgba(249, 251, 255, 0.98));
+}
+
+/* =========================================================================
+   LIGHT THEME — COLORFUL UI PASS
+   Purpose: give Light mode its own visual language. Dark mode is untouched.
+   Palette inspired by the portfolio's engineering pipeline and semantic UI
+   tokens: blue, cyan/teal, violet, orange, green and warm yellow.
+   ========================================================================= */
+
+[data-theme="light"] {
+  --bg: #eef3f8;
+  --bg-soft: #e8eef6;
+  --paper: #ffffff;
+  --paper-elevated: #fbfdff;
+  --ink: #111827;
+  --ink-secondary: #334155;
+  --muted: #64748b;
+  --line: #d8e1ec;
+  --line-strong: #b9c8da;
+  --cyan: #0891b2;
+  --orange: #f97316;
+  --violet: #7c3aed;
+  --blue: #2563eb;
+  --gold: #d97706;
+  --lime: #059669;
+  --shadow: rgba(30, 64, 175, 0.09);
+}
+
+/* Page canvas: visibly light, but not sterile white. */
+[data-theme="light"] body {
+  background:
+    radial-gradient(circle at 8% 8%, rgba(14, 165, 233, 0.09), transparent 24%),
+    radial-gradient(circle at 92% 14%, rgba(124, 58, 237, 0.075), transparent 23%),
+    radial-gradient(circle at 76% 86%, rgba(16, 185, 129, 0.055), transparent 24%),
+    linear-gradient(180deg, #f8fbff 0%, #eef3f8 48%, #e8eef6 100%);
+}
+
+[data-theme="light"] .section-panel,
+[data-theme="light"] .systems-showcase-container,
+[data-theme="light"] .skills-unified-card,
+[data-theme="light"] .contact {
+  border-color: #d6e1ed;
+  box-shadow:
+    0 10px 28px rgba(30, 64, 175, 0.055),
+    0 2px 6px rgba(15, 23, 42, 0.035);
+}
+
+/* Front-page hero: colored engineering atmosphere rather than a blank white block. */
+[data-theme="light"] .hero {
+  border-color: #d7e3ef;
+  box-shadow: 0 16px 42px rgba(30, 64, 175, 0.075);
+  background:
+    radial-gradient(circle at 14% 20%, rgba(14, 165, 233, 0.12), transparent 25%),
+    radial-gradient(circle at 86% 18%, rgba(124, 58, 237, 0.10), transparent 24%),
+    radial-gradient(circle at 72% 82%, rgba(249, 115, 22, 0.075), transparent 23%),
+    radial-gradient(circle at 20% 82%, rgba(16, 185, 129, 0.07), transparent 22%),
+    linear-gradient(135deg, #ffffff 0%, #f7fbff 48%, #f6f4ff 100%);
+}
+
+[data-theme="light"] .hero::after {
+  opacity: 1;
+  background:
+    linear-gradient(rgba(37, 99, 235, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.055) 1px, transparent 1px);
+  background-size: 46px 46px;
+  mask-image: radial-gradient(circle at center, black 30%, transparent 84%);
+}
+
+[data-theme="light"] .hero-kicker-badge {
+  color: #0369a1;
+  background: linear-gradient(135deg, #effaff, #f2f0ff);
+  border-color: #b9ddf5;
+  box-shadow: 0 5px 18px rgba(14, 165, 233, 0.10);
+}
+
+[data-theme="light"] .hero-subheadline {
+  background: linear-gradient(90deg, #0284c7 0%, #2563eb 42%, #7c3aed 74%, #ea580c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Core-domain chips: each chip carries a small semantic color instead of all
+   looking like the same gray pill. */
+[data-theme="light"] .hero .credibility-tag:nth-child(1),
+[data-theme="light"] .hero .core-domain-tag:nth-child(1) {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: #1d4ed8;
+}
+[data-theme="light"] .hero .credibility-tag:nth-child(2),
+[data-theme="light"] .hero .core-domain-tag:nth-child(2) {
+  background: #f5f3ff;
+  border-color: #ddd6fe;
+  color: #6d28d9;
+}
+[data-theme="light"] .hero .credibility-tag:nth-child(3),
+[data-theme="light"] .hero .core-domain-tag:nth-child(3) {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+  color: #047857;
+}
+[data-theme="light"] .hero .credibility-tag:nth-child(4),
+[data-theme="light"] .hero .core-domain-tag:nth-child(4) {
+  background: #fff7ed;
+  border-color: #fed7aa;
+  color: #c2410c;
+}
+
+/* Pipeline cards: the card itself stays light; the miniature visual gets a
+   tinted technical canvas. This removes the dark rectangles visible in the
+   front-page screenshot. */
+[data-theme="light"] .stage-panel {
+  background: linear-gradient(180deg, #ffffff 0%, #f9fbff 100%);
+  border-color: #d5e0ec;
+}
+
+[data-theme="light"] .stage-panel:nth-child(1) {
+  background: linear-gradient(145deg, #ffffff 0%, #f0faff 100%);
+  border-color: #c7e8f5;
+}
+[data-theme="light"] .stage-panel:nth-child(2) {
+  background: linear-gradient(145deg, #ffffff 0%, #fff8f0 100%);
+  border-color: #f5d8bd;
+}
+[data-theme="light"] .stage-panel:nth-child(3) {
+  background: linear-gradient(145deg, #ffffff 0%, #f7f3ff 100%);
+  border-color: #ddd3f7;
+}
+[data-theme="light"] .stage-panel:nth-child(4) {
+  background: linear-gradient(145deg, #ffffff 0%, #f2f6ff 100%);
+  border-color: #cfdbf7;
+}
+[data-theme="light"] .stage-panel:nth-child(5) {
+  background: linear-gradient(145deg, #ffffff 0%, #f0fbf7 100%);
+  border-color: #c8e8dc;
+}
+
+[data-theme="light"] .stage-visual {
+  border-color: #d2deea;
+  background:
+    linear-gradient(rgba(100, 116, 139, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(100, 116, 139, 0.055) 1px, transparent 1px),
+    #f8fbff;
+  background-size: 20px 20px;
+  box-shadow: inset 0 1px 4px rgba(15, 23, 42, 0.025);
+}
+
+[data-theme="light"] .stage-panel:nth-child(1) .stage-visual {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.13), transparent 62%),
+    #eefaff;
+  border-color: #c4e8f5;
+}
+[data-theme="light"] .stage-panel:nth-child(2) .stage-visual {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(249, 115, 22, 0.11), transparent 62%),
+    #fff8f0;
+  border-color: #f4d4b7;
+}
+[data-theme="light"] .stage-panel:nth-child(3) .stage-visual {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(124, 58, 237, 0.11), transparent 62%),
+    #f7f3ff;
+  border-color: #ddd1f7;
+}
+[data-theme="light"] .stage-panel:nth-child(4) .stage-visual {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.11), transparent 62%),
+    #f1f6ff;
+  border-color: #cedbf5;
+}
+[data-theme="light"] .stage-panel:nth-child(5) .stage-visual {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(5, 150, 105, 0.11), transparent 62%),
+    #f0fbf7;
+  border-color: #c8e8dc;
+}
+
+[data-theme="light"] .stage-visual--data .dot {
+  background: #0891b2;
+  box-shadow: 0 0 0 4px rgba(8, 145, 178, 0.10), 0 0 14px rgba(8, 145, 178, 0.30);
+}
+[data-theme="light"] .stage-visual .node {
+  background: rgba(249, 115, 22, 0.10);
+  border-color: #f97316;
+  box-shadow: 0 0 16px rgba(249, 115, 22, 0.18);
+}
+[data-theme="light"] .stage-visual .line {
+  background: rgba(249, 115, 22, 0.52);
+}
+[data-theme="light"] .doc {
+  background: rgba(124, 58, 237, 0.10);
+  border-color: #8b5cf6;
+  box-shadow: 0 0 14px rgba(124, 58, 237, 0.16);
+}
+[data-theme="light"] .embedding-ring {
+  border-color: #8b5cf6;
+}
+[data-theme="light"] .service {
+  background: rgba(37, 99, 235, 0.10);
+  border-color: #2563eb;
+  box-shadow: 0 0 12px rgba(37, 99, 235, 0.15);
+}
+[data-theme="light"] .project-block {
+  background: rgba(5, 150, 105, 0.11);
+  border-color: #059669;
+  box-shadow: 0 0 14px rgba(5, 150, 105, 0.16);
+}
+
+/* Projects as Systems: white cards with a colored edge language. */
+[data-theme="light"] .project-system {
+  background: linear-gradient(145deg, #ffffff 0%, #f8fbff 100%);
+  border-color: #d6e1ed;
+  box-shadow: 0 12px 30px rgba(30, 64, 175, 0.06);
+}
+[data-theme="light"] .project-system:nth-child(4n + 1) { border-top: 3px solid #0891b2; }
+[data-theme="light"] .project-system:nth-child(4n + 2) { border-top: 3px solid #7c3aed; }
+[data-theme="light"] .project-system:nth-child(4n + 3) { border-top: 3px solid #2563eb; }
+[data-theme="light"] .project-system:nth-child(4n) { border-top: 3px solid #f97316; }
+[data-theme="light"] .project-system:hover {
+  border-color: #b9c8da;
+  box-shadow: 0 18px 42px rgba(30, 64, 175, 0.10);
+}
+[data-theme="light"] .project-head h3 { color: #111827 !important; }
+[data-theme="light"] .project-system-desc { color: #475569; }
+[data-theme="light"] .project-platform-badge {
+  background: #f8fafc;
+  border-color: #d8e1ec;
+  color: #64748b;
+}
+[data-theme="light"] .structure {
+  background: linear-gradient(135deg, #f8fbff, #f5f3ff);
+  border-color: #d8e1ec;
+}
+[data-theme="light"] .structure strong { color: #334155; }
+
+/* Skills network: turn dark floating pills into crisp colored UI nodes. */
+[data-theme="light"] .network-node {
+  background: rgba(255, 255, 255, 0.96);
+  color: #334155;
+  border-color: #cbd8e6;
+  box-shadow: 0 5px 16px rgba(30, 64, 175, 0.08);
+}
+[data-theme="light"] .network-node:hover {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-color: #60a5fa;
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.14);
+}
+[data-theme="light"] .network-node.is-selected {
+  background: linear-gradient(135deg, #eff6ff, #f5f3ff);
+  color: #1d4ed8;
+  border-color: #60a5fa;
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.14), inset 0 0 0 1px rgba(124, 58, 237, 0.18);
+}
+[data-theme="light"] .network-center {
+  background: linear-gradient(145deg, #ffffff, #eff6ff);
+  border-color: #93c5fd;
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.12);
+}
+
+/* Architecture modal / diagrams: a real light engineering canvas. */
+[data-theme="light"] .arch-diagram-viewport.is-project-scroll {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(14, 165, 233, 0.08), transparent 25%),
+    radial-gradient(circle at 80% 75%, rgba(124, 58, 237, 0.07), transparent 25%),
+    linear-gradient(rgba(100, 116, 139, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(100, 116, 139, 0.045) 1px, transparent 1px),
+    #f8fbff;
+  background-size: auto, auto, 28px 28px, 28px 28px, auto;
+  border-color: #d3dfeb;
+  box-shadow: inset 0 2px 10px rgba(30, 64, 175, 0.035);
+}
+[data-theme="light"] .arch-diagram-viewport.is-project-scroll::-webkit-scrollbar-track {
+  background: #edf2f7;
+}
+[data-theme="light"] .arch-diagram-viewport.is-project-scroll::-webkit-scrollbar-thumb {
+  background: #b9c8da;
+  border-radius: 999px;
+}
+[data-theme="light"] .arch-project-desc-box {
+  background: linear-gradient(135deg, #f0faff, #f7f3ff);
+  border-color: #cfe0ef;
+}
+[data-theme="light"] .arch-desc-text { color: #334155; }
+[data-theme="light"] .arch-node-card {
+  background: rgba(255, 255, 255, 0.97);
+  border-color: #d4dfeb;
+  box-shadow: 0 7px 18px rgba(30, 64, 175, 0.075);
+}
+[data-theme="light"] .arch-node-card.is-active-step {
+  background: linear-gradient(135deg, #ffffff, #eff6ff);
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.08), 0 10px 24px rgba(37, 99, 235, 0.12);
+}
+[data-theme="light"] .arch-node-icon-wrap {
+  background: linear-gradient(135deg, #eff6ff, #f5f3ff);
+  border: 1px solid #dbe5f2;
+}
+[data-theme="light"] .arch-node-title { color: #111827 !important; }
+[data-theme="light"] .arch-node-subtext { color: #64748b; }
+[data-theme="light"] .arch-edge-base { stroke: #a9bfd6; }
+
+/* Detail tabs and controls: give the active state more visual identity. */
+[data-theme="light"] .project-detail-tabs {
+  border-bottom-color: #d8e1ec;
+}
+[data-theme="light"] .project-detail-tabs button.is-active,
+[data-theme="light"] .project-detail-tabs a:hover {
+  color: #2563eb;
+  border-bottom-color: #2563eb;
+}
+[data-theme="light"] .modal-close-btn {
+  background: #f1f5f9;
+  border-color: #d8e1ec;
+}
+[data-theme="light"] .modal-close-btn:hover {
+  background: #eff6ff;
+  border-color: #93c5fd;
+  color: #1d4ed8;
+}
+
+/* Technology chips: colorful but still professional. */
+[data-theme="light"] .modal-tech-tag,
+[data-theme="light"] .contact-stack-chip,
+[data-theme="light"] .project-related-skill-chip {
+  background: #ffffff;
+  border-color: #d4dfeb;
+  color: #334155;
+  box-shadow: 0 2px 6px rgba(30, 64, 175, 0.035);
+}
+[data-theme="light"] .modal-tech-tag:nth-child(4n + 1) { border-color: #bfdbfe; background: #eff6ff; color: #1d4ed8; }
+[data-theme="light"] .modal-tech-tag:nth-child(4n + 2) { border-color: #ddd6fe; background: #f5f3ff; color: #6d28d9; }
+[data-theme="light"] .modal-tech-tag:nth-child(4n + 3) { border-color: #a7f3d0; background: #ecfdf5; color: #047857; }
+[data-theme="light"] .modal-tech-tag:nth-child(4n) { border-color: #fed7aa; background: #fff7ed; color: #c2410c; }
+
+/* Avoid gray-on-gray sections in the rest of the light UI. */
+[data-theme="light"] .project-detail-structure-card {
+  background: linear-gradient(145deg, #ffffff, #f8fbff);
+  border-color: #d8e1ec;
+}
+[data-theme="light"] .project-detail-structure-card p { color: #475569; }
+[data-theme="light"] .badge-item {
+  background: linear-gradient(145deg, #ffffff, #f8fbff);
+  border-color: #d8e1ec;
+  box-shadow: 0 6px 18px rgba(30, 64, 175, 0.045);
+}
+[data-theme="light"] .badge-item:hover {
+  border-color: #93c5fd;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.08);
+}
+
+/* Color-coded section accents. */
+[data-theme="light"] .section-header .eyebrow,
+[data-theme="light"] .projects-section-header .eyebrow { color: #0284c7; }
+[data-theme="light"] .universe .eyebrow { color: #7c3aed; }
+[data-theme="light"] .rag .eyebrow { color: #059669; }
+[data-theme="light"] .thinking .eyebrow { color: #ea580c; }
+[data-theme="light"] .journey .eyebrow { color: #2563eb; }
+[data-theme="light"] .certifications .eyebrow { color: #7c3aed; }
+[data-theme="light"] .contact .eyebrow { color: #059669; }
+
+/* =========================================================================
+   LIGHT THEME — REFINED COLOR SYSTEM
+   Technical Journey / How I Think & Build / Projects as Systems
+   Dedicated light UI. Dark theme is intentionally untouched.
+========================================================================= */
+
+/* -------------------------------------------------------------------------
+   01. PROJECTS AS SYSTEMS
+   Turn the showcase into a light engineering console instead of a white box.
+------------------------------------------------------------------------- */
+[data-theme="light"] .systems-showcase-stage {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(14, 165, 233, 0.13), transparent 30%),
+    radial-gradient(circle at 82% 12%, rgba(124, 58, 237, 0.11), transparent 30%),
+    radial-gradient(circle at 72% 88%, rgba(16, 185, 129, 0.09), transparent 28%),
+    linear-gradient(135deg, #f7fbff 0%, #eef5ff 48%, #f7f4ff 100%);
+  border-color: #cbdcf2;
+  box-shadow:
+    0 18px 50px rgba(37, 99, 235, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+[data-theme="light"] .systems-stage-ambient .ambient-glow {
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.13), transparent 68%);
+  filter: blur(55px);
+}
+
+[data-theme="light"] .systems-stage-ambient .ambient-grid-lines {
+  background-image:
+    linear-gradient(rgba(37, 99, 235, 0.065) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.065) 1px, transparent 1px);
+  background-size: 32px 32px;
+  opacity: 0.9;
+}
+
+[data-theme="light"] .systems-showcase-content {
+  color: #172554;
+}
+
+[data-theme="light"] .systems-kicker-badge {
+  color: #0369a1;
+  background: #e0f2fe;
+  border-color: #7dd3fc;
+}
+
+[data-theme="light"] .systems-type-badge {
+  color: #6d28d9;
+  background: #f3e8ff;
+  border-color: #c4b5fd;
+}
+
+[data-theme="light"] .systems-header-link {
+  color: #334155;
+  background: rgba(255, 255, 255, 0.82);
+  border-color: #cbd5e1;
+  box-shadow: 0 2px 7px rgba(15, 23, 42, 0.04);
+}
+
+[data-theme="light"] .systems-header-link:hover {
+  color: #1d4ed8;
+  background: #eff6ff;
+  border-color: #60a5fa;
+}
+
+[data-theme="light"] .systems-live-link {
+  color: #047857;
+  background: #ecfdf5;
+  border-color: #86efac;
+}
+
+[data-theme="light"] .systems-live-link:hover {
+  color: #065f46;
+  background: #d1fae5;
+  border-color: #34d399;
+}
+
+[data-theme="light"] .systems-architecture-box {
+  background:
+    radial-gradient(circle at 30% 20%, rgba(14, 165, 233, 0.12), transparent 35%),
+    linear-gradient(145deg, #f8fcff 0%, #edf6ff 52%, #f4f1ff 100%);
+  border-color: #b9d8f4;
+  box-shadow:
+    0 12px 30px rgba(37, 99, 235, 0.09),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+[data-theme="light"] .systems-cockpit-header {
+  background: rgba(255, 255, 255, 0.78);
+  border-bottom-color: #cbdcf2;
+}
+
+[data-theme="light"] .cockpit-header-title {
+  color: #0369a1;
+}
+
+[data-theme="light"] .cockpit-node-count {
+  color: #64748b;
+  background: #f8fafc;
+  border-color: #dbe4ee;
+}
+
+[data-theme="light"] .systems-description-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(239, 246, 255, 0.92));
+  border-color: #cbdcf2;
+  box-shadow: 0 5px 18px rgba(37, 99, 235, 0.06);
+}
+
+[data-theme="light"] .systems-desc-kicker {
+  color: #c2410c;
+}
+
+[data-theme="light"] .systems-desc-text {
+  color: #334155;
+}
+
+[data-theme="light"] .systems-tech-chip {
+  color: #334155;
+  background: #ffffff;
+  border-color: #cbd5e1;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+}
+
+[data-theme="light"] .systems-tech-chip:nth-child(3n + 1) {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: #1d4ed8;
+}
+
+[data-theme="light"] .systems-tech-chip:nth-child(3n + 2) {
+  background: #f5f3ff;
+  border-color: #ddd6fe;
+  color: #6d28d9;
+}
+
+[data-theme="light"] .systems-tech-chip:nth-child(3n) {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+  color: #047857;
+}
+
+[data-theme="light"] .systems-primary-cta {
+  background: linear-gradient(135deg, #0284c7 0%, #4f46e5 100%);
+  border-color: #93c5fd;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.22);
+}
+
+[data-theme="light"] .systems-primary-cta:hover {
+  background: linear-gradient(135deg, #0369a1 0%, #4338ca 100%);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.28);
+}
+
+[data-theme="light"] .systems-nav-arrow {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: #bfdbfe;
+  color: #1d4ed8;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.13);
+}
+
+[data-theme="light"] .systems-nav-arrow:hover {
+  background: #eff6ff;
+  color: #0369a1;
+  border-color: #60a5fa;
+  box-shadow: 0 0 18px rgba(59, 130, 246, 0.20);
+}
+
+[data-theme="light"] .systems-thumb-card {
+  background: rgba(255, 255, 255, 0.88);
+  border-color: #d7e2ee;
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.04);
+}
+
+[data-theme="light"] .systems-thumb-card:nth-child(1) { background: #eff8ff; }
+[data-theme="light"] .systems-thumb-card:nth-child(2) { background: #f5f3ff; }
+[data-theme="light"] .systems-thumb-card:nth-child(3) { background: #ecfdf5; }
+[data-theme="light"] .systems-thumb-card:nth-child(4) { background: #fff7ed; }
+[data-theme="light"] .systems-thumb-card:nth-child(5) { background: #eef2ff; }
+[data-theme="light"] .systems-thumb-card:nth-child(6) { background: #f0fdfa; }
+
+[data-theme="light"] .systems-thumb-card:hover {
+  background: #ffffff;
+  border-color: #93c5fd;
+  box-shadow: 0 7px 18px rgba(37, 99, 235, 0.10);
+}
+
+[data-theme="light"] .systems-thumb-card.is-active {
+  background: linear-gradient(135deg, #e0f2fe, #eef2ff);
+  border-color: #60a5fa;
+  box-shadow: 0 7px 22px rgba(37, 99, 235, 0.15);
+}
+
+[data-theme="light"] .systems-thumb-title {
+  color: #172554;
+}
+
+[data-theme="light"] .systems-thumb-num {
+  color: #64748b;
+}
+
+[data-theme="light"] .systems-thumb-card.is-active .systems-thumb-num {
+  color: #2563eb;
+}
+
+[data-theme="light"] .systems-thumb-platform {
+  color: #64748b;
+}
+
+/* -------------------------------------------------------------------------
+   02. HOW I THINK & BUILD
+   Give each engineering step its own visual identity.
+------------------------------------------------------------------------- */
+[data-theme="light"] .thinking-flow {
+  gap: 14px;
+}
+
+[data-theme="light"] .thinking-step {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fbff 100%);
+  border-color: #d7e2ee;
+  box-shadow: 0 7px 20px rgba(15, 23, 42, 0.055);
+}
+
+[data-theme="light"] .thinking-step::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0ea5e9, #6366f1);
+}
+
+[data-theme="light"] .thinking-step:nth-child(2)::before {
+  background: linear-gradient(90deg, #8b5cf6, #ec4899);
+}
+
+[data-theme="light"] .thinking-step:nth-child(3)::before {
+  background: linear-gradient(90deg, #f97316, #eab308);
+}
+
+[data-theme="light"] .thinking-step:nth-child(4)::before {
+  background: linear-gradient(90deg, #10b981, #06b6d4);
+}
+
+[data-theme="light"] .thinking-step:nth-child(5)::before {
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+}
+
+[data-theme="light"] .thinking-step:hover {
+  transform: translateY(-3px);
+  border-color: #93c5fd;
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.10);
+}
+
+[data-theme="light"] .step-index {
+  background: #eff6ff;
+  border-color: #93c5fd;
+  color: #2563eb;
+}
+
+[data-theme="light"] .thinking-step:nth-child(2) .step-index {
+  background: #f5f3ff;
+  border-color: #c4b5fd;
+  color: #7c3aed;
+}
+
+[data-theme="light"] .thinking-step:nth-child(3) .step-index {
+  background: #fff7ed;
+  border-color: #fdba74;
+  color: #ea580c;
+}
+
+[data-theme="light"] .thinking-step:nth-child(4) .step-index {
+  background: #ecfdf5;
+  border-color: #86efac;
+  color: #059669;
+}
+
+[data-theme="light"] .thinking-step:nth-child(5) .step-index {
+  background: #eef2ff;
+  border-color: #a5b4fc;
+  color: #4f46e5;
+}
+
+[data-theme="light"] .step-label {
+  color: #172554;
+}
+
+[data-theme="light"] .step-subdesc {
+  color: #475569;
+}
+
+[data-theme="light"] .thinking-caption {
+  background: linear-gradient(135deg, #eff6ff, #f5f3ff);
+  border-color: #c7d7f5;
+  color: #334155;
+  box-shadow: 0 5px 16px rgba(37, 99, 235, 0.06);
+}
+
+/* -------------------------------------------------------------------------
+   03. TECHNICAL JOURNEY
+   A vertical engineering timeline with colored milestones.
+------------------------------------------------------------------------- */
+[data-theme="light"] .journey-flow {
+  position: relative;
+  gap: 12px;
+}
+
+[data-theme="light"] .journey-flow::before {
+  content: "";
+  position: absolute;
+  left: 39px;
+  top: 16px;
+  bottom: 16px;
+  width: 2px;
+  background: linear-gradient(180deg, #38bdf8, #8b5cf6, #f59e0b, #10b981, #2563eb);
+  opacity: 0.45;
+}
+
+[data-theme="light"] .journey-step {
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  background: linear-gradient(105deg, #ffffff 0%, #f8fbff 100%);
+  border-color: #d7e2ee;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.045);
+}
+
+[data-theme="light"] .journey-step:hover {
+  transform: translateX(3px);
+  border-color: #93c5fd;
+  box-shadow: 0 9px 24px rgba(37, 99, 235, 0.09);
+}
+
+[data-theme="light"] .journey-num {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  min-width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #eff6ff;
+  border: 2px solid #7dd3fc;
+  color: #0369a1;
+  box-shadow: 0 0 0 5px #ffffff;
+}
+
+[data-theme="light"] .journey-step:nth-child(2) .journey-num {
+  background: #f5f3ff;
+  border-color: #c4b5fd;
+  color: #6d28d9;
+}
+
+[data-theme="light"] .journey-step:nth-child(3) .journey-num {
+  background: #fff7ed;
+  border-color: #fdba74;
+  color: #c2410c;
+}
+
+[data-theme="light"] .journey-step:nth-child(4) .journey-num {
+  background: #ecfdf5;
+  border-color: #86efac;
+  color: #047857;
+}
+
+[data-theme="light"] .journey-step:nth-child(5) .journey-num {
+  background: #eef2ff;
+  border-color: #a5b4fc;
+  color: #4338ca;
+}
+
+[data-theme="light"] .journey-info h3 {
+  color: #172554;
+}
+
+[data-theme="light"] .journey-info p {
+  color: #475569;
+}
+
+/* Keep section headers visually connected to the colored content. */
+[data-theme="light"] .thinking .section-header h2,
+[data-theme="light"] .journey .section-header h2,
+[data-theme="light"] .projects .section-header h2 {
+  color: #172554 !important;
+}
+
+[data-theme="light"] .thinking .eyebrow,
+[data-theme="light"] .journey .eyebrow,
+[data-theme="light"] .projects .eyebrow {
+  color: #0369a1;
+}
+
+/* Light-theme project system wrapper: prevent any inherited dark fill. */
+[data-theme="light"] .projects .systems-showcase-container,
+[data-theme="light"] .projects .systems-showcase-stage,
+[data-theme="light"] .projects .systems-architecture-box,
+[data-theme="light"] .projects .systems-description-card,
+[data-theme="light"] .projects .systems-thumb-card {
+  color-scheme: light;
+}
+
+/* ========================================================================
+   FINAL LIGHT THEME PASS
+   Sidebar theme controls + resume CTA + project view + architecture
+   + front-page systems / thinking / journey. Dark theme is untouched.
+   ======================================================================== */
+
+[data-theme="light"] {
+  --light-blue: #2563eb;
+  --light-cyan: #0891b2;
+  --light-violet: #7c3aed;
+  --light-orange: #ea580c;
+  --light-green: #059669;
+  --light-amber: #d97706;
+  --light-surface: #ffffff;
+  --light-surface-2: #f8fbff;
+  --light-surface-3: #f1f5f9;
+  --light-border: #d7e2ee;
+  --light-border-strong: #b9c9da;
+  --light-text: #0f172a;
+  --light-text-2: #334155;
+  --light-muted: #64748b;
+}
+
+/* ------------------------------------------------------------------------
+   SIDEBAR: THEME SELECTION + RESUME
+   ------------------------------------------------------------------------ */
+[data-theme="light"] .sidebar-footer {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  border-top: 1px solid #d7e2ee;
+}
+
+[data-theme="light"] .theme-mode-btn {
+  background: #ffffff;
+  color: #475569;
+  border: 1px solid #cbd8e6;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+  font-weight: 700;
+}
+
+[data-theme="light"] .theme-mode-btn:hover {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-color: #93c5fd;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.10);
+}
+
+[data-theme="light"] .theme-mode-btn.is-active {
+  background: linear-gradient(135deg, #eff6ff 0%, #eef2ff 100%);
+  color: #1d4ed8;
+  border-color: #60a5fa;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.14), inset 0 0 0 1px rgba(255,255,255,.8);
+}
+
+[data-theme="light"] .theme-mode-btn.is-active svg,
+[data-theme="light"] .theme-mode-btn.is-active i {
+  color: #2563eb;
+}
+
+[data-theme="light"] .sidebar-actions-strip {
+  padding: 5px;
+  gap: 6px;
+  border: 1px solid #d7e2ee;
+  border-radius: 10px;
+  background: #f8fbff;
+}
+
+[data-theme="light"] .sidebar-resume-btn {
+  background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+  border: 1px solid #2563eb;
+  color: #ffffff !important;
+  box-shadow: 0 5px 14px rgba(37, 99, 235, 0.20);
+}
+
+[data-theme="light"] .sidebar-resume-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #4338ca 100%);
+  border-color: #1d4ed8;
+  color: #ffffff !important;
+  box-shadow: 0 7px 18px rgba(37, 99, 235, 0.28);
+  transform: translateY(-1px);
+}
+
+[data-theme="light"] .sidebar-icon-btn {
+  background: #ffffff;
+  border-color: #d7e2ee;
+  color: #475569;
+}
+
+[data-theme="light"] .sidebar-icon-btn:hover {
+  background: #eff6ff;
+  border-color: #93c5fd;
+  color: #1d4ed8;
+}
+
+[data-theme="light"] .collapsed-footer {
+  border-top-color: #d7e2ee;
+}
+
+[data-theme="light"] .collapsed-icon-btn {
+  background: #ffffff;
+  border-color: #d7e2ee;
+  color: #475569;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+}
+
+[data-theme="light"] .collapsed-icon-btn:hover {
+  background: #eff6ff;
+  border-color: #93c5fd;
+  color: #1d4ed8;
+}
+
+[data-theme="light"] .collapsed-icon-btn.resume-icon {
+  color: #2563eb;
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+/* ------------------------------------------------------------------------
+   PROJECT VIEW MODAL: TRUE LIGHT SURFACES
+   ------------------------------------------------------------------------ */
+[data-theme="light"] .kaggle-modal-overlay {
+  background: rgba(15, 23, 42, 0.46);
+  backdrop-filter: blur(7px);
+}
+
+[data-theme="light"] .kaggle-modal,
+[data-theme="light"] .kaggle-modal-inner {
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+  border-color: #d7e2ee;
+  color: #0f172a;
+  box-shadow: 0 28px 80px rgba(15, 23, 42, 0.20), 0 8px 28px rgba(37, 99, 235, 0.07);
+}
+
+[data-theme="light"] .modal-header {
+  border-bottom-color: #dbe5ef;
+  background: linear-gradient(90deg, #ffffff 0%, #f8fbff 100%);
+}
+
+[data-theme="light"] .modal-title {
+  color: #0f172a;
+}
+
+[data-theme="light"] .modal-desc,
+[data-theme="light"] .project-status-line {
+  color: #475569;
+}
+
+[data-theme="light"] .modal-badge {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: #2563eb;
+}
+
+[data-theme="light"] .modal-platform {
+  color: #7c3aed;
+}
+
+/* Tabs: visible even when inactive, obvious active state. */
+[data-theme="light"] .project-detail-tabs {
+  border-bottom-color: #d7e2ee;
+  background: #ffffff;
+}
+
+[data-theme="light"] .project-detail-tabs button {
+  background: #f8fafc;
+  color: #64748b;
+  border: 1px solid #dbe5ef;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.025);
+}
+
+[data-theme="light"] .project-detail-tabs button:hover {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-color: #93c5fd;
+}
+
+[data-theme="light"] .project-detail-tabs button.is-active {
+  background: linear-gradient(135deg, #eff6ff 0%, #eef2ff 100%);
+  color: #1d4ed8;
+  border-color: #60a5fa;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.10);
+}
+
+[data-theme="light"] .modal-close,
+[data-theme="light"] .modal-close-btn {
+  background: #f8fafc;
+  border: 1px solid #d7e2ee;
+  color: #475569;
+}
+
+[data-theme="light"] .modal-close:hover,
+[data-theme="light"] .modal-close-btn:hover {
+  background: #fee2e2;
+  border-color: #fca5a5;
+  color: #dc2626;
+}
+
+/* Overview content cards */
+[data-theme="light"] .project-detail-structure-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+  border-color: #d7e2ee;
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.045);
+}
+
+[data-theme="light"] .project-detail-structure-card:nth-child(4n + 1) {
+  border-top-color: #38bdf8;
+}
+[data-theme="light"] .project-detail-structure-card:nth-child(4n + 2) {
+  border-top-color: #818cf8;
+}
+[data-theme="light"] .project-detail-structure-card:nth-child(4n + 3) {
+  border-top-color: #34d399;
+}
+[data-theme="light"] .project-detail-structure-card:nth-child(4n) {
+  border-top-color: #fb923c;
+}
+
+[data-theme="light"] .detail-kicker {
+  color: #2563eb;
+}
+
+[data-theme="light"] .project-detail-structure-card p {
+  color: #475569;
+}
+
+/* ------------------------------------------------------------------------
+   ARCHITECTURE TAB
+   ------------------------------------------------------------------------ */
+[data-theme="light"] .project-architecture-modal-view,
+[data-theme="light"] .arch-diagram-viewport.is-project-scroll {
+  background:
+    linear-gradient(rgba(37, 99, 235, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.045) 1px, transparent 1px),
+    linear-gradient(180deg, #f8fbff 0%, #eef5fb 100%);
+  background-size: 28px 28px, 28px 28px, auto;
+  border-color: #cfddea;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.9), inset 0 0 30px rgba(37,99,235,.035);
+}
+
+[data-theme="light"] .arch-project-desc-box,
+[data-theme="light"] .arch-desc-box {
+  background: linear-gradient(135deg, #ffffff 0%, #f7fbff 100%);
+  border-color: #d7e2ee;
+  box-shadow: 0 4px 14px rgba(15,23,42,.04);
+}
+
+[data-theme="light"] .arch-desc-kicker,
+[data-theme="light"] .arch-roadmap-label {
+  color: #2563eb;
+}
+
+[data-theme="light"] .arch-desc-text {
+  color: #334155;
+}
+
+[data-theme="light"] .arch-node-card {
+  background: #ffffff;
+  border-color: #d4e0ec;
+  color: #0f172a;
+  box-shadow: 0 7px 18px rgba(15,23,42,.07);
+}
+
+[data-theme="light"] .arch-node-card:hover {
+  border-color: #93c5fd;
+  box-shadow: 0 10px 24px rgba(37,99,235,.12);
+  transform: translateY(-1px);
+}
+
+[data-theme="light"] .arch-node-card.is-active-step {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 2px rgba(96,165,250,.14), 0 10px 26px rgba(37,99,235,.12);
+}
+
+[data-theme="light"] .arch-node-step {
+  color: #64748b;
+}
+
+[data-theme="light"] .arch-node-title {
+  color: #0f172a;
+}
+
+[data-theme="light"] .arch-node-subtext {
+  color: #64748b;
+}
+
+[data-theme="light"] .arch-edge-base {
+  stroke: #b8c7d9;
+}
+
+[data-theme="light"] .arch-edge-flow {
+  stroke: #2563eb;
+  opacity: .85;
+}
+
+[data-theme="light"] .arch-edge-group.is-active .arch-edge-base {
+  stroke: #60a5fa;
+}
+
+[data-theme="light"] .arch-edge-group.is-active .arch-edge-flow {
+  stroke: #7c3aed;
+}
+
+/* Technology stack: no dark rectangle behind light chips. */
+[data-theme="light"] .modal-tech-section {
+  background: linear-gradient(135deg, #f1f5f9 0%, #eff6ff 100%);
+  border-color: #d2deea;
+}
+
+[data-theme="light"] .modal-tech-tag {
+  background: #ffffff;
+  color: #334155;
+  border-color: #d3dfeb;
+}
+
+[data-theme="light"] .modal-tech-tag:nth-child(4n + 1) { border-color: #bfdbfe; color: #1d4ed8; }
+[data-theme="light"] .modal-tech-tag:nth-child(4n + 2) { border-color: #ddd6fe; color: #6d28d9; }
+[data-theme="light"] .modal-tech-tag:nth-child(4n + 3) { border-color: #a7f3d0; color: #047857; }
+[data-theme="light"] .modal-tech-tag:nth-child(4n)     { border-color: #fed7aa; color: #c2410c; }
+
+/* ------------------------------------------------------------------------
+   PROJECTS AS SYSTEMS
+   ------------------------------------------------------------------------ */
+[data-theme="light"] .projects .systems-showcase-container {
+  background:
+    radial-gradient(circle at 12% 15%, rgba(14,165,233,.10), transparent 24%),
+    radial-gradient(circle at 88% 20%, rgba(124,58,237,.09), transparent 25%),
+    linear-gradient(135deg, #ffffff 0%, #f7fbff 55%, #f7f5ff 100%);
+  border-color: #d5e1ed;
+}
+
+[data-theme="light"] .projects .systems-showcase-stage,
+[data-theme="light"] .projects .systems-architecture-box {
+  background: linear-gradient(180deg, #f8fbff 0%, #eef5fb 100%);
+  border-color: #d0ddea;
+}
+
+[data-theme="light"] .projects .systems-architecture-box::before {
+  opacity: .8;
+}
+
+[data-theme="light"] .projects .systems-description-card {
+  background: #ffffff;
+  border-color: #d7e2ee;
+  box-shadow: 0 7px 22px rgba(15,23,42,.055);
+}
+
+[data-theme="light"] .projects .systems-tech-chip {
+  background: #ffffff;
+  border-color: #d7e2ee;
+  color: #334155;
+}
+
+[data-theme="light"] .projects .systems-tech-chip:nth-child(3n + 1) { background:#eff6ff; border-color:#bfdbfe; color:#1d4ed8; }
+[data-theme="light"] .projects .systems-tech-chip:nth-child(3n + 2) { background:#f5f3ff; border-color:#ddd6fe; color:#6d28d9; }
+[data-theme="light"] .projects .systems-tech-chip:nth-child(3n) { background:#ecfdf5; border-color:#a7f3d0; color:#047857; }
+
+[data-theme="light"] .projects .systems-primary-cta {
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(37,99,235,.20);
+}
+
+[data-theme="light"] .projects .systems-nav-arrow {
+  background: #ffffff;
+  border-color: #cbd8e6;
+  color: #2563eb;
+}
+
+[data-theme="light"] .projects .systems-nav-arrow:hover {
+  background: #eff6ff;
+  border-color: #93c5fd;
+}
+
+/* ------------------------------------------------------------------------
+   HOW I THINK & BUILD
+   ------------------------------------------------------------------------ */
+[data-theme="light"] .thinking-flow {
+  background: transparent;
+}
+
+[data-theme="light"] .thinking-step {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+  border-color: #d7e2ee;
+  box-shadow: 0 7px 20px rgba(15,23,42,.045);
+}
+
+[data-theme="light"] .thinking-step:nth-child(1) { border-top: 3px solid #0ea5e9; }
+[data-theme="light"] .thinking-step:nth-child(2) { border-top: 3px solid #7c3aed; }
+[data-theme="light"] .thinking-step:nth-child(3) { border-top: 3px solid #ea580c; }
+[data-theme="light"] .thinking-step:nth-child(4) { border-top: 3px solid #2563eb; }
+[data-theme="light"] .thinking-step:nth-child(5) { border-top: 3px solid #059669; }
+
+[data-theme="light"] .thinking-step:hover {
+  background: #ffffff;
+  border-color: #b9c9da;
+  box-shadow: 0 12px 28px rgba(37,99,235,.09);
+  transform: translateY(-2px);
+}
+
+[data-theme="light"] .step-label { color: #1e293b; }
+[data-theme="light"] .step-subdesc { color: #64748b; }
+
+/* ------------------------------------------------------------------------
+   TECHNICAL JOURNEY
+   ------------------------------------------------------------------------ */
+[data-theme="light"] .journey-flow::before {
+  background: linear-gradient(180deg, #38bdf8 0%, #818cf8 28%, #fb923c 52%, #60a5fa 76%, #34d399 100%);
+  opacity: .55;
+}
+
+[data-theme="light"] .journey-step {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+  border-color: #d7e2ee;
+  box-shadow: 0 7px 20px rgba(15,23,42,.045);
+}
+
+[data-theme="light"] .journey-step:hover {
+  border-color: #93c5fd;
+  box-shadow: 0 12px 28px rgba(37,99,235,.09);
+  transform: translateY(-2px);
+}
+
+[data-theme="light"] .journey-num {
+  background: #eff6ff;
+  border-color: #93c5fd;
+  color: #2563eb;
+  box-shadow: 0 4px 12px rgba(37,99,235,.12);
+}
+
+[data-theme="light"] .journey-step:nth-child(2) .journey-num { background:#f5f3ff; border-color:#c4b5fd; color:#7c3aed; }
+[data-theme="light"] .journey-step:nth-child(3) .journey-num { background:#fff7ed; border-color:#fdba74; color:#ea580c; }
+[data-theme="light"] .journey-step:nth-child(4) .journey-num { background:#eff6ff; border-color:#93c5fd; color:#2563eb; }
+[data-theme="light"] .journey-step:nth-child(5) .journey-num { background:#ecfdf5; border-color:#86efac; color:#059669; }
+
+[data-theme="light"] .journey-info h3 { color: #0f172a; }
+[data-theme="light"] .journey-info p { color: #475569; }
+
+/* ------------------------------------------------------------------------
+   MOBILE DRAWER: same light hierarchy as desktop sidebar
+   ------------------------------------------------------------------------ */
+@media (max-width: 1024px) {
+  [data-theme="light"] .portfolio-sidebar {
+    background: #ffffff;
+    box-shadow: 8px 0 35px rgba(15,23,42,.16);
+  }
+
+  [data-theme="light"] .sidebar-backdrop {
+    background: rgba(15,23,42,.32);
+  }
+}
+
+/* ========================================================================
+   LIGHT THEME — SIDEBAR CONTROL FINISH
+   Exact selectors used by Sidebar.tsx.
+   This removes the remaining dark pill from the Light theme.
+   ======================================================================== */
+
+[data-theme="light"] .sidebar-theme-row {
+  color: #475569;
+}
+
+[data-theme="light"] .sidebar-theme-row .sidebar-group-title {
+  color: #7c8da3;
+}
+
+[data-theme="light"] .theme-toggle-box {
+  background: #f1f5f9;
+  border: 1px solid #cbd8e6;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    0 3px 10px rgba(15, 23, 42, 0.07);
+}
+
+[data-theme="light"] .theme-btn {
+  color: #64748b;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+[data-theme="light"] .theme-btn:hover {
+  color: #1d4ed8;
+  background: #eaf2ff;
+  border-color: #bfdbfe;
+}
+
+[data-theme="light"] .theme-btn.is-active {
+  color: #ffffff;
+  background: linear-gradient(135deg, #2563eb 0%, #6366f1 100%);
+  border-color: transparent;
+  box-shadow:
+    0 3px 9px rgba(37, 99, 235, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+[data-theme="light"] .theme-btn.is-active:hover {
+  color: #ffffff;
+  background: linear-gradient(135deg, #1d4ed8 0%, #4f46e5 100%);
+  border-color: transparent;
+}
+
+[data-theme="light"] .theme-btn.is-active svg,
+[data-theme="light"] .theme-btn.is-active i {
+  color: currentColor;
+}
+
+/* Exact Resume/action strip used by Sidebar.tsx. */
+[data-theme="light"] .sidebar-actions-strip {
+  background: #f1f6fc;
+  border: 1px solid #d2deeb;
+  border-radius: 10px;
+  padding: 5px;
+  gap: 6px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    0 3px 10px rgba(15, 23, 42, 0.06);
+}
+
+[data-theme="light"] .sidebar-resume-btn {
+  background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+  border: 1px solid #2563eb;
+  color: #ffffff !important;
+  box-shadow: 0 4px 11px rgba(37, 99, 235, 0.20);
+}
+
+[data-theme="light"] .sidebar-resume-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #4338ca 100%);
+  border-color: #1d4ed8;
+  color: #ffffff !important;
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.26);
+  transform: translateY(-1px);
+}
+
+[data-theme="light"] .sidebar-icon-btn {
+  background: #ffffff;
+  border: 1px solid #cbd8e6;
+  color: #475569;
+  box-shadow: 0 2px 5px rgba(15, 23, 42, 0.035);
+}
+
+[data-theme="light"] .sidebar-icon-btn:hover {
+  background: #eff6ff;
+  border-color: #93c5fd;
+  color: #1d4ed8;
+  box-shadow: 0 4px 9px rgba(37, 99, 235, 0.10);
+}
+
+/* Light version of the temporary theme notice, if it is triggered. */
+[data-theme="light"] .theme-development-notice {
+  background: rgba(255, 255, 255, 0.97);
+  border-color: #bfdbfe;
+  color: #334155;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.16), 0 0 18px rgba(37, 99, 235, 0.08);
+}
+
+/* =========================================================
+   LIGHT THEME — SKILLS AS A NETWORK
+   Final cleanup for category tabs + network canvas
+   Dark theme intentionally untouched.
+   ========================================================= */
+
+[data-theme="light"] .skill-group-nav {
+  gap: 9px;
+}
+
+[data-theme="light"] .skill-group-tab {
+  color: #475569;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f8fc 100%);
+  border-color: #d7e1ec;
+  box-shadow: 0 3px 10px rgba(30, 64, 175, 0.05);
+}
+
+[data-theme="light"] .skill-group-tab:hover {
+  color: #1d4ed8;
+  background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 100%);
+  border-color: #93c5fd;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.10);
+}
+
+[data-theme="light"] .skill-group-tab.is-active {
+  color: #ffffff;
+  background: linear-gradient(135deg, #2563eb 0%, #6366f1 100%);
+  border-color: #4f7ff0;
+  box-shadow: 0 7px 18px rgba(37, 99, 235, 0.18);
+}
+
+/* The main skills card should feel like a light technical workspace. */
+[data-theme="light"] .skills-unified-card {
+  background:
+    radial-gradient(circle at 8% 5%, rgba(14, 165, 233, 0.08), transparent 26%),
+    radial-gradient(circle at 92% 92%, rgba(124, 58, 237, 0.07), transparent 28%),
+    linear-gradient(145deg, #ffffff 0%, #f8fbff 58%, #f7f5ff 100%);
+  border-color: #d5dfeb;
+  box-shadow:
+    0 18px 42px rgba(30, 64, 175, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+/* Main radial network canvas: remove the remaining dark galaxy surface. */
+[data-theme="light"] .network-node-bloom {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.10), transparent 22%),
+    radial-gradient(circle at 18% 22%, rgba(14, 165, 233, 0.10), transparent 25%),
+    radial-gradient(circle at 82% 78%, rgba(124, 58, 237, 0.09), transparent 27%),
+    linear-gradient(rgba(100, 116, 139, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(100, 116, 139, 0.045) 1px, transparent 1px),
+    #f8fbff;
+  background-size: auto, auto, auto, 26px 26px, 26px 26px, auto;
+  border-color: #d5dfeb;
+  box-shadow:
+    inset 0 0 45px rgba(59, 130, 246, 0.035),
+    0 8px 24px rgba(30, 64, 175, 0.06);
+}
+
+[data-theme="light"] .orbit-track {
+  border-color: rgba(37, 99, 235, 0.16);
+}
+
+[data-theme="light"] .network-center {
+  background: linear-gradient(145deg, #ffffff 0%, #eff6ff 58%, #f5f3ff 100%);
+  border-color: #60a5fa;
+  color: #172554;
+  box-shadow:
+    0 12px 30px rgba(37, 99, 235, 0.13),
+    inset 0 0 18px rgba(99, 102, 241, 0.07);
+}
+
+[data-theme="light"] .network-center small {
+  color: #64748b;
+}
+
+/* Keep skill nodes readable against the colored light canvas. */
+[data-theme="light"] .network-node {
+  background: rgba(255, 255, 255, 0.97);
+  color: #334155;
+  border-color: #cbd8e6;
+  box-shadow: 0 5px 16px rgba(30, 64, 175, 0.08);
+}
+
+[data-theme="light"] .network-node:hover {
+  background: linear-gradient(135deg, #eff6ff, #f5f3ff);
+  color: #1d4ed8;
+  border-color: #60a5fa;
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.14);
+}
+
+[data-theme="light"] .network-node.is-selected {
+  background: linear-gradient(135deg, #eaf4ff 0%, #f3efff 100%);
+  color: #1d4ed8;
+  border-color: #60a5fa;
+  box-shadow:
+    0 8px 24px rgba(37, 99, 235, 0.14),
+    inset 0 0 0 1px rgba(124, 58, 237, 0.18);
+}
+
+/* If the skills panel uses the secondary galaxy viewport, keep it light too. */
+[data-theme="light"] .skill-galaxy-viewport {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(14, 165, 233, 0.08), transparent 24%),
+    radial-gradient(circle at 82% 82%, rgba(124, 58, 237, 0.07), transparent 26%),
+    linear-gradient(rgba(100, 116, 139, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(100, 116, 139, 0.04) 1px, transparent 1px),
+    #f8fbff;
+  background-size: auto, auto, 26px 26px, 26px 26px, auto;
+  border-color: #d3dfeb;
+  box-shadow: 0 7px 22px rgba(30, 64, 175, 0.06);
+}
+
+/* Light text for any network labels that otherwise inherit dark-theme muted colors. */
+[data-theme="light"] .skill-network .section-kicker,
+[data-theme="light"] .skill-network .section-subtitle,
+[data-theme="light"] .skills-unified-card .muted,
+[data-theme="light"] .skills-unified-card .skill-meta {
+  color: #64748b;
+}

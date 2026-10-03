@@ -156,11 +156,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
   };
 
   const handleCycleTheme = () => {
-    if (theme !== 'dark') {
-      onSelectTheme('dark');
-      return;
-    }
-    setThemeNotice('Dark mode is currently the only available theme. Light and System themes are under development.');
+    const nextTheme: ThemeMode = theme === 'system' ? 'light' : theme === 'light' ? 'dark' : 'system';
+    onSelectTheme(nextTheme);
+    setThemeNotice('');
   };
 
   return (
@@ -481,8 +479,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   <button
                     type="button"
                     className={`theme-btn ${theme === 'system' ? 'is-active' : ''}`}
-                    onClick={() => setThemeNotice('System theme is under development. Dark mode is currently the only available theme.')}
-                    title="System theme (under development)"
+                    onClick={() => { onSelectTheme('system'); setThemeNotice(''); }}
+                    title="System theme"
                     aria-label="Switch to System theme"
                   >
                     <Laptop size={13} />
@@ -491,8 +489,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   <button
                     type="button"
                     className={`theme-btn ${theme === 'light' ? 'is-active' : ''}`}
-                    onClick={() => setThemeNotice('Light theme is under development. Dark mode is currently the only available theme.')}
-                    title="Light theme (under development)"
+                    onClick={() => { onSelectTheme('light'); setThemeNotice(''); }}
+                    title="Light theme"
                     aria-label="Switch to Light theme"
                   >
                     <Sun size={13} />
@@ -501,7 +499,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   <button
                     type="button"
                     className={`theme-btn ${theme === 'dark' ? 'is-active' : ''}`}
-                    onClick={() => onSelectTheme('dark')}
+                    onClick={() => { onSelectTheme('dark'); setThemeNotice(''); }}
                     title="Dark theme"
                     aria-label="Switch to Dark theme"
                   >

@@ -815,20 +815,35 @@ function App() {
     }
   }, [location.pathname]);
 
-  // Dark is the only available theme; other theme modes are announced from the selector.
-  const [themeMode, setThemeMode] = useState<'dark'>(() => {
-    if (typeof window === 'undefined') return 'dark';
+  // Theme preference is persisted as System, Light, or Dark. System is the default.
+  const [themeMode, setThemeMode] = useState<ThemeMode>(() => {
+    if (typeof window === 'undefined') return 'system';
     try {
       const saved = localStorage.getItem(THEME_KEY);
-      if (saved === 'dark') return saved;
+      if (saved === 'system' || saved === 'light' || saved === 'dark') return saved;
     } catch {}
-    return 'dark';
+    return 'system';
   });
 
-  const activeTheme = themeMode;
+  const [systemTheme, setSystemTheme] = useState<'dark' | 'light'>(() => {
+    if (typeof window === 'undefined') return 'dark';
+    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  });
+
+  const activeTheme: 'dark' | 'light' = themeMode === 'system' ? systemTheme : themeMode;
+
+  useEffect(() => {
+    const colorSchemeQuery = window.matchMedia('(prefers-color-scheme: light)');
+    const handleColorSchemeChange = (event: MediaQueryListEvent) => {
+      setSystemTheme(event.matches ? 'light' : 'dark');
+    };
+
+    setSystemTheme(colorSchemeQuery.matches ? 'light' : 'dark');
+    colorSchemeQuery.addEventListener('change', handleColorSchemeChange);
+    return () => colorSchemeQuery.removeEventListener('change', handleColorSchemeChange);
+  }, []);
 
   const handleSelectTheme = (mode: ThemeMode) => {
-    if (mode !== 'dark') return;
     setThemeMode(mode);
     try {
       localStorage.setItem(THEME_KEY, mode);
@@ -837,7 +852,8 @@ function App() {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', activeTheme);
-  }, [activeTheme]);
+    document.documentElement.setAttribute('data-theme-mode', themeMode);
+  }, [activeTheme, themeMode]);
 
   const toggleSidebarCollapse = () => {
     setIsSidebarCollapsed((prev) => !prev);
@@ -1548,6 +1564,7 @@ function App() {
                   <div className="unified-card-body">
                     {/* LEFT PANE: Interactive Cinematic Skill Galaxy */}
                     <SkillGalaxy
+                      key={`skill-galaxy-${activeTheme}`}
                       skillGroups={skillGroups}
                       allSkills={skills}
                       skillIcons={skillIcons}

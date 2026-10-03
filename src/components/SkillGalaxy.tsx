@@ -10,7 +10,7 @@ export interface SkillGalaxyProps {
   categoryFocusRequest?: number;
   onSelectSkill: (skillName: string, categoryName: string) => void;
   onCategoryChange: (categoryName: string) => void;
-  theme?: string;
+  theme?: 'dark' | 'light';
 }
 
 // Category color palettes
@@ -313,10 +313,25 @@ export const SkillGalaxy: React.FC<SkillGalaxyProps> = ({
   const lastExternalCategoryRef = useRef(activeCategory.toLowerCase());
   const lastCategoryFocusRequestRef = useRef(categoryFocusRequest);
   const programmaticCategoryChangeRef = useRef<string | null>(null);
+  const selectedSkillRef = useRef(selectedSkill);
+  const activeCategoryRef = useRef(activeCategory);
+  const onSelectSkillRef = useRef(onSelectSkill);
+  const notifyCategoryChangeRef = useRef<(categoryName: string) => void>(() => {});
+
+  useEffect(() => {
+    selectedSkillRef.current = selectedSkill;
+    activeCategoryRef.current = activeCategory;
+    onSelectSkillRef.current = onSelectSkill;
+  }, [selectedSkill, activeCategory, onSelectSkill]);
+
   const notifyCategoryChange = useCallback((categoryName: string) => {
     programmaticCategoryChangeRef.current = categoryName.toLowerCase();
     onCategoryChange(categoryName);
   }, [onCategoryChange]);
+
+  useEffect(() => {
+    notifyCategoryChangeRef.current = notifyCategoryChange;
+  }, [notifyCategoryChange]);
 
   // Animation state machine
   const animStateRef = useRef<{
@@ -568,12 +583,12 @@ export const SkillGalaxy: React.FC<SkillGalaxyProps> = ({
             state.phase = 'explore';
             state.phaseTimer = 0;
             state.dwellTimer = 0;
-            if (targetSys.name !== activeCategory) {
-              notifyCategoryChange(targetSys.name);
+            if (targetSys.name !== activeCategoryRef.current) {
+              notifyCategoryChangeRef.current(targetSys.name);
             }
             if (state.mode === 'loop1' && targetSys.skills.length > 0) {
               state.activeSkillIndex = randomSkillIndex(targetSys.skills.length);
-              onSelectSkill(targetSys.skills[state.activeSkillIndex].name, targetSys.name);
+              onSelectSkillRef.current(targetSys.skills[state.activeSkillIndex].name, targetSys.name);
             }
           }
         } else if (state.phase === 'explore') {
@@ -598,7 +613,7 @@ export const SkillGalaxy: React.FC<SkillGalaxyProps> = ({
             if (state.dwellTimer >= skillDwellDuration) {
               const skillIndex = randomSkillIndex(targetSys.skills.length, state.activeSkillIndex);
               state.activeSkillIndex = skillIndex;
-              if (skillIndex >= 0) onSelectSkill(targetSys.skills[skillIndex].name, targetSys.name);
+              if (skillIndex >= 0) onSelectSkillRef.current(targetSys.skills[skillIndex].name, targetSys.name);
               state.dwellTimer = 0;
             }
           }
@@ -879,7 +894,7 @@ export const SkillGalaxy: React.FC<SkillGalaxyProps> = ({
             && isCurrentCategory
             && sys.skills[state.activeSkillIndex]?.name.toLowerCase() === skill.name.toLowerCase();
           const isLoop2SelectedSkill = state.mode === 'loop2'
-            && selectedSkill.toLowerCase() === skill.name.toLowerCase();
+            && selectedSkillRef.current.toLowerCase() === skill.name.toLowerCase();
           const isSkillSelected = isLoop1ActiveSkill || isLoop2SelectedSkill;
 
           // If this skill is currently selected/highlighted, defer drawing to top pass!
@@ -1143,7 +1158,7 @@ export const SkillGalaxy: React.FC<SkillGalaxyProps> = ({
       if (animationFrameId !== null) cancelAnimationFrame(animationFrameId);
       renderRequestRef.current = () => {};
     };
-  }, [theme, selectedSkill, activeCategory, notifyCategoryChange, onSelectSkill]);
+  }, [theme]);
 
   const getCanvasCoords = useCallback((e: React.PointerEvent<HTMLCanvasElement>) => {
     const canvas = canvasRef.current;
